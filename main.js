@@ -67,7 +67,7 @@
   if (tape) tape.scrollLeft = tape.scrollWidth;
 
   /* ---------- GitHub languages ---------- */
-  const langColors = ["#2b3ff0", "#ffc933", "#00a889", "#ef4743", "#7d8cff", "#141833"];
+  const langColors = ["#0B1B2E", "#FFD23F", "#1F6FB2", "#9FD3F3", "#2E4A66", "#4FA8DE"];
   const langs = (D.github && D.github.languages) || [];
   const totalRepos = langs.reduce((s, l) => s + l.repos, 0) || 1;
   const bar = document.getElementById("langbar");
@@ -176,19 +176,61 @@
       line.style.strokeDashoffset = revealed || !el.classList.contains("is-pending") ? 0 : len;
       line.style.transition = "stroke-dashoffset 1.4s cubic-bezier(.2,.7,.1,1)";
 
+      // crosshair: a vertical guide that snaps to the nearest contest
+      const xhair = svgEl("line", { class: "xhair", x1: 0, x2: 0, y1: m.t, y2: H - m.b }, svg);
       const tip = tipFor(el);
+      const dots = [];
+      const htmlFor = (p) => `<strong>${p.y}${p.delta != null ? ` <span>(${signed(p.delta)})</span>` : ""}</strong>${esc(p.name)}<br><span>${fmtDate(p.date, true)}${p.rank ? `, rank ${p.rank.toLocaleString("en-US")}` : ""}</span>`;
+      const show = (i) => {
+        const cx = x(i), cy = y(points[i].y);
+        xhair.setAttribute("x1", cx); xhair.setAttribute("x2", cx);
+        el.classList.add("is-tracking");
+        dots.forEach((d, k) => d.classList.toggle("on", k === i));
+        tip.show(cx, cy, htmlFor(points[i]));
+      };
+      const hide = () => { el.classList.remove("is-tracking"); dots.forEach((d) => d.classList.remove("on")); tip.hide(); };
+      const track = svgEl("rect", { class: "xtrack", x: m.l, y: m.t, width: Math.max(0, W - m.l - m.r), height: Math.max(0, H - m.t - m.b) }, svg);
+      track.addEventListener("pointermove", (e) => {
+        const r = svg.getBoundingClientRect();
+        const px = ((e.clientX - r.left) / r.width) * W;
+        let best = 0;
+        points.forEach((_, i) => { if (Math.abs(x(i) - px) < Math.abs(x(best) - px)) best = i; });
+        show(best);
+      });
+      track.addEventListener("pointerleave", hide);
+
       points.forEach((p, i) => {
         const cx = x(i), cy = y(p.y);
         const band = bands.find((b) => p.y >= b.from && p.y < b.to);
-        svgEl("circle", { cx, cy, r: 4.5, class: "dot", fill: band && band.dot ? band.dot : color }, svg);
+        dots.push(svgEl("circle", { cx, cy, r: 4.5, class: "dot", fill: band && band.dot ? band.dot : color }, svg));
         const hit = svgEl("circle", { cx, cy, r: 14, class: "hit", role: "img", tabindex: 0, "aria-label": `${p.name}: rating ${p.y}` }, svg);
-        const html = `<strong>${p.y}${p.delta != null ? ` <span>(${signed(p.delta)})</span>` : ""}</strong>${esc(p.name)}<br><span>${fmtDate(p.date, true)}${p.rank ? `, rank ${p.rank.toLocaleString("en-US")}` : ""}</span>`;
-        const on = () => tip.show(cx, cy, html);
-        hit.addEventListener("pointerenter", on);
-        hit.addEventListener("focus", on);
-        hit.addEventListener("pointerleave", tip.hide);
-        hit.addEventListener("blur", tip.hide);
+        hit.addEventListener("pointerenter", () => show(i));
+        hit.addEventListener("focus", () => show(i));
+        hit.addEventListener("pointerleave", hide);
+        hit.addEventListener("blur", hide);
       });
+
+      // the peak gets a label
+      const peak = ys.lastIndexOf(Math.max(...ys));
+      const px = x(peak), py = y(ys[peak]);
+      const above = py - 16 > m.t + 4;
+      const bestRing = svgEl("circle", { cx: px, cy: py, r: 9, class: "best-ring" }, svg);
+      const bestLabel = svgEl("text", { x: px, y: above ? py - 15 : py + 24, "text-anchor": points.length > 1 && peak === points.length - 1 ? "end" : "middle", class: "best" }, svg);
+      bestLabel.textContent = "BEST";
+
+      // scenes can draw the line with scroll: p in 0..1
+      const apply = () => {
+        if (el._p == null) return;
+        const p = el._p;
+        line.style.transition = "none";
+        line.style.strokeDashoffset = len * (1 - p);
+        const lastShown = p * Math.max(1, points.length - 1) + 1e-6;
+        dots.forEach((d, k) => (d.style.opacity = k <= lastShown ? 1 : 0));
+        const peakShown = peak <= lastShown;
+        bestRing.style.opacity = bestLabel.style.opacity = peakShown ? 1 : 0;
+      };
+      el._scrub = (p) => { el._p = p; apply(); };
+      apply();
     });
   }
 
@@ -220,18 +262,6 @@
     });
   }
 
-  function contestTable(el, rows, { link, showSolved = false } = {}) {
-    if (!el) return;
-    const newest = rows.slice().reverse();
-    el.innerHTML =
-      `<thead><tr><th scope="col">Contest</th><th scope="col" class="num">Rank</th>${showSolved ? '<th scope="col" class="num">Solved</th>' : ""}<th scope="col" class="num">Change</th><th scope="col" class="num">Rating</th></tr></thead><tbody>` +
-      newest.map((r) => {
-        const name = link ? `<a href="${esc(link(r))}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
-        const cls = r.delta > 0 ? "up" : r.delta < 0 ? "down" : "";
-        return `<tr><td>${name}<span class="muted">${fmtDate(r.date, true)}</span></td><td class="num">${r.rank.toLocaleString("en-US")}</td>${showSolved ? `<td class="num">${r.solved}/${r.of}</td>` : ""}<td class="num ${cls}">${r.delta == null ? "–" : signed(r.delta)}</td><td class="num"><b>${r.rating}</b></td></tr>`;
-      }).join("") + "</tbody>";
-  }
-
   /* ---------- LeetCode ---------- */
   const lcBadges = document.getElementById("lc-badges");
   if (lcBadges) {
@@ -240,14 +270,7 @@
       (lc.upcomingBadges || []).map((b) => `<li class="upcoming"><img src="${esc(b.icon)}" alt="" width="88" height="88" loading="lazy"><strong>${esc(b.name)}</strong><span>${b.progress}% there</span><span class="meter" aria-hidden="true"><i style="width:${b.progress}%"></i></span></li>`).join("");
   }
   const lcHist = (lc.contestHistory || []).map((h, i, a) => ({ ...h, delta: i ? h.rating - a[i - 1].rating : null }));
-  ratingChart(document.getElementById("lc-chart"), lcHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#ffa116" });
-  contestTable(document.getElementById("lc-contests"), lcHist, { showSolved: true, link: (r) => "https://leetcode.com/contest/" + r.name.toLowerCase().replace(/\s+/g, "-") + "/" });
-  const lcRecent = document.getElementById("lc-recent");
-  if (lcRecent) {
-    const langName = { java: "Java", python3: "Python", python: "Python", cpp: "C++", c: "C", mysql: "MySQL" };
-    lcRecent.innerHTML = (lc.recent || []).slice(0, 10).map((r) =>
-      `<li><time datetime="${r.date}">${fmtDate(r.date)}</time><span><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="tag">${esc(langName[r.lang] || r.lang)}</span></span></li>`).join("");
-  }
+  ratingChart(document.getElementById("lc-chart"), lcHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#1F6FB2" });
   const lcLangs = document.getElementById("lc-langs");
   if (lcLangs && lc.languages) lcLangs.textContent = lc.languages.map((l) => `${l.name} ${l.count}`).join(", ");
 
@@ -261,9 +284,8 @@
     { from: 1900, to: 2100, color: "#aa00aa", dot: "#aa00aa", name: "Candidate master" },
   ];
   const cfHist = (cf.contestHistory || []).map((h) => ({ ...h, delta: h.rating - h.old }));
-  ratingChart(document.getElementById("cf-chart"), cfHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#0f2230", bands: cfBands });
-  columnChart(document.getElementById("cf-diff"), Object.entries(cf.solvedByRating || {}).map(([k, v]) => ({ label: k, value: v })), { color: "#1f8acb", unit: "problems" });
-  contestTable(document.getElementById("cf-contests"), cfHist, { link: (r) => "https://codeforces.com/contest/" + r.id });
+  ratingChart(document.getElementById("cf-chart"), cfHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#0B1B2E", bands: cfBands });
+  columnChart(document.getElementById("cf-diff"), Object.entries(cf.solvedByRating || {}).map(([k, v]) => ({ label: k, value: v })), { color: "#1F6FB2", unit: "problems" });
 
   /* ---------- AtCoder ---------- */
   const ac = D.atcoder || {};
@@ -274,8 +296,72 @@
     { from: 1200, to: 1600, color: "#00c0c0", dot: "#00c0c0", name: "Cyan" },
   ];
   const acHist = (ac.contestHistory || []).map((h) => ({ ...h, delta: h.rating - h.old }));
-  ratingChart(document.getElementById("ac-chart"), acHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#000", bands: acBands });
-  contestTable(document.getElementById("ac-contests"), acHist, { link: (r) => r.url });
+  ratingChart(document.getElementById("ac-chart"), acHist.map((h) => ({ y: h.rating, name: h.name, date: h.date, rank: h.rank, delta: h.delta })), { color: "#0B1B2E", bands: acBands });
+
+  /* ---------- Rank meters: how far to the next title ---------- */
+  const setMeter = (key, label, fill, color) => {
+    const m = document.querySelector(`[data-meter="${key}"]`);
+    if (!m) return;
+    m.querySelector(".meter-label").textContent = label;
+    m.style.setProperty("--to", Math.max(0.02, Math.min(1, fill)).toFixed(4));
+    if (color) m.style.setProperty("--meter-color", color);
+  };
+  const bandMeter = (key, rating, bands) => {
+    if (typeof rating !== "number") return null;
+    const i = bands.findIndex((b) => rating >= b.from && rating < b.to);
+    if (i < 0) return null;
+    const b = bands[i], next = bands[i + 1];
+    const label = next
+      ? `${b.name} now. ${next.name} at ${next.from}, ${next.from - rating} to go.`
+      : `${b.name}.`;
+    setMeter(key, label, (rating - b.from) / (b.to - b.from), b.dot);
+    return b;
+  };
+  bandMeter("cf", cf.rating, cfBands);
+  const acBand = bandMeter("ac", ac.rating, acBands);
+  document.querySelectorAll(".ac-rank-text").forEach((el) => acBand && (el.textContent = acBand.name));
+  const top = lc.contest && lc.contest.topPercentage;
+  if (typeof top === "number") {
+    setMeter("lc", top <= 25 ? `Top ${top}% of contestants. Knight badge earned.` : `Top ${top}% of contestants. Knight badge at top 25%.`, (100 - top) / 75, "#ffa116");
+  }
+
+  /* ---------- LeetCode difficulty ring, drawn like LeetCode's own ---------- */
+  const ringEl = document.getElementById("lc-ring");
+  if (ringEl && lc.solved && lc.totals) {
+    const R = 52, C = 2 * Math.PI * R, GAP = 7;
+    const kinds = [["Easy", "#00b8a3"], ["Medium", "#ffc01e"], ["Hard", "#ff375f"]];
+    const sum = kinds.reduce((t, [k]) => t + (lc.totals[k] || 0), 0) || 1;
+    const svg = svgEl("svg", { viewBox: "0 0 120 120", "aria-hidden": "true" });
+    const g = svgEl("g", { transform: "rotate(-90 60 60)" }, svg);
+    const center = ringEl.querySelector(".ring-center");
+    const big = center && center.querySelector("b"), small = center && center.querySelector("span");
+    const reset = () => { if (big) { big.textContent = lc.solved.All; small.textContent = "solved"; } ringEl.classList.remove("is-hot"); g.querySelectorAll(".seg").forEach((s) => s.classList.remove("hot")); };
+    let offset = 0;
+    const arcs = [];
+    kinds.forEach(([k, color]) => {
+      const seg = Math.max(0, ((lc.totals[k] || 0) / sum) * C - GAP);
+      const len = seg * Math.min(1, (lc.solved[k] || 0) / (lc.totals[k] || 1));
+      const grp = svgEl("g", { class: "seg", "data-k": k }, g);
+      const dash = (l) => `${l} ${C - l}`;
+      svgEl("circle", { cx: 60, cy: 60, r: R, class: "track", stroke: color, "stroke-dasharray": dash(seg), "stroke-dashoffset": -offset }, grp);
+      const arc = svgEl("circle", { cx: 60, cy: 60, r: R, class: "arc", stroke: color, "stroke-dasharray": dash(len), "stroke-dashoffset": -offset }, grp);
+      arc._len = len; arc._dash = dash; arcs.push(arc);
+      svgEl("circle", { cx: 60, cy: 60, r: R, class: "seg-hit", "stroke-dasharray": dash(seg), "stroke-dashoffset": -offset }, grp);
+      const hot = () => {
+        reset();
+        grp.classList.add("hot"); ringEl.classList.add("is-hot");
+        if (big) { big.textContent = lc.solved[k]; small.textContent = `of ${lc.totals[k]} ${k.toLowerCase()}`; }
+      };
+      grp.addEventListener("pointerenter", hot);
+      grp.addEventListener("pointerleave", reset);
+      const row = document.querySelector(`.diff-row.${k.toLowerCase()}`);
+      if (row) { row.addEventListener("pointerenter", hot); row.addEventListener("pointerleave", reset); }
+      offset += seg + GAP;
+    });
+    ringEl.prepend(svg);
+    ringEl.setAttribute("aria-label", `${lc.solved.All} of ${lc.totals.All || sum} LeetCode problems solved: ${lc.solved.Easy} easy, ${lc.solved.Medium} medium, ${lc.solved.Hard} hard`);
+    ringEl._scrub = (p) => arcs.forEach((a) => a.setAttribute("stroke-dasharray", a._dash(a._len * p)));
+  }
 
   /* ---------- GitHub activity ---------- */
   const gh = D.github || {};
@@ -350,14 +436,39 @@
     });
   });
 
-  // Page-load sequence: name rises, intro follows, then the year of LeetCode fills in day by day
-  const cells = document.querySelectorAll(".heatmap i:not(.pad)");
-  gsap.timeline({ defaults: { ease: "expo.out" } })
-    .to(".hero-name .word", { y: 0, duration: 1.2, stagger: 0.12 }, 0.1)
-    .to(".hero-hello", { opacity: 1, y: 0, duration: 0.9 }, 0.05)
-    .to(".hero-photo", { opacity: 1, y: 0, rotate: 0, duration: 1.3 }, 0.3)
-    .to(".hero-text .reveal-load:not(.hero-hello)", { opacity: 1, y: 0, duration: 1, stagger: 0.08 }, 0.55)
-    .to(cells, { scale: 1, duration: 0.5, ease: "back.out(2.2)", stagger: { each: 0.0026, from: "start" } }, 0.75);
+  // The cinematic chapters live in cinema.js; without it, a plain load sequence keeps the hero visible
+  if (window.Cinema) {
+    window.Cinema.init({ lenis });
+  } else {
+    gsap.timeline({ defaults: { ease: "expo.out" } })
+      .to(".hero-hello", { opacity: 1, y: 0, duration: 0.9 }, 0.05)
+      .to(".hero-photo", { opacity: 1, y: 0, rotate: 0, duration: 1.3 }, 0.3)
+      .to(".hero-text .reveal-load:not(.hero-hello)", { opacity: 1, y: 0, duration: 1, stagger: 0.08 }, 0.55);
+  }
+
+
+  // Chapter titles rise word by word, like the hero name
+  function splitTitle(el) {
+    const words = el.textContent.trim().split(/\s+/);
+    el.setAttribute("aria-label", words.join(" "));
+    el.classList.remove("reveal");
+    el.textContent = "";
+    words.forEach((w, i) => {
+      const outer = document.createElement("span");
+      const inner = document.createElement("span");
+      outer.className = "tw";
+      outer.setAttribute("aria-hidden", "true");
+      inner.textContent = w;
+      outer.appendChild(inner);
+      if (i) el.appendChild(document.createTextNode(" "));
+      el.appendChild(outer);
+    });
+    ScrollTrigger.create({
+      trigger: el, start: "top 85%", once: true,
+      onEnter: () => gsap.to(el.querySelectorAll(".tw > span"), { y: 0, duration: 1, ease: "expo.out", stagger: 0.08 }),
+    });
+  }
+  document.querySelectorAll(".chapter .h2:not(.about-statement), .certs-sub").forEach(splitTitle);
 
   // Section reveals
   ScrollTrigger.batch(".reveal", {
@@ -368,7 +479,7 @@
 
   // Count-ups and bars
   document.querySelectorAll("[data-target]").forEach((el) => {
-    if (el.closest(".hero")) return;
+    if (el.closest(".hero") || el.hasAttribute("data-scrub") || el.classList.contains("cp-count")) return;
     const target = +el.dataset.target;
     const o = { v: 0 };
     el.textContent = fmt(0, el);
@@ -382,7 +493,7 @@
     onEnter: () => barTargets.forEach((b, i) => gsap.to(b.el, { width: b.pct + "%", duration: 1.4, delay: i * 0.12, ease: "power3.out" })),
   });
   // Charts draw their line (or grow their bars) the first time they scroll into view
-  document.querySelectorAll(".chart").forEach((el) => {
+  document.querySelectorAll(".chart:not(.is-scrubbed)").forEach((el) => {
     el.classList.add("is-pending");
     ScrollTrigger.create({ trigger: el, start: "top 85%", once: true, onEnter: () => el._reveal && el._reveal() });
   });
@@ -391,40 +502,8 @@
     scrollTrigger: { trigger: "#gh-cal", start: "top 85%", once: true },
   });
 
-  // Projects slide sideways while you scroll down (wide screens only)
-  const mm = gsap.matchMedia();
-  const projects = document.querySelector(".projects");
-  const track = document.getElementById("track");
-  mm.add("(min-width: 861px)", () => {
-    projects.classList.remove("is-static");
-    const distance = () => Math.max(0, track.scrollWidth - innerWidth);
-    const tween = gsap.to(track, {
-      x: () => -distance(),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".projects-pin",
-        start: "top top",
-        end: () => "+=" + distance(),
-        pin: true,
-        scrub: 0.6,
-        invalidateOnRefresh: true,
-      },
-    });
-    // each panel eases in as it reaches the viewport
-    gsap.utils.toArray(".proj").forEach((panel) => {
-      gsap.from(panel.querySelectorAll(".proj-top, .flow, .proj-foot, .btn"), {
-        opacity: 0, y: 30, stagger: 0.06, duration: 0.7, ease: "power3.out",
-        scrollTrigger: { trigger: panel, containerAnimation: tween, start: "left 85%", once: true },
-      });
-    });
-    return () => projects.classList.add("is-static");
-  });
-  mm.add("(max-width: 860px)", () => {
-    projects.classList.add("is-static");
-    gsap.utils.toArray(".proj").forEach((panel) => {
-      gsap.from(panel, { opacity: 0, y: 40, duration: 0.8, ease: "power3.out", scrollTrigger: { trigger: panel, start: "top 88%", once: true } });
-    });
-  });
+  // Projects slide sideways in cinema.js; without it they stack
+  if (!window.Cinema) document.querySelector(".projects").classList.add("is-static");
 
   addEventListener("load", () => ScrollTrigger.refresh());
   document.fonts && document.fonts.ready.then(() => ScrollTrigger.refresh());

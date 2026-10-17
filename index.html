@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gaurrov S Narayanan — AI/ML Engineer</title>
 <meta name="description" content="Gaurrov S Narayanan builds agentic AI systems, RAG pipelines and ML products. B.Tech AI/ML student in Chennai, 663 LeetCode problems solved.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232B3FF0'/><text x='16' y='22.5' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23FFC933'>GN</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230B1B2E'/><text x='16' y='22.5' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23FFD23F'>GN</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script>
   // Hide animated elements before first paint; reveal everything if scripts never start.
   if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
     document.documentElement.classList.add("js-motion");
+    try { if (sessionStorage.getItem("gn-intro")) document.documentElement.classList.add("intro-seen"); } catch (e) {}
     setTimeout(function () {
       var r = document.documentElement;
       if (!r.classList.contains("motion-ready")) r.classList.remove("js-motion");
@@ -22,19 +23,22 @@
 </script>
 </head>
 <body>
+<canvas id="liquid" aria-hidden="true"></canvas>
 <a class="skip" href="#main">Skip to content</a>
 <div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"></i></div>
+<div class="loader" aria-hidden="true"><span class="loader-mark">GN</span><span class="loader-bar"><i></i></span></div>
 
 <header class="nav">
-  <a class="nav-mark" href="#top" aria-label="Gaurrov, back to top">Gaurrov<span>.</span></a>
+  <a class="nav-mark display" href="#top" aria-label="Gaurrov, back to top">Gaurrov</a>
   <nav aria-label="Sections">
     <ul>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#solving">Coding</a></li>
-      <li><a href="#github">GitHub</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work"><b class="rail-n" aria-hidden="true">03</b><span>Work</span></a></li>
+      <li><a href="#projects"><b class="rail-n" aria-hidden="true">04</b><span>Projects</span></a></li>
+      <li><a href="#solving"><b class="rail-n" aria-hidden="true">05</b><span>Coding</span></a></li>
+      <li><a href="#github"><b class="rail-n" aria-hidden="true">06</b><span>GitHub</span></a></li>
+      <li><a href="#certifications"><b class="rail-n" aria-hidden="true">07</b><span>Certifications</span></a></li>
+      <li><a href="#skills"><b class="rail-n" aria-hidden="true">08</b><span>Skills</span></a></li>
     </ul>
   </nav>
   <a class="btn btn-small" href="assets/Gaurrov-S-Narayanan-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
@@ -43,10 +47,10 @@
 <main id="main">
 
 <!-- HERO -->
-<section class="hero" id="top">
+<section class="hero chapter" id="top">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="hero-hello reveal-load">Hi, I'm</p>
+      <p class="hero-hello kicker reveal-load">AI/ML engineer · Chennai</p>
       <h1 class="hero-name" aria-label="Gaurrov S Narayanan">
         <span class="line"><span class="word">Gaurrov</span></span>
         <span class="line"><span class="word">S&nbsp;Narayanan</span></span>
@@ -66,6 +70,7 @@
       </ul>
     </div>
     <figure class="hero-photo reveal-load">
+      <div class="soft-shape" aria-hidden="true"></div>
       <img src="assets/avatar.jpg" alt="Portrait of Gaurrov S Narayanan" width="460" height="460">
       <figcaption>
         <strong>B.Tech AI &amp; ML</strong>
@@ -73,25 +78,14 @@
       </figcaption>
     </figure>
   </div>
+  <a class="scroll-cue" href="#about-title" aria-hidden="true" tabindex="-1"><span>Scroll</span><i></i></a>
 
-  <div class="tape" aria-labelledby="tape-title">
-    <div class="wrap tape-head">
-      <h2 id="tape-title" class="tape-title">A year on LeetCode, one square per day</h2>
-      <p class="tape-meta"><strong data-bind="lc.streak">186</strong> days in a row right now, <strong data-bind="lc.activeDays">262</strong> active days in the last year</p>
-    </div>
-    <div class="tape-scroll">
-      <div class="heatmap" id="lc-heatmap" role="img" aria-label="LeetCode submissions per day over the past year"></div>
-    </div>
-    <div class="wrap tape-legend" aria-hidden="true">
-      <span>Fewer</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>More submissions</span>
-    </div>
-  </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about section" aria-labelledby="about-title">
+<section class="about section chapter" aria-labelledby="about-title">
   <div class="wrap about-grid">
-    <h2 id="about-title" class="h2 reveal">I'm an AI &amp; ML undergraduate who likes shipping things people actually use.</h2>
+    <h2 id="about-title" class="h2 about-statement reveal">I'm an AI &amp; ML undergraduate who likes shipping things people actually use.</h2>
     <div class="about-body reveal">
       <p>Right now I lead a five-person team building the official placement platform for my college, built for 10,000+ students. Its LangGraph agent reads a student's profile across 12 parameters, finds the gaps, and writes a 30/60/90-day plan to close them.</p>
       <p>Before that I interned at Infosys Springboard and Elewayte, where I built speech-to-summary pipelines and end-to-end ML workflows. Outside class I contribute to open source through GSSoC and Open Source Connect India.</p>
@@ -106,7 +100,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="work section" id="work" aria-labelledby="work-title">
+<section class="work section chapter" id="work" aria-labelledby="work-title">
   <div class="wrap">
     <h2 id="work-title" class="h2 reveal">Experience</h2>
     <ol class="timeline">
@@ -139,7 +133,7 @@
 </section>
 
 <!-- PROJECTS: horizontal slide -->
-<section class="projects" id="projects" aria-labelledby="projects-title">
+<section class="projects chapter" id="projects" aria-labelledby="projects-title">
   <div class="projects-pin">
     <div class="wrap projects-head">
       <h2 id="projects-title" class="h2">Projects</h2>
@@ -249,10 +243,36 @@
 </section>
 
 <!-- COMPETITIVE PROGRAMMING: one themed band per platform -->
-<section class="platforms" id="solving" aria-labelledby="solving-title">
+<section class="platforms data" id="solving" aria-labelledby="solving-title">
   <div class="wrap platforms-intro section-top">
     <h2 id="solving-title" class="h2 reveal">Competitive programming</h2>
     <p class="section-lede reveal">Every contest and number below comes from my public profiles, last pulled on <span data-bind="updated-human">15 Oct 2026</span>.</p>
+  </div>
+
+  <div class="cp-stage">
+    <div class="wrap cp-hero">
+      <p class="cp-big"><span class="cp-count display" data-count="lc.solved.All">663</span><span class="cp-label display">problems solved</span></p>
+      <p class="cp-sub">On LeetCode, across <span data-bind="lc.activeDays">262</span> active days this year.</p>
+    </div>
+  <div class="tape" aria-labelledby="tape-title">
+    <div class="wrap">
+      <div class="tape-panel reveal">
+        <div class="tape-head">
+          <h3 id="tape-title" class="tape-title">A year on LeetCode, one square per day</h3>
+          <p class="tape-meta"><strong data-bind="lc.streak">186</strong> days in a row right now, <strong data-bind="lc.activeDays">262</strong> active days in the last year</p>
+        </div>
+        <div class="tape-scroll">
+          <div class="heatmap" id="lc-heatmap" role="img" aria-label="LeetCode submissions per day over the past year"></div>
+        </div>
+        <div class="tape-foot">
+          <p class="tape-note"><span data-count="lc.submissionsLastYear" data-format="comma">1,206</span> accepted submissions in the last year. Languages: <span id="lc-langs">Java</span>.</p>
+          <div class="tape-legend" aria-hidden="true"><span>Fewer</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>More submissions</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="wrap cp-jump">
     <nav class="plat-jump reveal" aria-label="Platforms">
       <a class="pj pj-lc" href="#leetcode"><b data-count="lc.solved.All">663</b><span>solved on LeetCode</span></a>
       <a class="pj pj-cf" href="#codeforces"><b data-count="cf.rating">1246</b><span>Codeforces rating</span></a>
@@ -261,23 +281,43 @@
     </nav>
   </div>
 
-  <!-- LeetCode -->
-  <div class="plat plat-lc" id="leetcode">
-    <div class="wrap">
-      <header class="plat-head reveal">
-        <div class="plat-brand">
-          <span class="plat-logo lc-logo" aria-hidden="true">LC</span>
-          <div>
-            <h3 class="plat-name">LeetCode</h3>
-            <a class="plat-handle" href="https://leetcode.com/u/Gaurrov/" target="_blank" rel="noopener">leetcode.com/u/Gaurrov</a>
-          </div>
-        </div>
-        <a class="plat-cta" href="https://leetcode.com/u/Gaurrov/" target="_blank" rel="noopener">Open my LeetCode profile</a>
-      </header>
+  <nav class="plat-rail" aria-hidden="true">
+    <a href="#leetcode" tabindex="-1" style="--brand: #ffa116"><b>LC</b></a>
+    <a href="#codeforces" tabindex="-1" style="--brand: #1f8acb"><b>CF</b></a>
+    <a href="#atcoder" tabindex="-1" style="--brand: #804000"><b>AC</b></a>
+    <a href="#codechef" tabindex="-1" style="--brand: #5b4638"><b>CC</b></a>
+  </nav>
 
-      <div class="lc reveal">
-        <div class="lc-main">
-          <p class="lc-total"><span class="count" data-count="lc.solved.All">663</span><span class="lc-unit">problems solved</span></p>
+  <!-- LeetCode -->
+  <div class="plat plat-lc scene" id="leetcode" style="--brand: #ffa116">
+    <div class="wrap scene-grid">
+      <div class="scene-info">
+        <header class="plat-head">
+          <div class="plat-brand">
+            <span class="plat-logo lc-logo" aria-hidden="true">LC</span>
+            <div>
+              <h3 class="plat-name">LeetCode</h3>
+              <a class="plat-handle" href="https://leetcode.com/u/Gaurrov/" target="_blank" rel="noopener">leetcode.com/u/Gaurrov</a>
+            </div>
+          </div>
+        </header>
+        <p class="scene-big"><span class="scene-num display" data-count="lc.contest.rating" data-scrub>1575</span><span class="scene-unit">contest rating</span></p>
+        <div class="rank-meter" data-meter="lc">
+          <p class="meter-label">Top 28.29% of contestants. Knight badge at top 25%.</p>
+          <div class="meter-track"><i class="meter-fill"></i></div>
+        </div>
+        <dl class="scene-stats spot">
+          <div><dt>Contest standing</dt><dd>Top <span data-bind="lc.contest.topPercentage">28.29</span>%</dd></div>
+          <div><dt>Global rank</dt><dd data-count="lc.ranking" data-format="comma">113,984</dd></div>
+          <div><dt>Current streak</dt><dd><span data-count="lc.streak">186</span> days</dd></div>
+        </dl>
+        <a class="plat-cta" href="https://leetcode.com/u/Gaurrov/" target="_blank" rel="noopener">Open my LeetCode profile</a>
+      </div>
+      <div class="scene-visual">
+        <div class="ring-card spot">
+          <div class="lc-ring" id="lc-ring" role="img" aria-label="663 of 4082 LeetCode problems solved: 339 easy, 280 medium, 44 hard">
+            <p class="ring-center" aria-hidden="true"><b class="display">663</b><span>solved</span></p>
+          </div>
           <div class="diff">
             <div class="diff-row easy">
               <span class="diff-name">Easy</span>
@@ -296,102 +336,87 @@
             </div>
           </div>
         </div>
-        <dl class="lc-side">
-          <div><dt>Contest rating</dt><dd data-count="lc.contest.rating">1575</dd></div>
-          <div><dt>Contest standing</dt><dd>Top <span data-bind="lc.contest.topPercentage">28.29</span>%</dd></div>
-          <div><dt>Global rank</dt><dd data-count="lc.ranking" data-format="comma">113,984</dd></div>
-          <div><dt>Current streak</dt><dd><span data-count="lc.streak">186</span> days</dd></div>
-        </dl>
-      </div>
-
-      <div class="plat-block reveal">
-        <h4 class="plat-h">Badges</h4>
-        <ul class="lc-badges" id="lc-badges"></ul>
-      </div>
-
-      <div class="plat-cols">
-        <div class="plat-block reveal">
+        <div class="plat-block spot chart-card">
           <h4 class="plat-h">Contest rating</h4>
           <div class="chart" id="lc-chart" aria-label="LeetCode contest rating after each contest"></div>
-          <div class="table-wrap"><table class="ctable" id="lc-contests" aria-label="LeetCode contest history"></table></div>
         </div>
-        <div class="plat-block reveal">
-          <h4 class="plat-h">Recently solved</h4>
-          <ol class="feed" id="lc-recent"></ol>
-          <p class="plat-note"><span data-count="lc.submissionsLastYear" data-format="comma">1,206</span> accepted submissions in the last year. Languages: <span id="lc-langs">Java</span>.</p>
-        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="plat-block spot badge-shelf reveal">
+        <h4 class="plat-h">Badges</h4>
+        <ul class="lc-badges" id="lc-badges"></ul>
       </div>
     </div>
   </div>
 
   <!-- Codeforces -->
-  <div class="plat plat-cf" id="codeforces">
-    <div class="wrap">
-      <header class="plat-head reveal">
-        <div class="plat-brand">
-          <span class="plat-logo cf-logo" aria-hidden="true"><i></i><i></i><i></i></span>
-          <div>
-            <h3 class="plat-name">Codeforces</h3>
-            <a class="plat-handle" href="https://codeforces.com/profile/gaurrov2007" target="_blank" rel="noopener">codeforces.com/profile/gaurrov2007</a>
+  <div class="plat plat-cf scene" id="codeforces" style="--brand: #1f8acb">
+    <div class="wrap scene-grid">
+      <div class="scene-info">
+        <header class="plat-head">
+          <div class="plat-brand">
+            <span class="plat-logo cf-logo" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div>
+              <h3 class="plat-name">Codeforces</h3>
+              <a class="plat-handle" href="https://codeforces.com/profile/gaurrov2007" target="_blank" rel="noopener">codeforces.com/profile/gaurrov2007</a>
+            </div>
           </div>
+        </header>
+        <p class="scene-big"><span class="scene-num display" data-count="cf.rating" data-scrub>1246</span><span class="scene-unit"><span class="cf-rank-text" data-bind="cf.rank">pupil</span> rating</span></p>
+        <div class="rank-meter" data-meter="cf">
+          <p class="meter-label">Pupil now. Specialist at 1400.</p>
+          <div class="meter-track"><i class="meter-fill"></i></div>
         </div>
+        <dl class="scene-stats spot">
+          <div><dt>Best rating</dt><dd data-count="cf.maxRating">1246</dd></div>
+          <div><dt>Rated contests</dt><dd data-count="cf.contestCount">16</dd></div>
+          <div><dt>Problems solved</dt><dd data-count="cf.solved">56</dd></div>
+        </dl>
         <a class="plat-cta" href="https://codeforces.com/profile/gaurrov2007" target="_blank" rel="noopener">Open my Codeforces profile</a>
-      </header>
-
-      <dl class="plat-stats reveal">
-        <div><dt>Rating</dt><dd><span data-count="cf.rating">1246</span></dd><dd class="sub cf-rank-text" data-bind="cf.rank">pupil</dd></div>
-        <div><dt>Best rating</dt><dd data-count="cf.maxRating">1246</dd></div>
-        <div><dt>Rated contests</dt><dd data-count="cf.contestCount">16</dd></div>
-        <div><dt>Problems solved</dt><dd data-count="cf.solved">56</dd></div>
-      </dl>
-
-      <div class="plat-block reveal">
-        <h4 class="plat-h">Rating after each contest</h4>
-        <div class="chart chart-tall" id="cf-chart" aria-label="Codeforces rating after each contest"></div>
       </div>
-
-      <div class="plat-cols">
-        <div class="plat-block reveal">
-          <h4 class="plat-h">Solved problems by difficulty</h4>
-          <div class="chart" id="cf-diff" aria-label="Codeforces problems solved, grouped by problem rating"></div>
+      <div class="scene-visual">
+        <div class="plat-block spot chart-card">
+          <h4 class="plat-h">Rating after each contest</h4>
+          <div class="chart chart-tall" id="cf-chart" aria-label="Codeforces rating after each contest"></div>
         </div>
-        <div class="plat-block reveal">
-          <h4 class="plat-h">All rated contests</h4>
-          <div class="table-wrap table-scroll"><table class="ctable" id="cf-contests" aria-label="Codeforces contest history"></table></div>
+        <div class="plat-block spot chart-card">
+          <h4 class="plat-h">Solved problems by difficulty</h4>
+          <div class="chart chart-short" id="cf-diff" aria-label="Codeforces problems solved, grouped by problem rating"></div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- AtCoder -->
-  <div class="plat plat-ac" id="atcoder">
-    <div class="wrap">
-      <header class="plat-head reveal">
-        <div class="plat-brand">
-          <span class="plat-logo ac-logo" aria-hidden="true">A</span>
-          <div>
-            <h3 class="plat-name">AtCoder</h3>
-            <a class="plat-handle" href="https://atcoder.jp/users/gaurrov" target="_blank" rel="noopener">atcoder.jp/users/gaurrov</a>
+  <div class="plat plat-ac scene" id="atcoder" style="--brand: #804000">
+    <div class="wrap scene-grid">
+      <div class="scene-info">
+        <header class="plat-head">
+          <div class="plat-brand">
+            <span class="plat-logo ac-logo" aria-hidden="true">A</span>
+            <div>
+              <h3 class="plat-name">AtCoder</h3>
+              <a class="plat-handle" href="https://atcoder.jp/users/gaurrov" target="_blank" rel="noopener">atcoder.jp/users/gaurrov</a>
+            </div>
           </div>
+        </header>
+        <p class="scene-big"><span class="scene-num display" data-count="ac.rating" data-scrub>770</span><span class="scene-unit"><span class="ac-rank-text">Brown</span> rating</span></p>
+        <div class="rank-meter" data-meter="ac">
+          <p class="meter-label">Brown now. Green at 800.</p>
+          <div class="meter-track"><i class="meter-fill"></i></div>
         </div>
+        <dl class="scene-stats spot">
+          <div><dt>Highest</dt><dd data-count="ac.highest">770</dd></div>
+          <div><dt>Rated contests</dt><dd data-count="ac.contests">4</dd></div>
+          <div><dt>Problems accepted</dt><dd data-count="ac.solved">27</dd></div>
+        </dl>
         <a class="plat-cta" href="https://atcoder.jp/users/gaurrov" target="_blank" rel="noopener">Open my AtCoder profile</a>
-      </header>
-
-      <dl class="plat-stats reveal">
-        <div><dt>Rating</dt><dd data-count="ac.rating">770</dd><dd class="sub">Brown</dd></div>
-        <div><dt>Highest</dt><dd data-count="ac.highest">770</dd></div>
-        <div><dt>Rated contests</dt><dd data-count="ac.contests">4</dd></div>
-        <div><dt>Problems accepted</dt><dd data-count="ac.solved">27</dd></div>
-      </dl>
-
-      <div class="plat-cols">
-        <div class="plat-block reveal">
+      </div>
+      <div class="scene-visual">
+        <div class="plat-block spot chart-card">
           <h4 class="plat-h">Rating after each contest</h4>
-          <div class="chart" id="ac-chart" aria-label="AtCoder rating after each contest"></div>
-        </div>
-        <div class="plat-block reveal">
-          <h4 class="plat-h">Contests</h4>
-          <div class="table-wrap"><table class="ctable" id="ac-contests" aria-label="AtCoder contest history"></table></div>
+          <div class="chart chart-tall" id="ac-chart" aria-label="AtCoder rating after each contest"></div>
         </div>
       </div>
     </div>
@@ -414,7 +439,7 @@
 </section>
 
 <!-- GITHUB -->
-<section class="plat plat-gh" id="github" aria-labelledby="github-title">
+<section class="plat plat-gh data" id="github" aria-labelledby="github-title">
   <div class="wrap">
     <header class="plat-head reveal">
       <div class="plat-brand">
@@ -456,7 +481,7 @@
 </section>
 
 <!-- CERTIFICATIONS & ACHIEVEMENTS -->
-<section class="certs section" id="certifications" aria-labelledby="certs-title">
+<section class="certs section chapter" id="certifications" aria-labelledby="certs-title">
   <div class="wrap">
     <h2 id="certs-title" class="h2 reveal">Certifications &amp; achievements</h2>
 
@@ -483,53 +508,6 @@
             <div><dt>Valid until</dt><dd>25 Feb 2028</dd></div>
           </dl>
           <a class="btn btn-small cert-verify" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=AAB9E799105116B4004147FBFBA31BB798B8BB45CFECAE8FD9074573EBECA051" target="_blank" rel="noopener">Verify on Oracle</a>
-        </div>
-      </article>
-    </div>
-
-    <div class="ach-grid">
-      <article class="ach ach-win reveal">
-        <img src="assets/certs/innovation-hackathon-1st.jpg" alt="Certificate of merit, first place, Innovation Hackathon" width="640" height="452" loading="lazy">
-        <div>
-          <p class="ach-when">Feb 2025</p>
-          <h3>1st place, Innovation Hackathon</h3>
-          <p>Software events track, run by the Coding Club at St. Joseph's College of Engineering.</p>
-        </div>
-      </article>
-      <article class="ach reveal">
-        <div>
-          <p class="ach-when">2026</p>
-          <h3>Smart India Hackathon</h3>
-          <p>Built EchoPulseNet with my team for problem statement 26057: detecting underwater debris in sonar scans.</p>
-        </div>
-      </article>
-      <article class="ach reveal">
-        <div>
-          <p class="ach-when">Mar 2026</p>
-          <h3>K!ODE WARS, Kurukshetra '26</h3>
-          <p>Competed at the international techno-management fest of College of Engineering Guindy, Anna University.</p>
-        </div>
-      </article>
-      <article class="ach reveal">
-        <div>
-          <p class="ach-when">2025</p>
-          <h3>GDG on Campus Solution Challenge</h3>
-          <p>Participated in Google Developer Groups' Solution Challenge, run with Hack2skill.</p>
-        </div>
-      </article>
-      <article class="ach reveal">
-        <div>
-          <p class="ach-when">2026</p>
-          <h3>Adobe University Hackathon</h3>
-          <p>Participated representing St. Joseph's College of Engineering.</p>
-        </div>
-      </article>
-      <article class="ach ach-img reveal">
-        <img src="assets/certs/hackerrank-orchestrate.jpg" alt="HackerRank Orchestrate October edition participant badge" width="560" height="418" loading="lazy">
-        <div>
-          <p class="ach-when">Oct 2026</p>
-          <h3>HackerRank Orchestrate</h3>
-          <p>Participant in the October edition.</p>
         </div>
       </article>
     </div>
@@ -584,7 +562,7 @@
 </section>
 
 <!-- SKILLS -->
-<section class="skills section" id="skills" aria-labelledby="skills-title">
+<section class="skills section chapter" id="skills" aria-labelledby="skills-title">
   <div class="wrap">
     <h2 id="skills-title" class="h2 reveal">Skills</h2>
     <div class="skill-grid">
@@ -617,13 +595,14 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact" aria-labelledby="contact-title">
+<section class="contact band-dark" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
+    <p class="contact-big display reveal" aria-hidden="true">Let's talk</p>
     <h2 id="contact-title" class="contact-title reveal">Have a role or a project in mind? Let's talk.</h2>
     <div class="contact-row reveal">
       <a class="btn btn-sun btn-big" href="mailto:gsn2k7@gmail.com">Email gsn2k7@gmail.com</a>
-      <a class="btn btn-onblue" href="https://www.linkedin.com/in/gaurrovnarayanan/" target="_blank" rel="noopener">Message on LinkedIn</a>
-      <a class="btn btn-onblue" href="assets/Gaurrov-S-Narayanan-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+      <a class="btn btn-ondark" href="https://www.linkedin.com/in/gaurrovnarayanan/" target="_blank" rel="noopener">Message on LinkedIn</a>
+      <a class="btn btn-ondark" href="assets/Gaurrov-S-Narayanan-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
     </div>
   </div>
   <footer class="wrap foot">
@@ -638,6 +617,8 @@
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
+<script src="liquid.js"></script>
+<script src="cinema.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
