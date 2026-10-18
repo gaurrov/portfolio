@@ -98,7 +98,9 @@
       const fade = { opacity: 0, y: -40, ease: "none", immediateRender: false };
       gsap.timeline({ scrollTrigger: { trigger: ".hero", start: "top top", end: "+=60%", pin: true, scrub: 0.6 } })
         .fromTo(".hero-name", { scale: 1, y: 0 }, { scale: 0.82, y: "-6vh", transformOrigin: "0% 50%", ease: "none", immediateRender: false }, 0)
-        .fromTo([".hero-hello", ".hero-lede", ".hero-actions", ".hero-links"], { opacity: 1, y: 0 }, { ...fade, stagger: 0.04 }, 0)
+        // no stagger: a fade that starts after 0 gets rewound past its start at the very top, and GSAP then restores
+        // its pre-tween snapshot, which is the hidden intro state when the page was reloaded mid-scroll
+        .fromTo([".hero-hello", ".hero-lede", ".hero-actions", ".hero-links"], { opacity: 1, y: 0 }, fade, 0)
         .fromTo(".hero-photo", { y: 0 }, { y: "-10vh", ease: "none", immediateRender: false }, 0)
         .fromTo(".hero-sun", { y: 0, scale: 1 }, { y: "-7vh", scale: 1.12, ease: "none", immediateRender: false }, 0)
         .fromTo(".scroll-cue", { opacity: 1 }, { opacity: 0, ease: "none", duration: 0.3, immediateRender: false }, 0);

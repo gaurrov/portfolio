@@ -320,11 +320,11 @@ ul, ol { padding: 0; list-style: none; }
 .about-statement { grid-area: statement; }
 .about-body { grid-area: body; }
 
-/* A taped-up print from DevFest; cinema.js develops it from grey to colour */
+/* A taped-up print of the DevFest photo; cinema.js develops it from grey to colour */
 .about-photo { grid-area: photo; align-self: center; }
 .about-print {
   position: relative;
-  padding: .7rem .7rem 0;
+  padding: .7rem;
   background: var(--paper); border: 2px solid var(--midnight); border-radius: 1.1rem;
   box-shadow: 10px 12px 0 var(--midnight);
   transform: rotate(-4deg);
@@ -335,9 +335,6 @@ ul, ol { padding: 0; list-style: none; }
   background: rgba(255, 210, 63, .88); transform: rotate(4deg);
 }
 .about-print img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: .7rem; background: var(--cloud); }
-.about-print figcaption { padding: .75rem .25rem 1rem; line-height: 1.25; }
-.about-print figcaption strong { display: block; font: 400 1.25rem/1.1 var(--display); text-transform: uppercase; color: var(--midnight); }
-.about-print figcaption span { color: var(--ink-2); font-size: .98rem; }
 @media (max-width: 1100px) { .about-grid { grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); } }
 @media (max-width: 760px) {
   .about-grid { grid-template-columns: 1fr; grid-template-areas: "statement" "photo" "body"; }
@@ -553,11 +550,8 @@ ul, ol { padding: 0; list-style: none; }
 }
 
 .plat-block { margin-top: clamp(1.5rem, 3vw, 2.25rem); padding: clamp(1.25rem, 3vw, 1.75rem); background: var(--p-surface); border-radius: 1.25rem; min-width: 0; }
-.plat-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(1rem, 2.5vw, 1.75rem); }
-.plat-cols .plat-block { margin-top: clamp(1rem, 2.5vw, 1.75rem); }
-@media (max-width: 860px) { .plat-cols { grid-template-columns: 1fr; } }
+.gh-langs { margin-top: clamp(1rem, 2.5vw, 1.75rem); }
 .plat-h { font-size: .9rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--p-muted); margin: 0 0 1rem; }
-.plat-h-gap { margin-top: 2rem; }
 .plat-note { margin-top: 1.25rem; color: var(--p-muted); font-size: .95rem; }
 
 .diff { display: grid; gap: 1rem; }
@@ -605,23 +599,6 @@ ul, ol { padding: 0; list-style: none; }
 .chart-tip strong { display: block; font-size: 1.05rem; color: var(--sun); }
 .chart-tip span { color: rgba(234, 246, 253, .8); }
 
-/* Activity feeds */
-.feed li { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .75rem; padding-block: .6rem; border-bottom: 1px solid var(--p-line); }
-.feed li:last-child { border-bottom: 0; }
-.feed time { color: var(--p-muted); font-size: .9rem; font-variant-numeric: tabular-nums; padding-top: .1rem; }
-.feed a { color: var(--p-ink); font-weight: 600; text-decoration: none; }
-.feed a:hover { color: var(--p-accent-ink); text-decoration: underline; text-underline-offset: .2em; }
-.feed .tag { display: inline-block; margin-left: .4rem; padding: .05rem .5rem; border-radius: 99px; font-size: .8rem; font-weight: 600; background: var(--cloud); color: var(--ink-2); vertical-align: .1em; }
-.gh-feed .kind { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: .5rem; vertical-align: .1em; background: var(--p-muted); }
-.gh-feed .kind.push { background: #1a7f37; } .gh-feed .kind.pr { background: #8250df; }
-.gh-feed .kind.review, .gh-feed .kind.comment { background: #0969da; } .gh-feed .kind.fork, .gh-feed .kind.create { background: #9a6700; }
-.gh-feed .times { color: var(--p-muted); font-weight: 500; }
-
-.repo-list li { padding-block: .7rem; border-bottom: 1px solid var(--p-line); }
-.repo-list li:first-child { padding-top: 0; }
-.repo-list a { color: var(--p-ink); font-weight: 700; text-decoration: none; word-break: break-word; }
-.repo-list a:hover { text-decoration: underline; color: var(--p-accent-ink); }
-.repo-list p { color: var(--p-muted); font-size: .92rem; margin-top: .15rem; }
 
 /* GitHub calendar on the same olive-gold ramp as the LeetCode tape */
 .gh-cal-wrap { margin-top: 2.25rem; padding: 1.5rem; background: var(--p-surface); border-radius: 1.25rem; overflow-x: auto; }

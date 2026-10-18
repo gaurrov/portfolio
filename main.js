@@ -363,18 +363,6 @@
     ringEl._scrub = (p) => arcs.forEach((a) => a.setAttribute("stroke-dasharray", a._dash(a._len * p)));
   }
 
-  /* ---------- GitHub activity ---------- */
-  const gh = D.github || {};
-  const ghFeed = document.getElementById("gh-activity");
-  if (ghFeed) {
-    ghFeed.innerHTML = (gh.activity || []).slice(0, 12).map((a) =>
-      `<li><time datetime="${a.date}">${fmtDate(a.date)}</time><span><i class="kind ${esc(a.kind)}" aria-hidden="true"></i><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.text)}</a>${a.times > 1 ? ` <span class="times">${a.times} times</span>` : ""}</span></li>`).join("");
-  }
-  const ghRepos = document.getElementById("gh-repos");
-  if (ghRepos) {
-    ghRepos.innerHTML = (gh.recentRepos || []).map((r) =>
-      `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a><p>${r.description ? esc(r.description.trim()) + ". " : ""}${r.language ? esc(r.language) + ", " : ""}updated ${fmtDate(r.pushed)}${r.stars ? `, ${r.stars} star${r.stars > 1 ? "s" : ""}` : ""}</p></li>`).join("");
-  }
 
   /* ---------- Difficulty bars ---------- */
   const barTargets = [...document.querySelectorAll("[data-bar]")].map((el) => {
