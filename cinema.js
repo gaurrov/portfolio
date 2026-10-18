@@ -100,6 +100,7 @@
         .fromTo(".hero-name", { scale: 1, y: 0 }, { scale: 0.82, y: "-6vh", transformOrigin: "0% 50%", ease: "none", immediateRender: false }, 0)
         .fromTo([".hero-hello", ".hero-lede", ".hero-actions", ".hero-links"], { opacity: 1, y: 0 }, { ...fade, stagger: 0.04 }, 0)
         .fromTo(".hero-photo", { y: 0 }, { y: "-10vh", ease: "none", immediateRender: false }, 0)
+        .fromTo(".hero-sun", { y: 0, scale: 1 }, { y: "-7vh", scale: 1.12, ease: "none", immediateRender: false }, 0)
         .fromTo(".scroll-cue", { opacity: 1 }, { opacity: 0, ease: "none", duration: 0.3, immediateRender: false }, 0);
     });
   }
@@ -110,9 +111,15 @@
     title.classList.remove("reveal");
     const words = splitWords(title, "aw");
     const facts = document.querySelectorAll(".facts > div");
+    // the DevFest print develops like a photo while the statement fills in
+    const raw = { rotate: -11, filter: "grayscale(1) brightness(1.3) contrast(0.8)" };
+    const developed = { rotate: -4, filter: "grayscale(0) brightness(1) contrast(1)", ease: "none" };
     mm.add(WIDE, () => {
+      const span = words.length * 0.12 + 0.28;
       gsap.timeline({ scrollTrigger: { trigger: ".about", start: "center center", end: "+=80%", pin: true, scrub: 0.5 } })
         .fromTo(words, { opacity: 0.18 }, { opacity: 1, stagger: 0.12, duration: 0.4, ease: "none" }, 0)
+        .fromTo(".about-print", { rotate: raw.rotate }, { rotate: developed.rotate, ease: "none", duration: span }, 0)
+        .fromTo(".about-print img", { filter: raw.filter }, { filter: developed.filter, ease: "none", duration: span }, 0)
         .fromTo(facts, { opacity: 0, y: 30 }, { opacity: 1, y: 0, stagger: 0.08, duration: 0.3, ease: "power2.out" }, ">-0.1");
     });
     mm.add(NARROW, () => {
@@ -120,6 +127,9 @@
         opacity: 1, stagger: 0.06, ease: "none",
         scrollTrigger: { trigger: title, start: "top 80%", end: "bottom 45%", scrub: true },
       });
+      const develop = { trigger: ".about-photo", start: "top 85%", end: "center 50%", scrub: true };
+      gsap.fromTo(".about-print", { rotate: raw.rotate }, { rotate: developed.rotate, ease: "none", scrollTrigger: develop });
+      gsap.fromTo(".about-print img", { filter: raw.filter }, { filter: developed.filter, ease: "none", scrollTrigger: { ...develop } });
     });
   }
 
@@ -447,15 +457,31 @@
       el.addEventListener("pointerleave", () => { el.style.removeProperty("--mx"); el.style.removeProperty("--my"); });
     });
 
-    // badges tilt toward the pointer
-    document.querySelectorAll(".lc-badges li").forEach((li) => {
+    // the portrait drifts inside its arch, opposite the pointer, like looking through a window
+    const frame = document.querySelector(".hero-frame");
+    const face = frame && frame.querySelector("img");
+    if (face) {
+      gsap.set(face, { scale: 1.1 });
+      const fx = gsap.quickTo(face, "xPercent", { duration: 0.8, ease: "power3" });
+      const fy = gsap.quickTo(face, "yPercent", { duration: 0.8, ease: "power3" });
+      frame.addEventListener("pointermove", (e) => {
+        const r = frame.getBoundingClientRect();
+        fx(-((e.clientX - r.left) / r.width - 0.5) * 6);
+        fy(-((e.clientY - r.top) / r.height - 0.5) * 6);
+      });
+      frame.addEventListener("pointerleave", () => { fx(0); fy(0); });
+    }
+
+    // badges and the DevFest print tilt toward the pointer
+    document.querySelectorAll(".lc-badges li, .about-print").forEach((li) => {
+      const k = li.classList.contains("about-print") ? 12 : 26;
       gsap.set(li, { transformPerspective: 500 });
       const rx = gsap.quickTo(li, "rotationX", { duration: 0.4, ease: "power3" });
       const ry = gsap.quickTo(li, "rotationY", { duration: 0.4, ease: "power3" });
       li.addEventListener("pointermove", (e) => {
         const r = li.getBoundingClientRect();
-        ry(((e.clientX - r.left) / r.width - 0.5) * 26);
-        rx(-((e.clientY - r.top) / r.height - 0.5) * 26);
+        ry(((e.clientX - r.left) / r.width - 0.5) * k);
+        rx(-((e.clientY - r.top) / r.height - 0.5) * k);
       });
       li.addEventListener("pointerleave", () => { rx(0); ry(0); });
     });

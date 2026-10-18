@@ -71,7 +71,20 @@
     </div>
     <figure class="hero-photo reveal-load">
       <div class="soft-shape" aria-hidden="true"></div>
-      <img src="assets/avatar.jpg" alt="Portrait of Gaurrov S Narayanan" width="460" height="460">
+      <span class="hero-sun" aria-hidden="true"></span>
+      <div class="hero-frame">
+        <picture>
+          <source srcset="assets/gaurrov-hero.webp" type="image/webp">
+          <img src="assets/gaurrov-hero.jpg" alt="Gaurrov S Narayanan in a black blazer, arms crossed, on a rooftop under a blue sky" width="720" height="900" fetchpriority="high">
+        </picture>
+      </div>
+      <svg class="hero-orbit" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+        <defs><path id="orbit-path" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs>
+        <circle class="orbit-disc" cx="60" cy="60" r="58"/>
+        <g class="orbit-spin"><text><textPath href="#orbit-path" textLength="282" lengthAdjust="spacing">AI AGENTS • ML • OPEN SOURCE • </textPath></text></g>
+        <circle class="orbit-core" cx="60" cy="60" r="21"/>
+        <path class="orbit-star" d="M60 47c1.6 8.4 4.6 11.4 13 13-8.4 1.6-11.4 4.6-13 13-1.6-8.4-4.6-11.4-13-13 8.4-1.6 11.4-4.6 13-13z"/>
+      </svg>
       <figcaption>
         <strong>B.Tech AI &amp; ML</strong>
         <span>St. Joseph's College of Engineering, Chennai. Class of 2028.</span>
@@ -86,6 +99,15 @@
 <section class="about section chapter" aria-labelledby="about-title">
   <div class="wrap about-grid">
     <h2 id="about-title" class="h2 about-statement reveal">I'm an AI &amp; ML undergraduate who likes shipping things people actually use.</h2>
+    <figure class="about-photo reveal">
+      <div class="about-print">
+        <picture>
+          <source srcset="assets/gaurrov-devfest.webp" type="image/webp">
+          <img src="assets/gaurrov-devfest.jpg" alt="Gaurrov at DevFest in a black blazer, arms stretched wide, wearing his event pass" width="414" height="552" loading="lazy">
+        </picture>
+        <figcaption><strong>At DevFest</strong><span>Blazer on, arms open.</span></figcaption>
+      </div>
+    </figure>
     <div class="about-body reveal">
       <p>Right now I lead a five-person team building the official placement platform for my college, built for 10,000+ students. Its LangGraph agent reads a student's profile across 12 parameters, finds the gaps, and writes a 30/60/90-day plan to close them.</p>
       <p>Before that I interned at Infosys Springboard and Elewayte, where I built speech-to-summary pipelines and end-to-end ML workflows. Outside class I contribute to open source through GSSoC and Open Source Connect India.</p>
