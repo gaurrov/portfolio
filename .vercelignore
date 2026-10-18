@@ -1,0 +1,8 @@
+# Only the site itself is deployed; notes, tooling and the data script stay private
+docs/
+scripts/
+CLAUDE.md
+README.md
+.superpowers/
+.env*
+.vercel/
