@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 109758,
   "solved": {
-   "All": 675,
-   "Easy": 342,
-   "Medium": 286,
+   "All": 680,
+   "Easy": 344,
+   "Medium": 289,
    "Hard": 47
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 191,
   "activeDays": 267,
-  "submissionsLastYear": 1041,
+  "submissionsLastYear": 1049,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -275,7 +275,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-18": 5,
    "2026-10-19": 7,
-   "2026-10-20": 16,
+   "2026-10-20": 24,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -340,7 +340,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 579
+    "count": 584
    },
    {
     "name": "Python",
@@ -391,6 +391,42 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Path Sum III",
+    "url": "https://leetcode.com/problems/path-sum-iii/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Count Good Nodes in Binary Tree",
+    "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Leaf-Similar Trees",
+    "url": "https://leetcode.com/problems/leaf-similar-trees/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Maximum Depth of Binary Tree",
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Equal Row and Column Pairs",
+    "url": "https://leetcode.com/problems/equal-row-and-column-pairs/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Unique Number of Occurrences",
+    "url": "https://leetcode.com/problems/unique-number-of-occurrences/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
     "title": "Find the Difference of Two Arrays",
     "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
     "date": "2026-10-20",
@@ -424,42 +460,6 @@ window.PORTFOLIO_DATA = {
     "title": "Delete the Middle Node of a Linked List",
     "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
     "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Sum of Sortable Integers",
-    "url": "https://leetcode.com/problems/sum-of-sortable-integers/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Decode String",
-    "url": "https://leetcode.com/problems/decode-string/",
-    "date": "2026-10-19",
-    "lang": "java"
-   },
-   {
-    "title": "Asteroid Collision",
-    "url": "https://leetcode.com/problems/asteroid-collision/",
-    "date": "2026-10-19",
-    "lang": "java"
-   },
-   {
-    "title": "Removing Stars From a String",
-    "url": "https://leetcode.com/problems/removing-stars-from-a-string/",
-    "date": "2026-10-19",
-    "lang": "java"
-   },
-   {
-    "title": "Find Target Indices After Sorting Array",
-    "url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
-    "date": "2026-10-19",
-    "lang": "java"
-   },
-   {
-    "title": "Number of Ways to Reorder Array to Get Same BST",
-    "url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
-    "date": "2026-10-18",
     "lang": "java"
    }
   ]
@@ -704,7 +704,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 188,
+  "solved": 198,
   "rating": null
  },
  "github": {
