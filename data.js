@@ -1189,17 +1189,17 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
-    "name": "readiness-hub",
-    "url": "https://github.com/gaurrov/readiness-hub",
-    "language": "Python",
-    "stars": 0,
-    "pushed": "2026-10-18",
-    "description": ""
-   },
-   {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
+    "stars": 0,
+    "pushed": "2026-10-20",
+    "description": ""
+   },
+   {
+    "name": "readiness-hub",
+    "url": "https://github.com/gaurrov/readiness-hub",
+    "language": "Python",
     "stars": 0,
     "pushed": "2026-10-18",
     "description": ""
