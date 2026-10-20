@@ -25,6 +25,8 @@ python scripts/update_data.py
 
 If a site is unreachable, the script keeps the last good numbers for that site.
 
+On the live site this happens automatically: a GitHub Action (`.github/workflows/update-stats.yml`) runs the script every hour and commits `data.js` when the numbers change, which redeploys the site. To refresh right away, open the repo's Actions tab, pick "Update stats" and click "Run workflow".
+
 **Codeforces:** to change the handle, edit `HANDLES["codeforces"]` at the top of `scripts/update_data.py` and rerun it. Handle is set to `gaurrov2007`.
 
 ## Files

@@ -5,9 +5,13 @@ and GitHub, then writes them to ../data.js so the site works straight from the
 file system with no server and no API calls at view time. LeetCode badge images
 are saved into ../assets/lc-badges/ for the same reason.
 
+.github/workflows/update-stats.yml runs this every hour and commits the result,
+which redeploys the site. Visitors never trigger a fetch.
+
 Run:  python scripts/update_data.py
 """
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -30,7 +34,11 @@ UA = {"User-Agent": "Mozilla/5.0 (portfolio-stats-refresh)"}
 
 
 def get(url, data=None, headers=None, raw=False):
-    req = urllib.request.Request(url, data=data, headers={**UA, **(headers or {})})
+    headers = dict(headers or {})
+    token = os.environ.get("GITHUB_TOKEN")
+    if token and url.startswith("https://api.github.com/"):  # set in CI; lifts the 60/hour anonymous limit
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, data=data, headers={**UA, **headers})
     with urllib.request.urlopen(req, timeout=25) as r:
         body = r.read()
     return body if raw else body.decode("utf-8", "replace")

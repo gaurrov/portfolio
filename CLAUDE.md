@@ -25,8 +25,8 @@ Then open http://127.0.0.1:5500. Opening `index.html` directly also works. The o
 - `main.js` — fills in stats, draws heatmaps and charts, section reveals. Calls `Cinema.init()` when motion is allowed.
 - `cinema.js` — the scroll-driven chapters (pins, scrubs), intro loader, custom cursor and pointer interactions. Skipped under `prefers-reduced-motion`.
 - `liquid.js` — the WebGL fluid sky behind the page (`window.Liquid`). Falls back to a CSS gradient without WebGL or with reduced motion.
-- `data.js` — **generated; do not edit by hand.** Regenerate with `python scripts/update_data.py`.
-- `scripts/update_data.py` — refreshes `data.js` (and LeetCode badge images in `assets/lc-badges/`). Standard-library Python 3 only — no pip install needed. To change a handle, edit `HANDLES` at the top. If a site is unreachable it keeps the last good numbers.
+- `data.js` — **generated; do not edit by hand.** Refreshed every hour by the GitHub Action `.github/workflows/update-stats.yml`, which runs `scripts/update_data.py` and commits `data.js` (and any new badge images) only when something changed; that push redeploys the site. Visitors never trigger a fetch. Run the script by hand, or use "Run workflow" on the Actions tab, for an immediate refresh. Expect hourly `Update stats` commits from `github-actions[bot]` on `main` — `git pull` before working.
+- `scripts/update_data.py` — refreshes `data.js` (and LeetCode badge images in `assets/lc-badges/`). Standard-library Python 3 only — no pip install needed. Uses `GITHUB_TOKEN` for GitHub API calls when set (the Action passes its own). To change a handle, edit `HANDLES` at the top. If a site is unreachable it keeps the last good numbers.
 - `assets/` — portraits (`gaurrov-hero.*` in the hero arch, `gaurrov-devfest.*` in About; WebP with JPG fallback), `og-card.jpg` (1200×630 link-preview card made from the hero portrait — remake it if the photo or headline changes), the résumé PDF, and cert/badge images.
 - `docs/superpowers/` — design specs and plans. Not deployed.
 
@@ -38,6 +38,6 @@ This folder is its own git repository: `origin` is https://github.com/gaurrov/po
 
 The site is the Vercel project `gaurrov`, connected to the GitHub repo: **every push to `main` deploys to production** in a few seconds. `vercel deploy --prod --yes` from this folder also deploys directly (CLI is installed globally; `.vercel/` holds the local link).
 
-- `.vercelignore` keeps `docs/`, `scripts/`, `CLAUDE.md`, `README.md`, `.superpowers/`, `.env*` and `.vercel/` off the public site. Add new private files there.
+- `.vercelignore` keeps `.github/`, `docs/`, `scripts/`, `CLAUDE.md`, `README.md`, `.superpowers/`, `.env*` and `.vercel/` off the public site. Add new private files there.
 - `.env.local` (written by `vercel link`) holds a Vercel OIDC token. It is gitignored — never commit or deploy it.
 - After changing the preview tags or `og-card.jpg`, refresh LinkedIn's cached preview with the Post Inspector (https://www.linkedin.com/post-inspector/).

@@ -1,0 +1,39 @@
+# Refreshes data.js every hour. A commit to main redeploys the site on Vercel,
+# so the stats stay current while visitors only ever load a static file.
+name: Update stats
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly, off the top of the hour when GitHub's scheduler is busiest
+  workflow_dispatch: # run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch stats
+        run: python3 scripts/update_data.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if anything changed
+        run: |
+          git add data.js assets/lc-badges
+          if git diff --cached --quiet; then
+            echo "Stats unchanged, nothing to deploy."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update stats"
+          git pull --rebase # in case you pushed while this ran
+          git push
