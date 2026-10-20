@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 109758,
   "solved": {
-   "All": 674,
-   "Easy": 341,
+   "All": 675,
+   "Easy": 342,
    "Medium": 286,
    "Hard": 47
   },
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 191,
   "activeDays": 267,
-  "submissionsLastYear": 1026,
+  "submissionsLastYear": 1041,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -275,7 +275,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-18": 5,
    "2026-10-19": 7,
-   "2026-10-20": 1,
+   "2026-10-20": 16,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -340,7 +340,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 578
+    "count": 579
    },
    {
     "name": "Python",
@@ -391,6 +391,42 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Find the Difference of Two Arrays",
+    "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Can Place Flowers",
+    "url": "https://leetcode.com/problems/can-place-flowers/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Maximum Twin Sum of a Linked List",
+    "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Reverse Linked List",
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Odd Even Linked List",
+    "url": "https://leetcode.com/problems/odd-even-linked-list/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
+    "title": "Delete the Middle Node of a Linked List",
+    "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
+    "date": "2026-10-20",
+    "lang": "java"
+   },
+   {
     "title": "Sum of Sortable Integers",
     "url": "https://leetcode.com/problems/sum-of-sortable-integers/",
     "date": "2026-10-20",
@@ -424,42 +460,6 @@ window.PORTFOLIO_DATA = {
     "title": "Number of Ways to Reorder Array to Get Same BST",
     "url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
     "date": "2026-10-18",
-    "lang": "java"
-   },
-   {
-    "title": "Find Root of a Colored Tree",
-    "url": "https://leetcode.com/problems/find-root-of-a-colored-tree/",
-    "date": "2026-10-18",
-    "lang": "python3"
-   },
-   {
-    "title": "Last Visited Cell in a Directional Grid",
-    "url": "https://leetcode.com/problems/last-visited-cell-in-a-directional-grid/",
-    "date": "2026-10-18",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Deletions to Make Array Sharp",
-    "url": "https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/",
-    "date": "2026-10-18",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Swaps to Sort by Digit Sum",
-    "url": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
-    "date": "2026-10-17",
-    "lang": "java"
-   },
-   {
-    "title": "Subarrays Distinct Element Sum of Squares II",
-    "url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
-    "date": "2026-10-16",
-    "lang": "java"
-   },
-   {
-    "title": "Subarrays Distinct Element Sum of Squares I",
-    "url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/",
-    "date": "2026-10-15",
     "lang": "java"
    }
   ]
@@ -704,7 +704,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 183,
+  "solved": 188,
   "rating": null
  },
  "github": {
@@ -716,7 +716,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 376,
+  "contributionsLastYear": 381,
   "contributionLevels": {
    "2025-10-19": 0,
    "2025-10-26": 0,
@@ -876,7 +876,7 @@ window.PORTFOLIO_DATA = {
    "2026-09-29": 2,
    "2026-10-06": 2,
    "2026-10-13": 2,
-   "2026-10-20": 1,
+   "2026-10-20": 2,
    "2025-10-22": 0,
    "2025-10-29": 0,
    "2025-11-05": 0,
@@ -1086,11 +1086,25 @@ window.PORTFOLIO_DATA = {
    "2026-10-10": 1,
    "2026-10-17": 1
   },
-  "pullRequestsRecent": 6,
+  "pullRequestsRecent": 7,
   "activity": [
    {
     "text": "Commented on “refactor: remove built-in problem bank — engine should be test-case agnostic” in stjosephsplacements/AetherCode-Execution-Engine",
     "kind": "comment",
+    "date": "2026-10-20",
+    "times": 2,
+    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
+   },
+   {
+    "text": "Commented on “refactor(api): make the engine a pure executor (#56, part 1 of 2)” in stjosephsplacements/AetherCode-Execution-Engine",
+    "kind": "comment",
+    "date": "2026-10-20",
+    "times": 1,
+    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
+   },
+   {
+    "text": "Opened a pull request in stjosephsplacements/AetherCode-Execution-Engine",
+    "kind": "pr",
     "date": "2026-10-20",
     "times": 1,
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
@@ -1171,20 +1185,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/morluto/rea"
-   },
-   {
-    "text": "Opened a pull request in meshery/meshery",
-    "kind": "pr",
-    "date": "2026-10-18",
-    "times": 1,
-    "url": "https://github.com/meshery/meshery"
-   },
-   {
-    "text": "Forked meshery/meshery",
-    "kind": "fork",
-    "date": "2026-10-18",
-    "times": 1,
-    "url": "https://github.com/meshery/meshery"
    }
   ],
   "recentRepos": [
