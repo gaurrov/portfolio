@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 106996,
   "solved": {
-   "All": 681,
+   "All": 683,
    "Easy": 344,
-   "Medium": 290,
+   "Medium": 292,
    "Hard": 47
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 192,
   "activeDays": 268,
-  "submissionsLastYear": 1053,
+  "submissionsLastYear": 1056,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -276,7 +276,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-18": 5,
    "2026-10-19": 7,
    "2026-10-20": 24,
-   "2026-10-21": 4,
+   "2026-10-21": 7,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -341,7 +341,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 585
+    "count": 587
    },
    {
     "name": "Python",
@@ -391,6 +391,18 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "recent": [
+   {
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "date": "2026-10-21",
+    "lang": "java"
+   },
+   {
+    "title": "Longest ZigZag Path in a Binary Tree",
+    "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
+    "date": "2026-10-21",
+    "lang": "java"
+   },
    {
     "title": "Spiral Matrix",
     "url": "https://leetcode.com/problems/spiral-matrix/",
@@ -448,18 +460,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Can Place Flowers",
     "url": "https://leetcode.com/problems/can-place-flowers/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Maximum Twin Sum of a Linked List",
-    "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Reverse Linked List",
-    "url": "https://leetcode.com/problems/reverse-linked-list/",
     "date": "2026-10-20",
     "lang": "java"
    }
