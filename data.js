@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 109758,
   "solved": {
-   "All": 680,
+   "All": 681,
    "Easy": 344,
-   "Medium": 289,
+   "Medium": 290,
    "Hard": 47
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2131,
    "Hard": 984
   },
-  "streak": 191,
-  "activeDays": 267,
-  "submissionsLastYear": 1049,
+  "streak": 192,
+  "activeDays": 268,
+  "submissionsLastYear": 1052,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -276,6 +276,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-18": 5,
    "2026-10-19": 7,
    "2026-10-20": 24,
+   "2026-10-21": 3,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -340,7 +341,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 584
+    "count": 585
    },
    {
     "name": "Python",
@@ -385,11 +386,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 64,
+    "progress": 67,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Operations to Sort a String",
+    "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
+    "date": "2026-10-21",
+    "lang": "java"
+   },
    {
     "title": "Path Sum III",
     "url": "https://leetcode.com/problems/path-sum-iii/",
@@ -453,12 +460,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Odd Even Linked List",
     "url": "https://leetcode.com/problems/odd-even-linked-list/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Delete the Middle Node of a Linked List",
-    "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
     "date": "2026-10-20",
     "lang": "java"
    }
@@ -1194,7 +1195,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-20",
+    "pushed": "2026-10-21",
     "description": ""
    },
    {
