@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 109758,
+  "ranking": 106996,
   "solved": {
    "All": 681,
    "Easy": 344,
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 192,
   "activeDays": 268,
-  "submissionsLastYear": 1052,
+  "submissionsLastYear": 1053,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -276,7 +276,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-18": 5,
    "2026-10-19": 7,
    "2026-10-20": 24,
-   "2026-10-21": 3,
+   "2026-10-21": 4,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -392,6 +392,12 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Spiral Matrix",
+    "url": "https://leetcode.com/problems/spiral-matrix/",
+    "date": "2026-10-21",
+    "lang": "java"
+   },
+   {
     "title": "Minimum Operations to Sort a String",
     "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
     "date": "2026-10-21",
@@ -454,12 +460,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Reverse Linked List",
     "url": "https://leetcode.com/problems/reverse-linked-list/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Odd Even Linked List",
-    "url": "https://leetcode.com/problems/odd-even-linked-list/",
     "date": "2026-10-20",
     "lang": "java"
    }
@@ -705,7 +705,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 198,
+  "solved": 202,
   "rating": null
  },
  "github": {
@@ -1112,6 +1112,13 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
    },
    {
+    "text": "Pushed to gaurrov/portfolio",
+    "kind": "push",
+    "date": "2026-10-20",
+    "times": 3,
+    "url": "https://github.com/gaurrov/portfolio"
+   },
+   {
     "text": "Merged a pull request in stjosephsplacements/AetherCode-Execution-Engine",
     "kind": "pr",
     "date": "2026-10-19",
@@ -1180,13 +1187,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/gaurrov/meshery"
-   },
-   {
-    "text": "Starred morluto/rea",
-    "kind": "star",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/morluto/rea"
    }
   ],
   "recentRepos": [
