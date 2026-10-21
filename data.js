@@ -705,19 +705,19 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 202,
+  "solved": 204,
   "rating": null
  },
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 38,
-  "ownRepos": 27,
+  "publicRepos": 39,
+  "ownRepos": 28,
   "forks": 11,
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 381,
+  "contributionsLastYear": 383,
   "contributionLevels": {
    "2025-10-19": 0,
    "2025-10-26": 0,
@@ -930,7 +930,7 @@ window.PORTFOLIO_DATA = {
    "2026-09-30": 3,
    "2026-10-07": 1,
    "2026-10-14": 1,
-   "2026-10-21": 0,
+   "2026-10-21": 1,
    "2025-10-23": 0,
    "2025-10-30": 0,
    "2025-11-06": 0,
@@ -1091,6 +1091,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 7,
   "activity": [
    {
+    "text": "Pushed to gaurrov/HOPE_website",
+    "kind": "push",
+    "date": "2026-10-21",
+    "times": 1,
+    "url": "https://github.com/gaurrov/HOPE_website"
+   },
+   {
     "text": "Commented on “refactor: remove built-in problem bank — engine should be test-case agnostic” in stjosephsplacements/AetherCode-Execution-Engine",
     "kind": "comment",
     "date": "2026-10-20",
@@ -1180,16 +1187,17 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/meshery/meshery"
-   },
-   {
-    "text": "Pushed to gaurrov/meshery",
-    "kind": "push",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/gaurrov/meshery"
    }
   ],
   "recentRepos": [
+   {
+    "name": "HOPE_website",
+    "url": "https://github.com/gaurrov/HOPE_website",
+    "language": null,
+    "stars": 0,
+    "pushed": "2026-10-21",
+    "description": ""
+   },
    {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
@@ -1229,14 +1237,6 @@ window.PORTFOLIO_DATA = {
     "stars": 0,
     "pushed": "2026-08-23",
     "description": ""
-   },
-   {
-    "name": "DSA",
-    "url": "https://github.com/gaurrov/DSA",
-    "language": null,
-    "stars": 0,
-    "pushed": "2026-07-20",
-    "description": "every DSA problems i solve on daily basis "
    }
   ],
   "languages": [
