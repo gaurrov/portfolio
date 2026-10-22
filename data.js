@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 106996,
+  "ranking": 106286,
   "solved": {
-   "All": 683,
+   "All": 684,
    "Easy": 344,
-   "Medium": 292,
+   "Medium": 293,
    "Hard": 47
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2131,
    "Hard": 984
   },
-  "streak": 192,
-  "activeDays": 268,
-  "submissionsLastYear": 1056,
+  "streak": 193,
+  "activeDays": 269,
+  "submissionsLastYear": 1057,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -277,6 +277,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-19": 7,
    "2026-10-20": 24,
    "2026-10-21": 7,
+   "2026-10-22": 1,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -341,7 +342,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 587
+    "count": 588
    },
    {
     "name": "Python",
@@ -386,11 +387,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 67,
+    "progress": 70,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Operations to Sort a Permutation",
+    "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
+    "date": "2026-10-22",
+    "lang": "java"
+   },
    {
     "title": "Lowest Common Ancestor of a Binary Tree",
     "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
@@ -454,12 +461,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Find the Difference of Two Arrays",
     "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Can Place Flowers",
-    "url": "https://leetcode.com/problems/can-place-flowers/",
     "date": "2026-10-20",
     "lang": "java"
    }
@@ -705,7 +706,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 204,
+  "solved": 208,
   "rating": null
  },
  "github": {
@@ -1089,7 +1090,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-10": 1,
    "2026-10-17": 1
   },
-  "pullRequestsRecent": 7,
+  "pullRequestsRecent": 6,
   "activity": [
    {
     "text": "Pushed to gaurrov/HOPE_website",
@@ -1118,6 +1119,13 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-20",
     "times": 1,
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
+   },
+   {
+    "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
+    "kind": "push",
+    "date": "2026-10-20",
+    "times": 1,
+    "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
    },
    {
     "text": "Pushed to gaurrov/portfolio",
@@ -1181,30 +1189,23 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities"
-   },
-   {
-    "text": "Commented on “[UI] Add a Canvas Overview Navigator to Meshery Designs” in meshery/meshery",
-    "kind": "comment",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/meshery/meshery"
    }
   ],
   "recentRepos": [
+   {
+    "name": "HOPE_website",
+    "url": "https://github.com/gaurrov/HOPE_website",
+    "language": null,
+    "stars": 0,
+    "pushed": "2026-10-22",
+    "description": ""
+   },
    {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
     "pushed": "2026-10-22",
-    "description": ""
-   },
-   {
-    "name": "HOPE_website",
-    "url": "https://github.com/gaurrov/HOPE_website",
-    "language": null,
-    "stars": 0,
-    "pushed": "2026-10-21",
     "description": ""
    },
    {
