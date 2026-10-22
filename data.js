@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 106286,
   "solved": {
-   "All": 684,
+   "All": 686,
    "Easy": 344,
-   "Medium": 293,
+   "Medium": 295,
    "Hard": 47
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 193,
   "activeDays": 269,
-  "submissionsLastYear": 1057,
+  "submissionsLastYear": 1061,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -277,7 +277,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-19": 7,
    "2026-10-20": 24,
    "2026-10-21": 7,
-   "2026-10-22": 1,
+   "2026-10-22": 5,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -292,10 +292,10 @@ window.PORTFOLIO_DATA = {
    "2025-12-30": 3
   },
   "contest": {
-   "rating": 1575,
-   "globalRanking": 248180,
-   "attended": 5,
-   "topPercentage": 28.29
+   "rating": 1646,
+   "globalRanking": 166060,
+   "attended": 6,
+   "topPercentage": 18.96
   },
   "contestHistory": [
    {
@@ -337,12 +337,20 @@ window.PORTFOLIO_DATA = {
     "rank": 796,
     "solved": 3,
     "of": 4
+   },
+   {
+    "name": "Weekly Contest 524",
+    "date": "2026-10-18",
+    "rating": 1646,
+    "rank": 1387,
+    "solved": 3,
+    "of": 4
    }
   ],
   "languages": [
    {
     "name": "Java",
-    "count": 588
+    "count": 590
    },
    {
     "name": "Python",
@@ -393,6 +401,30 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Delete Node in a BST",
+    "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
+    "date": "2026-10-22",
+    "lang": "java"
+   },
+   {
+    "title": "Search in a Binary Search Tree",
+    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+    "date": "2026-10-22",
+    "lang": "java"
+   },
+   {
+    "title": "Maximum Level Sum of a Binary Tree",
+    "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
+    "date": "2026-10-22",
+    "lang": "java"
+   },
+   {
+    "title": "Binary Tree Right Side View",
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "date": "2026-10-22",
+    "lang": "java"
+   },
+   {
     "title": "Minimum Operations to Sort a Permutation",
     "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
     "date": "2026-10-22",
@@ -439,30 +471,6 @@ window.PORTFOLIO_DATA = {
     "url": "https://leetcode.com/problems/leaf-similar-trees/",
     "date": "2026-10-20",
     "lang": "java"
-   },
-   {
-    "title": "Maximum Depth of Binary Tree",
-    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Equal Row and Column Pairs",
-    "url": "https://leetcode.com/problems/equal-row-and-column-pairs/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Unique Number of Occurrences",
-    "url": "https://leetcode.com/problems/unique-number-of-occurrences/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Find the Difference of Two Arrays",
-    "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
-    "date": "2026-10-20",
-    "lang": "java"
    }
   ]
  },
@@ -473,57 +481,10 @@ window.PORTFOLIO_DATA = {
   "maxRating": 1246,
   "rank": "pupil",
   "maxRank": "pupil",
-  "solved": 56,
-  "submissions": 95,
-  "calendar": {
-   "2026-09-12": 3,
-   "2026-09-10": 1,
-   "2026-09-08": 5,
-   "2026-09-03": 1,
-   "2026-08-29": 2,
-   "2026-08-21": 3,
-   "2026-08-17": 4,
-   "2026-08-06": 5,
-   "2026-08-04": 3,
-   "2026-08-01": 2,
-   "2026-07-20": 1,
-   "2026-07-16": 1,
-   "2026-07-14": 2,
-   "2026-07-06": 2,
-   "2026-06-12": 6,
-   "2026-04-21": 2,
-   "2026-04-13": 2,
-   "2026-04-10": 2,
-   "2026-04-08": 2,
-   "2026-04-01": 10,
-   "2026-03-29": 4,
-   "2026-03-28": 4,
-   "2026-03-18": 1,
-   "2026-03-16": 4,
-   "2026-03-14": 1,
-   "2026-03-04": 2,
-   "2026-03-02": 1,
-   "2026-03-01": 2,
-   "2026-02-27": 1,
-   "2026-02-26": 1,
-   "2026-02-12": 8,
-   "2026-02-02": 3,
-   "2026-01-29": 2,
-   "2026-01-28": 1,
-   "2026-01-08": 1
-  },
-  "solvedByRating": {
-   "800": 27,
-   "900": 7,
-   "1000": 8,
-   "1100": 4,
-   "1200": 2,
-   "1300": 1,
-   "1400": 2,
-   "1600": 1,
-   "1800": 1,
-   "1900": 1
-  },
+  "solved": 0,
+  "submissions": 0,
+  "calendar": {},
+  "solvedByRating": {},
   "contestHistory": [
    {
     "name": "Codeforces Round 1077 (Div. 2)",
@@ -706,7 +667,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 208,
+  "solved": 213,
   "rating": null
  },
  "github": {
@@ -1095,6 +1056,13 @@ window.PORTFOLIO_DATA = {
    {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
+    "date": "2026-10-22",
+    "times": 1,
+    "url": "https://github.com/gaurrov/HOPE_website"
+   },
+   {
+    "text": "Pushed to gaurrov/HOPE_website",
+    "kind": "push",
     "date": "2026-10-21",
     "times": 2,
     "url": "https://github.com/gaurrov/HOPE_website"
@@ -1182,13 +1150,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/gaurrov/meshery"
-   },
-   {
-    "text": "Starred Jose-Gael-Cruz-Lopez/underclassmen-opportunities",
-    "kind": "star",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities"
    }
   ],
   "recentRepos": [
