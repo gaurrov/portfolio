@@ -667,7 +667,7 @@ window.PORTFOLIO_DATA = {
  "codechef": {
   "handle": "gaurrov",
   "url": "https://www.codechef.com/users/gaurrov",
-  "solved": 213,
+  "solved": 214,
   "rating": null
  },
  "github": {
@@ -1054,6 +1054,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 6,
   "activity": [
    {
+    "text": "Merged a pull request in stjosephsplacements/AetherCode-Execution-Engine",
+    "kind": "pr",
+    "date": "2026-10-22",
+    "times": 1,
+    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
+   },
+   {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
     "date": "2026-10-22",
@@ -1064,7 +1071,7 @@ window.PORTFOLIO_DATA = {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
     "date": "2026-10-21",
-    "times": 2,
+    "times": 3,
     "url": "https://github.com/gaurrov/HOPE_website"
    },
    {
@@ -1143,28 +1150,21 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Starred gaurrov/meshery",
-    "kind": "star",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/gaurrov/meshery"
    }
   ],
   "recentRepos": [
    {
-    "name": "HOPE_website",
-    "url": "https://github.com/gaurrov/HOPE_website",
-    "language": null,
+    "name": "portfolio",
+    "url": "https://github.com/gaurrov/portfolio",
+    "language": "JavaScript",
     "stars": 0,
     "pushed": "2026-10-22",
     "description": ""
    },
    {
-    "name": "portfolio",
-    "url": "https://github.com/gaurrov/portfolio",
-    "language": "JavaScript",
+    "name": "HOPE_website",
+    "url": "https://github.com/gaurrov/HOPE_website",
+    "language": null,
     "stars": 0,
     "pushed": "2026-10-22",
     "description": ""
