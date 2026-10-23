@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 104765,
   "solved": {
-   "All": 687,
+   "All": 688,
    "Easy": 344,
-   "Medium": 296,
+   "Medium": 297,
    "Hard": 47
   },
   "totals": {
@@ -18,8 +18,8 @@ window.PORTFOLIO_DATA = {
    "Hard": 984
   },
   "streak": 194,
-  "activeDays": 270,
-  "submissionsLastYear": 1062,
+  "activeDays": 269,
+  "submissionsLastYear": 1061,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -278,8 +278,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-20": 24,
    "2026-10-21": 7,
    "2026-10-22": 5,
-   "2026-10-23": 1,
-   "2025-10-23": 2,
+   "2026-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -351,7 +350,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 591
+    "count": 592
    },
    {
     "name": "Python",
@@ -401,6 +400,12 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "recent": [
+   {
+    "title": "Keys and Rooms",
+    "url": "https://leetcode.com/problems/keys-and-rooms/",
+    "date": "2026-10-23",
+    "lang": "java"
+   },
    {
     "title": "Maximum K to Sort a Permutation",
     "url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
@@ -464,12 +469,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Path Sum III",
     "url": "https://leetcode.com/problems/path-sum-iii/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Count Good Nodes in Binary Tree",
-    "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
     "date": "2026-10-20",
     "lang": "java"
    }
@@ -727,7 +726,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 385,
+  "contributionsLastYear": 386,
   "contributionLevels": {
    "2025-10-19": 0,
    "2025-10-26": 0,
