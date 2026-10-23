@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 106286,
   "solved": {
-   "All": 686,
+   "All": 687,
    "Easy": 344,
-   "Medium": 295,
+   "Medium": 296,
    "Hard": 47
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2131,
    "Hard": 984
   },
-  "streak": 193,
-  "activeDays": 269,
-  "submissionsLastYear": 1061,
+  "streak": 194,
+  "activeDays": 270,
+  "submissionsLastYear": 1062,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -278,6 +278,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-20": 24,
    "2026-10-21": 7,
    "2026-10-22": 5,
+   "2026-10-23": 1,
    "2025-10-23": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
@@ -350,7 +351,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 590
+    "count": 591
    },
    {
     "name": "Python",
@@ -395,11 +396,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 70,
+    "progress": 74,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Maximum K to Sort a Permutation",
+    "url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
+    "date": "2026-10-23",
+    "lang": "java"
+   },
    {
     "title": "Delete Node in a BST",
     "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
@@ -463,12 +470,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Count Good Nodes in Binary Tree",
     "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
-    "date": "2026-10-20",
-    "lang": "java"
-   },
-   {
-    "title": "Leaf-Similar Trees",
-    "url": "https://leetcode.com/problems/leaf-similar-trees/",
     "date": "2026-10-20",
     "lang": "java"
    }
@@ -1102,6 +1103,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 6,
   "activity": [
    {
+    "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
+    "kind": "push",
+    "date": "2026-10-23",
+    "times": 1,
+    "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
+   },
+   {
     "text": "Merged a pull request in stjosephsplacements/AetherCode-Execution-Engine",
     "kind": "pr",
     "date": "2026-10-22",
@@ -1112,7 +1120,7 @@ window.PORTFOLIO_DATA = {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
     "date": "2026-10-22",
-    "times": 2,
+    "times": 3,
     "url": "https://github.com/gaurrov/HOPE_website"
    },
    {
@@ -1188,13 +1196,6 @@ window.PORTFOLIO_DATA = {
    {
     "text": "Starred stjosephsplacements/AetherCode-Execution-Engine",
     "kind": "star",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Commented on “test: add Go integration test for the full execute → SSE stream round trip” in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "comment",
     "date": "2026-10-19",
     "times": 1,
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
