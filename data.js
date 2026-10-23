@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 106286,
+  "ranking": 104765,
   "solved": {
    "All": 687,
    "Easy": 344,
@@ -1120,7 +1120,7 @@ window.PORTFOLIO_DATA = {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
     "date": "2026-10-22",
-    "times": 3,
+    "times": 5,
     "url": "https://github.com/gaurrov/HOPE_website"
    },
    {
