@@ -1112,7 +1112,7 @@ window.PORTFOLIO_DATA = {
     "text": "Pushed to gaurrov/HOPE_website",
     "kind": "push",
     "date": "2026-10-22",
-    "times": 1,
+    "times": 2,
     "url": "https://github.com/gaurrov/HOPE_website"
    },
    {
@@ -1206,7 +1206,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-22",
+    "pushed": "2026-10-23",
     "description": ""
    },
    {
