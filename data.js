@@ -12,10 +12,10 @@ window.PORTFOLIO_DATA = {
    "Hard": 47
   },
   "totals": {
-   "All": 4087,
-   "Easy": 972,
-   "Medium": 2131,
-   "Hard": 984
+   "All": 4091,
+   "Easy": 973,
+   "Medium": 2133,
+   "Hard": 985
   },
   "streak": 195,
   "activeDays": 270,
@@ -667,15 +667,16 @@ window.PORTFOLIO_DATA = {
  "atcoder": {
   "handle": "gaurrov",
   "url": "https://atcoder.jp/users/gaurrov",
-  "rating": 770,
-  "highest": 770,
-  "contests": 4,
-  "solved": 28,
+  "rating": 918,
+  "highest": 918,
+  "contests": 5,
+  "solved": 33,
   "history": [
    209,
    587,
    706,
-   770
+   770,
+   918
   ],
   "contestHistory": [
    {
@@ -709,6 +710,14 @@ window.PORTFOLIO_DATA = {
     "old": 706,
     "rating": 770,
     "url": "https://atcoder.jp/contests/abc475/standings"
+   },
+   {
+    "name": "SMBC Programming Contest #2 (AtCoder Beginner Contest 481）",
+    "date": "2026-10-24",
+    "rank": 1369,
+    "old": 770,
+    "rating": 918,
+    "url": "https://atcoder.jp/contests/abc481/standings"
    }
   ]
  },
