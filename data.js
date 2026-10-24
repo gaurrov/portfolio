@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 104765,
   "solved": {
-   "All": 688,
-   "Easy": 344,
+   "All": 689,
+   "Easy": 345,
    "Medium": 297,
    "Hard": 47
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2131,
    "Hard": 984
   },
-  "streak": 194,
-  "activeDays": 269,
-  "submissionsLastYear": 1061,
+  "streak": 195,
+  "activeDays": 270,
+  "submissionsLastYear": 1062,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -279,6 +279,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-21": 7,
    "2026-10-22": 5,
    "2026-10-23": 2,
+   "2026-10-24": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -350,7 +351,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 592
+    "count": 593
    },
    {
     "name": "Python",
@@ -395,11 +396,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 74,
+    "progress": 77,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Count Days Spent Together",
+    "url": "https://leetcode.com/problems/count-days-spent-together/",
+    "date": "2026-10-24",
+    "lang": "java"
+   },
    {
     "title": "Keys and Rooms",
     "url": "https://leetcode.com/problems/keys-and-rooms/",
@@ -464,12 +471,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Operations to Sort a String",
     "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
     "date": "2026-10-21",
-    "lang": "java"
-   },
-   {
-    "title": "Path Sum III",
-    "url": "https://leetcode.com/problems/path-sum-iii/",
-    "date": "2026-10-20",
     "lang": "java"
    }
   ]
@@ -1207,7 +1208,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-23",
+    "pushed": "2026-10-24",
     "description": ""
    },
    {
