@@ -731,13 +731,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 39,
+  "publicRepos": 40,
   "ownRepos": 28,
-  "forks": 11,
+  "forks": 12,
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 389,
+  "contributionsLastYear": 390,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -1108,6 +1108,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 6,
   "activity": [
    {
+    "text": "Forked FinanceFlash/unvibecode",
+    "kind": "fork",
+    "date": "2026-10-25",
+    "times": 1,
+    "url": "https://github.com/FinanceFlash/unvibecode"
+   },
+   {
     "text": "Starred FinanceFlash/unvibecode",
     "kind": "star",
     "date": "2026-10-25",
@@ -1197,13 +1204,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-20",
     "times": 1,
     "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Pushed to gaurrov/portfolio",
-    "kind": "push",
-    "date": "2026-10-20",
-    "times": 5,
-    "url": "https://github.com/gaurrov/portfolio"
    }
   ],
   "recentRepos": [
