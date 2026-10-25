@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 104026,
+  "ranking": 104152,
   "solved": {
    "All": 689,
    "Easy": 345,
@@ -737,7 +737,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 388,
+  "contributionsLastYear": 389,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -1108,6 +1108,41 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 6,
   "activity": [
    {
+    "text": "Starred FinanceFlash/unvibecode",
+    "kind": "star",
+    "date": "2026-10-25",
+    "times": 1,
+    "url": "https://github.com/FinanceFlash/unvibecode"
+   },
+   {
+    "text": "Commented on “fix(voice): align mock query intent handling and remove invalid splic…” in KanishJebaMathewM/Truxify",
+    "kind": "comment",
+    "date": "2026-10-25",
+    "times": 1,
+    "url": "https://github.com/KanishJebaMathewM/Truxify"
+   },
+   {
+    "text": "Opened a pull request in KanishJebaMathewM/Truxify",
+    "kind": "pr",
+    "date": "2026-10-25",
+    "times": 1,
+    "url": "https://github.com/KanishJebaMathewM/Truxify"
+   },
+   {
+    "text": "Closed a pull request in KanishJebaMathewM/Truxify",
+    "kind": "pr",
+    "date": "2026-10-25",
+    "times": 1,
+    "url": "https://github.com/KanishJebaMathewM/Truxify"
+   },
+   {
+    "text": "Pushed to gaurrov/Truxify",
+    "kind": "push",
+    "date": "2026-10-25",
+    "times": 2,
+    "url": "https://github.com/gaurrov/Truxify"
+   },
+   {
     "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
     "kind": "push",
     "date": "2026-10-23",
@@ -1169,41 +1204,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-20",
     "times": 5,
     "url": "https://github.com/gaurrov/portfolio"
-   },
-   {
-    "text": "Merged a pull request in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "pr",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Opened a pull request in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "pr",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
-    "kind": "push",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Forked stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "fork",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Starred stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "star",
-    "date": "2026-10-19",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
    }
   ],
   "recentRepos": [
