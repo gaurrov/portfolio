@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 104152,
+  "ranking": 103840,
   "solved": {
-   "All": 689,
+   "All": 690,
    "Easy": 345,
-   "Medium": 297,
+   "Medium": 298,
    "Hard": 47
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2135,
    "Hard": 986
   },
-  "streak": 196,
-  "activeDays": 271,
-  "submissionsLastYear": 1063,
+  "streak": 197,
+  "activeDays": 272,
+  "submissionsLastYear": 1069,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -281,6 +281,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-23": 2,
    "2026-10-24": 1,
    "2026-10-25": 1,
+   "2026-10-26": 6,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -352,7 +353,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 593
+    "count": 594
    },
    {
     "name": "Python",
@@ -397,11 +398,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 80,
+    "progress": 83,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Count Islands With Total Value Divisible by K",
+    "url": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+    "date": "2026-10-26",
+    "lang": "java"
+   },
    {
     "title": "Number of Closed Islands",
     "url": "https://leetcode.com/problems/number-of-closed-islands/",
@@ -465,12 +472,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Longest ZigZag Path in a Binary Tree",
     "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
-    "date": "2026-10-21",
-    "lang": "java"
-   },
-   {
-    "title": "Spiral Matrix",
-    "url": "https://leetcode.com/problems/spiral-matrix/",
     "date": "2026-10-21",
     "lang": "java"
    }
