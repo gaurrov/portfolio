@@ -739,7 +739,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 392,
+  "contributionsLastYear": 405,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -899,7 +899,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-06": 2,
    "2026-10-13": 2,
    "2026-10-20": 2,
-   "2026-10-27": 1,
+   "2026-10-27": 3,
    "2025-10-29": 0,
    "2025-11-05": 0,
    "2025-11-12": 0,
@@ -1109,8 +1109,22 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-24": 1
   },
-  "pullRequestsRecent": 6,
+  "pullRequestsRecent": 12,
   "activity": [
+   {
+    "text": "Merged a pull request in gaurrov/WASP",
+    "kind": "pr",
+    "date": "2026-10-27",
+    "times": 7,
+    "url": "https://github.com/gaurrov/WASP"
+   },
+   {
+    "text": "Opened a pull request in gaurrov/WASP",
+    "kind": "pr",
+    "date": "2026-10-27",
+    "times": 7,
+    "url": "https://github.com/gaurrov/WASP"
+   },
    {
     "text": "Forked FinanceFlash/unvibecode",
     "kind": "fork",
@@ -1194,20 +1208,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-20",
     "times": 1,
     "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Opened a pull request in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "pr",
-    "date": "2026-10-20",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
-    "kind": "push",
-    "date": "2026-10-20",
-    "times": 1,
-    "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
    }
   ],
   "recentRepos": [
