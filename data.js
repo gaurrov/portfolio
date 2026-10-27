@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 103840,
+  "ranking": 103538,
   "solved": {
    "All": 691,
    "Easy": 346,
@@ -12,14 +12,14 @@ window.PORTFOLIO_DATA = {
    "Hard": 47
   },
   "totals": {
-   "All": 4095,
+   "All": 4096,
    "Easy": 974,
-   "Medium": 2135,
+   "Medium": 2136,
    "Hard": 986
   },
   "streak": 198,
   "activeDays": 273,
-  "submissionsLastYear": 1070,
+  "submissionsLastYear": 1071,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -282,7 +282,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-24": 1,
    "2026-10-25": 1,
    "2026-10-26": 6,
-   "2026-10-27": 1,
+   "2026-10-27": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -405,6 +405,12 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Number of Provinces",
+    "url": "https://leetcode.com/problems/number-of-provinces/",
+    "date": "2026-10-27",
+    "lang": "java"
+   },
+   {
     "title": "Create Grid With Exactly One Path",
     "url": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
     "date": "2026-10-27",
@@ -468,12 +474,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Operations to Sort a Permutation",
     "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
     "date": "2026-10-22",
-    "lang": "java"
-   },
-   {
-    "title": "Lowest Common Ancestor of a Binary Tree",
-    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
-    "date": "2026-10-21",
     "lang": "java"
    }
   ]
@@ -733,13 +733,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 40,
-  "ownRepos": 28,
+  "publicRepos": 41,
+  "ownRepos": 29,
   "forks": 12,
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 390,
+  "contributionsLastYear": 392,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -899,7 +899,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-06": 2,
    "2026-10-13": 2,
    "2026-10-20": 2,
-   "2026-10-27": 0,
+   "2026-10-27": 1,
    "2025-10-29": 0,
    "2025-11-05": 0,
    "2025-11-12": 0,
@@ -1212,6 +1212,14 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
+    "name": "WASP",
+    "url": "https://github.com/gaurrov/WASP",
+    "language": "Python",
+    "stars": 0,
+    "pushed": "2026-10-27",
+    "description": ""
+   },
+   {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
@@ -1250,20 +1258,12 @@ window.PORTFOLIO_DATA = {
     "stars": 2,
     "pushed": "2026-08-26",
     "description": ""
-   },
-   {
-    "name": "Speech-Transition-Real-Time",
-    "url": "https://github.com/gaurrov/Speech-Transition-Real-Time",
-    "language": "Python",
-    "stars": 0,
-    "pushed": "2026-08-23",
-    "description": ""
    }
   ],
   "languages": [
    {
     "name": "Python",
-    "repos": 10
+    "repos": 11
    },
    {
     "name": "JavaScript",
