@@ -1212,17 +1212,17 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
-    "name": "WASP",
-    "url": "https://github.com/gaurrov/WASP",
-    "language": "Python",
+    "name": "portfolio",
+    "url": "https://github.com/gaurrov/portfolio",
+    "language": "JavaScript",
     "stars": 0,
     "pushed": "2026-10-27",
     "description": ""
    },
    {
-    "name": "portfolio",
-    "url": "https://github.com/gaurrov/portfolio",
-    "language": "JavaScript",
+    "name": "WASP",
+    "url": "https://github.com/gaurrov/WASP",
+    "language": "Python",
     "stars": 0,
     "pushed": "2026-10-27",
     "description": ""
