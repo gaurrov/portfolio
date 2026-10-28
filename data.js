@@ -734,13 +734,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 41,
+  "publicRepos": 42,
   "ownRepos": 29,
-  "forks": 12,
+  "forks": 13,
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 409,
+  "contributionsLastYear": 410,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -1111,8 +1111,22 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-24": 1
   },
-  "pullRequestsRecent": 13,
+  "pullRequestsRecent": 14,
   "activity": [
+   {
+    "text": "Opened a pull request in ELANGKATHIR11/TRACE-AIML",
+    "kind": "pr",
+    "date": "2026-10-28",
+    "times": 1,
+    "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
+   },
+   {
+    "text": "Forked ELANGKATHIR11/TRACE-AIML",
+    "kind": "fork",
+    "date": "2026-10-28",
+    "times": 1,
+    "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
+   },
    {
     "text": "Merged a pull request in gaurrov/WASP",
     "kind": "pr",
@@ -1196,35 +1210,21 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-23",
     "times": 1,
     "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Merged a pull request in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "pr",
-    "date": "2026-10-22",
-    "times": 1,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Pushed to gaurrov/HOPE_website",
-    "kind": "push",
-    "date": "2026-10-22",
-    "times": 5,
-    "url": "https://github.com/gaurrov/HOPE_website"
    }
   ],
   "recentRepos": [
    {
-    "name": "WASP",
-    "url": "https://github.com/gaurrov/WASP",
-    "language": "Python",
+    "name": "portfolio",
+    "url": "https://github.com/gaurrov/portfolio",
+    "language": "JavaScript",
     "stars": 0,
     "pushed": "2026-10-28",
     "description": ""
    },
    {
-    "name": "portfolio",
-    "url": "https://github.com/gaurrov/portfolio",
-    "language": "JavaScript",
+    "name": "WASP",
+    "url": "https://github.com/gaurrov/WASP",
+    "language": "Python",
     "stars": 0,
     "pushed": "2026-10-28",
     "description": ""
