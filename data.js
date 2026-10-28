@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 103538,
+  "ranking": 103220,
   "solved": {
-   "All": 691,
+   "All": 692,
    "Easy": 346,
-   "Medium": 298,
+   "Medium": 299,
    "Hard": 47
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2136,
    "Hard": 986
   },
-  "streak": 198,
-  "activeDays": 273,
-  "submissionsLastYear": 1071,
+  "streak": 199,
+  "activeDays": 274,
+  "submissionsLastYear": 1073,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -283,6 +283,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-25": 1,
    "2026-10-26": 6,
    "2026-10-27": 2,
+   "2026-10-28": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -354,7 +355,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 595
+    "count": 596
    },
    {
     "name": "Python",
@@ -399,11 +400,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 87,
+    "progress": 90,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum XOR Path in a Grid",
+    "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+    "date": "2026-10-28",
+    "lang": "java"
+   },
    {
     "title": "Number of Provinces",
     "url": "https://leetcode.com/problems/number-of-provinces/",
@@ -467,12 +474,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Binary Tree Right Side View",
     "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
-    "date": "2026-10-22",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Operations to Sort a Permutation",
-    "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
     "date": "2026-10-22",
     "lang": "java"
    }
@@ -739,7 +740,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 405,
+  "contributionsLastYear": 409,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -952,7 +953,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-07": 1,
    "2026-10-14": 1,
    "2026-10-21": 1,
-   "2026-10-28": 0,
+   "2026-10-28": 1,
    "2025-10-30": 0,
    "2025-11-06": 0,
    "2025-11-13": 0,
@@ -1110,20 +1111,34 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-24": 1
   },
-  "pullRequestsRecent": 12,
+  "pullRequestsRecent": 13,
   "activity": [
    {
     "text": "Merged a pull request in gaurrov/WASP",
     "kind": "pr",
-    "date": "2026-10-27",
-    "times": 7,
+    "date": "2026-10-28",
+    "times": 1,
+    "url": "https://github.com/gaurrov/WASP"
+   },
+   {
+    "text": "Opened a pull request in gaurrov/WASP",
+    "kind": "pr",
+    "date": "2026-10-28",
+    "times": 1,
     "url": "https://github.com/gaurrov/WASP"
    },
    {
     "text": "Pushed to gaurrov/WASP",
     "kind": "push",
     "date": "2026-10-27",
-    "times": 3,
+    "times": 5,
+    "url": "https://github.com/gaurrov/WASP"
+   },
+   {
+    "text": "Merged a pull request in gaurrov/WASP",
+    "kind": "pr",
+    "date": "2026-10-27",
+    "times": 7,
     "url": "https://github.com/gaurrov/WASP"
    },
    {
@@ -1195,37 +1210,23 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-22",
     "times": 5,
     "url": "https://github.com/gaurrov/HOPE_website"
-   },
-   {
-    "text": "Pushed to gaurrov/HOPE_website",
-    "kind": "push",
-    "date": "2026-10-21",
-    "times": 3,
-    "url": "https://github.com/gaurrov/HOPE_website"
-   },
-   {
-    "text": "Commented on “refactor: remove built-in problem bank — engine should be test-case agnostic” in stjosephsplacements/AetherCode-Execution-Engine",
-    "kind": "comment",
-    "date": "2026-10-20",
-    "times": 2,
-    "url": "https://github.com/stjosephsplacements/AetherCode-Execution-Engine"
    }
   ],
   "recentRepos": [
-   {
-    "name": "portfolio",
-    "url": "https://github.com/gaurrov/portfolio",
-    "language": "JavaScript",
-    "stars": 0,
-    "pushed": "2026-10-27",
-    "description": ""
-   },
    {
     "name": "WASP",
     "url": "https://github.com/gaurrov/WASP",
     "language": "Python",
     "stars": 0,
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-28",
+    "description": ""
+   },
+   {
+    "name": "portfolio",
+    "url": "https://github.com/gaurrov/portfolio",
+    "language": "JavaScript",
+    "stars": 0,
+    "pushed": "2026-10-28",
     "description": ""
    },
    {
