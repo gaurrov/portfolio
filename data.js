@@ -735,13 +735,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 42,
+  "publicRepos": 43,
   "ownRepos": 29,
-  "forks": 13,
+  "forks": 14,
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 445,
+  "contributionsLastYear": 446,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -1113,8 +1113,22 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-24": 1
   },
-  "pullRequestsRecent": 13,
+  "pullRequestsRecent": 14,
   "activity": [
+   {
+    "text": "Opened a pull request in layer5io/sistent",
+    "kind": "pr",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/layer5io/sistent"
+   },
+   {
+    "text": "Forked layer5io/sistent",
+    "kind": "fork",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/layer5io/sistent"
+   },
    {
     "text": "Commented on “[Bug]: Template catalog card text becomes mirrored and unreadable on hover” in meshery/meshery",
     "kind": "comment",
@@ -1198,20 +1212,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-25",
     "times": 1,
     "url": "https://github.com/FinanceFlash/unvibecode"
-   },
-   {
-    "text": "Commented on “fix(voice): align mock query intent handling and remove invalid splic…” in KanishJebaMathewM/Truxify",
-    "kind": "comment",
-    "date": "2026-10-25",
-    "times": 1,
-    "url": "https://github.com/KanishJebaMathewM/Truxify"
-   },
-   {
-    "text": "Opened a pull request in KanishJebaMathewM/Truxify",
-    "kind": "pr",
-    "date": "2026-10-25",
-    "times": 1,
-    "url": "https://github.com/KanishJebaMathewM/Truxify"
    }
   ],
   "recentRepos": [
