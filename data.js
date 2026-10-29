@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 103220,
+  "ranking": 102910,
   "solved": {
    "All": 693,
    "Easy": 346,
@@ -738,7 +738,7 @@ window.PORTFOLIO_DATA = {
   "publicRepos": 42,
   "ownRepos": 29,
   "forks": 13,
-  "followers": 1,
+  "followers": 3,
   "stars": 5,
   "since": "2024",
   "contributionsLastYear": 445,
@@ -1113,8 +1113,15 @@ window.PORTFOLIO_DATA = {
    "2026-10-17": 1,
    "2026-10-24": 1
   },
-  "pullRequestsRecent": 14,
+  "pullRequestsRecent": 13,
   "activity": [
+   {
+    "text": "Commented on “[Bug]: Template catalog card text becomes mirrored and unreadable on hover” in meshery/meshery",
+    "kind": "comment",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/meshery/meshery"
+   },
    {
     "text": "Merged a pull request in ELANGKATHIR11/TRACE-AIML",
     "kind": "pr",
@@ -1201,13 +1208,6 @@ window.PORTFOLIO_DATA = {
    },
    {
     "text": "Opened a pull request in KanishJebaMathewM/Truxify",
-    "kind": "pr",
-    "date": "2026-10-25",
-    "times": 1,
-    "url": "https://github.com/KanishJebaMathewM/Truxify"
-   },
-   {
-    "text": "Closed a pull request in KanishJebaMathewM/Truxify",
     "kind": "pr",
     "date": "2026-10-25",
     "times": 1,
