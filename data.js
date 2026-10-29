@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 103220,
   "solved": {
-   "All": 692,
+   "All": 693,
    "Easy": 346,
    "Medium": 299,
-   "Hard": 47
+   "Hard": 48
   },
   "totals": {
    "All": 4096,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2136,
    "Hard": 986
   },
-  "streak": 199,
-  "activeDays": 274,
-  "submissionsLastYear": 1073,
+  "streak": 200,
+  "activeDays": 275,
+  "submissionsLastYear": 1074,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -284,6 +284,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-26": 6,
    "2026-10-27": 2,
    "2026-10-28": 2,
+   "2026-10-29": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -355,7 +356,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 596
+    "count": 597
    },
    {
     "name": "Python",
@@ -400,11 +401,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 90,
+    "progress": 93,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Palindromic Path Queries in a Tree",
+    "url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+    "date": "2026-10-29",
+    "lang": "java"
+   },
    {
     "title": "Minimum XOR Path in a Grid",
     "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
@@ -468,12 +475,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Maximum Level Sum of a Binary Tree",
     "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
-    "date": "2026-10-22",
-    "lang": "java"
-   },
-   {
-    "title": "Binary Tree Right Side View",
-    "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
     "date": "2026-10-22",
     "lang": "java"
    }
@@ -740,7 +741,7 @@ window.PORTFOLIO_DATA = {
   "followers": 1,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 411,
+  "contributionsLastYear": 445,
   "contributionLevels": {
    "2025-10-26": 0,
    "2025-11-02": 0,
@@ -784,16 +785,16 @@ window.PORTFOLIO_DATA = {
    "2026-07-26": 1,
    "2026-08-02": 0,
    "2026-08-09": 0,
-   "2026-08-16": 2,
+   "2026-08-16": 1,
    "2026-08-23": 1,
    "2026-08-30": 0,
    "2026-09-06": 0,
    "2026-09-13": 0,
    "2026-09-20": 0,
-   "2026-09-27": 3,
+   "2026-09-27": 2,
    "2026-10-04": 3,
    "2026-10-11": 1,
-   "2026-10-18": 4,
+   "2026-10-18": 3,
    "2026-10-25": 1,
    "2025-10-27": 0,
    "2025-11-03": 0,
@@ -837,7 +838,7 @@ window.PORTFOLIO_DATA = {
    "2026-07-27": 1,
    "2026-08-03": 0,
    "2026-08-10": 0,
-   "2026-08-17": 2,
+   "2026-08-17": 1,
    "2026-08-24": 0,
    "2026-08-31": 0,
    "2026-09-07": 0,
@@ -846,7 +847,7 @@ window.PORTFOLIO_DATA = {
    "2026-09-28": 1,
    "2026-10-05": 2,
    "2026-10-12": 0,
-   "2026-10-19": 2,
+   "2026-10-19": 1,
    "2026-10-26": 0,
    "2025-10-28": 0,
    "2025-11-04": 0,
@@ -885,7 +886,7 @@ window.PORTFOLIO_DATA = {
    "2026-06-23": 1,
    "2026-06-30": 0,
    "2026-07-07": 0,
-   "2026-07-14": 3,
+   "2026-07-14": 2,
    "2026-07-21": 0,
    "2026-07-28": 0,
    "2026-08-04": 0,
@@ -896,11 +897,11 @@ window.PORTFOLIO_DATA = {
    "2026-09-08": 0,
    "2026-09-15": 1,
    "2026-09-22": 1,
-   "2026-09-29": 2,
-   "2026-10-06": 2,
-   "2026-10-13": 2,
-   "2026-10-20": 2,
-   "2026-10-27": 3,
+   "2026-09-29": 1,
+   "2026-10-06": 1,
+   "2026-10-13": 1,
+   "2026-10-20": 1,
+   "2026-10-27": 2,
    "2025-10-29": 0,
    "2025-11-05": 0,
    "2025-11-12": 0,
@@ -938,7 +939,7 @@ window.PORTFOLIO_DATA = {
    "2026-06-24": 0,
    "2026-07-01": 1,
    "2026-07-08": 0,
-   "2026-07-15": 2,
+   "2026-07-15": 1,
    "2026-07-22": 0,
    "2026-07-29": 0,
    "2026-08-05": 0,
@@ -949,11 +950,11 @@ window.PORTFOLIO_DATA = {
    "2026-09-09": 0,
    "2026-09-16": 1,
    "2026-09-23": 1,
-   "2026-09-30": 3,
+   "2026-09-30": 2,
    "2026-10-07": 1,
    "2026-10-14": 1,
    "2026-10-21": 1,
-   "2026-10-28": 1,
+   "2026-10-28": 4,
    "2025-10-30": 0,
    "2025-11-06": 0,
    "2025-11-13": 0,
@@ -1038,7 +1039,7 @@ window.PORTFOLIO_DATA = {
    "2026-05-15": 0,
    "2026-05-22": 0,
    "2026-05-29": 0,
-   "2026-06-05": 3,
+   "2026-06-05": 2,
    "2026-06-12": 0,
    "2026-06-19": 0,
    "2026-06-26": 1,
@@ -1107,13 +1108,20 @@ window.PORTFOLIO_DATA = {
    "2026-09-12": 0,
    "2026-09-19": 0,
    "2026-09-26": 0,
-   "2026-10-03": 4,
+   "2026-10-03": 3,
    "2026-10-10": 1,
    "2026-10-17": 1,
    "2026-10-24": 1
   },
   "pullRequestsRecent": 14,
   "activity": [
+   {
+    "text": "Merged a pull request in ELANGKATHIR11/TRACE-AIML",
+    "kind": "pr",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
+   },
    {
     "text": "Opened a pull request in ELANGKATHIR11/TRACE-AIML",
     "kind": "pr",
@@ -1153,7 +1161,7 @@ window.PORTFOLIO_DATA = {
     "text": "Pushed to gaurrov/WASP",
     "kind": "push",
     "date": "2026-10-27",
-    "times": 6,
+    "times": 7,
     "url": "https://github.com/gaurrov/WASP"
    },
    {
@@ -1204,13 +1212,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-25",
     "times": 1,
     "url": "https://github.com/KanishJebaMathewM/Truxify"
-   },
-   {
-    "text": "Pushed to gaurrov/Truxify",
-    "kind": "push",
-    "date": "2026-10-25",
-    "times": 2,
-    "url": "https://github.com/gaurrov/Truxify"
    }
   ],
   "recentRepos": [
@@ -1219,7 +1220,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-28",
+    "pushed": "2026-10-29",
     "description": ""
    },
    {
