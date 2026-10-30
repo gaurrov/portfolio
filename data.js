@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 102910,
+  "ranking": 102962,
   "solved": {
-   "All": 693,
+   "All": 694,
    "Easy": 346,
-   "Medium": 299,
+   "Medium": 300,
    "Hard": 48
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2136,
    "Hard": 986
   },
-  "streak": 200,
-  "activeDays": 275,
-  "submissionsLastYear": 1074,
+  "streak": 201,
+  "activeDays": 276,
+  "submissionsLastYear": 1075,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -285,6 +285,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-27": 2,
    "2026-10-28": 2,
    "2026-10-29": 1,
+   "2026-10-30": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -299,9 +300,9 @@ window.PORTFOLIO_DATA = {
   },
   "contest": {
    "rating": 1646,
-   "globalRanking": 166060,
+   "globalRanking": 166569,
    "attended": 6,
-   "topPercentage": 18.96
+   "topPercentage": 18.99
   },
   "contestHistory": [
    {
@@ -356,7 +357,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 597
+    "count": 598
    },
    {
     "name": "Python",
@@ -401,11 +402,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 93,
+    "progress": 96,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Shortest Path With At Most K Consecutive Identical Characters",
+    "url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
+    "date": "2026-10-30",
+    "lang": "java"
+   },
    {
     "title": "Palindromic Path Queries in a Tree",
     "url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
@@ -469,12 +476,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Search in a Binary Search Tree",
     "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
-    "date": "2026-10-22",
-    "lang": "java"
-   },
-   {
-    "title": "Maximum Level Sum of a Binary Tree",
-    "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
     "date": "2026-10-22",
     "lang": "java"
    }
