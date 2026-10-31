@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 102682,
   "solved": {
-   "All": 694,
+   "All": 695,
    "Easy": 346,
-   "Medium": 300,
+   "Medium": 301,
    "Hard": 48
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2136,
    "Hard": 986
   },
-  "streak": 201,
-  "activeDays": 276,
-  "submissionsLastYear": 1075,
+  "streak": 202,
+  "activeDays": 277,
+  "submissionsLastYear": 1077,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -286,6 +286,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-28": 2,
    "2026-10-29": 1,
    "2026-10-30": 1,
+   "2026-10-31": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -357,7 +358,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 598
+    "count": 599
    },
    {
     "name": "Python",
@@ -373,6 +374,11 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "badges": [
+   {
+    "name": "Oct LeetCoding Challenge",
+    "date": "2026-10-31",
+    "icon": "assets/lc-badges/dcc-2026-10.png"
+   },
    {
     "name": "Sep LeetCoding Challenge",
     "date": "2026-09-30",
@@ -402,11 +408,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Oct LeetCoding Challenge",
-    "progress": 96,
+    "progress": 100,
     "icon": "assets/lc-badges/dcc-2026-10.png"
    }
   ],
   "recent": [
+   {
+    "title": "Twisted Mirror Path Count",
+    "url": "https://leetcode.com/problems/twisted-mirror-path-count/",
+    "date": "2026-10-31",
+    "lang": "java"
+   },
    {
     "title": "Shortest Path With At Most K Consecutive Identical Characters",
     "url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
@@ -470,12 +482,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Delete Node in a BST",
     "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
-    "date": "2026-10-22",
-    "lang": "java"
-   },
-   {
-    "title": "Search in a Binary Search Tree",
-    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
     "date": "2026-10-22",
     "lang": "java"
    }
@@ -673,16 +679,17 @@ window.PORTFOLIO_DATA = {
  "atcoder": {
   "handle": "gaurrov",
   "url": "https://atcoder.jp/users/gaurrov",
-  "rating": 918,
-  "highest": 918,
-  "contests": 5,
-  "solved": null,
+  "rating": 960,
+  "highest": 960,
+  "contests": 6,
+  "solved": 37,
   "history": [
    209,
    587,
    706,
    770,
-   918
+   918,
+   960
   ],
   "contestHistory": [
    {
@@ -724,6 +731,14 @@ window.PORTFOLIO_DATA = {
     "old": 770,
     "rating": 918,
     "url": "https://atcoder.jp/contests/abc481/standings"
+   },
+   {
+    "name": "AtCoder Beginner Contest 482",
+    "date": "2026-10-31",
+    "rank": 1871,
+    "old": 918,
+    "rating": 960,
+    "url": "https://atcoder.jp/contests/abc482/standings"
    }
   ]
  },
@@ -1140,6 +1155,13 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/meshery/meshery"
    },
    {
+    "text": "Pushed to gaurrov/unvibecode",
+    "kind": "push",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/gaurrov/unvibecode"
+   },
+   {
     "text": "Pushed to gaurrov/meshery",
     "kind": "push",
     "date": "2026-10-29",
@@ -1204,13 +1226,6 @@ window.PORTFOLIO_DATA = {
    },
    {
     "text": "Merged a pull request in gaurrov/WASP",
-    "kind": "pr",
-    "date": "2026-10-27",
-    "times": 7,
-    "url": "https://github.com/gaurrov/WASP"
-   },
-   {
-    "text": "Opened a pull request in gaurrov/WASP",
     "kind": "pr",
     "date": "2026-10-27",
     "times": 7,
