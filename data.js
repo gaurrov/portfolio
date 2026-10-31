@@ -1116,7 +1116,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-24": 1,
    "2026-10-31": 0
   },
-  "pullRequestsRecent": 14,
+  "pullRequestsRecent": 13,
   "activity": [
    {
     "text": "Opened a pull request in layer5io/sistent",
@@ -1138,6 +1138,13 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/meshery/meshery"
+   },
+   {
+    "text": "Pushed to gaurrov/meshery",
+    "kind": "push",
+    "date": "2026-10-29",
+    "times": 1,
+    "url": "https://github.com/gaurrov/meshery"
    },
    {
     "text": "Merged a pull request in ELANGKATHIR11/TRACE-AIML",
@@ -1208,13 +1215,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-27",
     "times": 7,
     "url": "https://github.com/gaurrov/WASP"
-   },
-   {
-    "text": "Forked FinanceFlash/unvibecode",
-    "kind": "fork",
-    "date": "2026-10-25",
-    "times": 1,
-    "url": "https://github.com/FinanceFlash/unvibecode"
    }
   ],
   "recentRepos": [
@@ -1223,7 +1223,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "description": ""
    },
    {
