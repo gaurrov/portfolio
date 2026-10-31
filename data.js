@@ -1134,6 +1134,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 13,
   "activity": [
    {
+    "text": "Starred multica-ai/andrej-karpathy-skills",
+    "kind": "star",
+    "date": "2026-10-31",
+    "times": 1,
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+   },
+   {
     "text": "Opened a pull request in layer5io/sistent",
     "kind": "pr",
     "date": "2026-10-29",
@@ -1220,13 +1227,6 @@ window.PORTFOLIO_DATA = {
    {
     "text": "Pushed to gaurrov/WASP",
     "kind": "push",
-    "date": "2026-10-27",
-    "times": 7,
-    "url": "https://github.com/gaurrov/WASP"
-   },
-   {
-    "text": "Merged a pull request in gaurrov/WASP",
-    "kind": "pr",
     "date": "2026-10-27",
     "times": 7,
     "url": "https://github.com/gaurrov/WASP"
