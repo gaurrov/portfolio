@@ -752,13 +752,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 43,
+  "publicRepos": 44,
   "ownRepos": 29,
-  "forks": 14,
+  "forks": 15,
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 450,
+  "contributionsLastYear": 451,
   "contributionLevels": {
    "2025-11-02": 0,
    "2025-11-09": 0,
@@ -1129,6 +1129,20 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 13,
   "activity": [
    {
+    "text": "Forked liquidslr/leetcode-company-wise-problems",
+    "kind": "fork",
+    "date": "2026-11-01",
+    "times": 1,
+    "url": "https://github.com/liquidslr/leetcode-company-wise-problems"
+   },
+   {
+    "text": "Starred liquidslr/leetcode-company-wise-problems",
+    "kind": "star",
+    "date": "2026-11-01",
+    "times": 1,
+    "url": "https://github.com/liquidslr/leetcode-company-wise-problems"
+   },
+   {
     "text": "Starred multica-ai/andrej-karpathy-skills",
     "kind": "star",
     "date": "2026-10-31",
@@ -1211,20 +1225,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-28",
     "times": 1,
     "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
-   },
-   {
-    "text": "Pushed to gaurrov/WASP",
-    "kind": "push",
-    "date": "2026-10-28",
-    "times": 2,
-    "url": "https://github.com/gaurrov/WASP"
-   },
-   {
-    "text": "Merged a pull request in gaurrov/WASP",
-    "kind": "pr",
-    "date": "2026-10-28",
-    "times": 1,
-    "url": "https://github.com/gaurrov/WASP"
    }
   ],
   "recentRepos": [
