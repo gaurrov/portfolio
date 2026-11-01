@@ -6,20 +6,20 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 102682,
   "solved": {
-   "All": 695,
+   "All": 696,
    "Easy": 346,
-   "Medium": 301,
+   "Medium": 302,
    "Hard": 48
   },
   "totals": {
-   "All": 4096,
-   "Easy": 974,
-   "Medium": 2136,
-   "Hard": 986
+   "All": 4100,
+   "Easy": 975,
+   "Medium": 2138,
+   "Hard": 987
   },
-  "streak": 202,
-  "activeDays": 277,
-  "submissionsLastYear": 1077,
+  "streak": 203,
+  "activeDays": 278,
+  "submissionsLastYear": 1078,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -287,6 +287,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-29": 1,
    "2026-10-30": 1,
    "2026-10-31": 2,
+   "2026-11-01": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -358,7 +359,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 599
+    "count": 600
    },
    {
     "name": "Python",
@@ -405,8 +406,20 @@ window.PORTFOLIO_DATA = {
     "icon": "assets/lc-badges/lg2550.png"
    }
   ],
-  "upcomingBadges": [],
+  "upcomingBadges": [
+   {
+    "name": "Nov LeetCoding Challenge",
+    "progress": 3,
+    "icon": "assets/lc-badges/dcc-2026-11.png"
+   }
+  ],
   "recent": [
+   {
+    "title": "Minimum Moves to Equal Array Elements",
+    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
+    "date": "2026-11-01",
+    "lang": "java"
+   },
    {
     "title": "Twisted Mirror Path Count",
     "url": "https://leetcode.com/problems/twisted-mirror-path-count/",
@@ -471,12 +484,6 @@ window.PORTFOLIO_DATA = {
     "title": "Maximum K to Sort a Permutation",
     "url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
     "date": "2026-10-23",
-    "lang": "java"
-   },
-   {
-    "title": "Delete Node in a BST",
-    "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
-    "date": "2026-10-22",
     "lang": "java"
    }
   ]
@@ -1136,6 +1143,13 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/unvibecode"
    },
    {
+    "text": "Pushed to gaurrov/meshery",
+    "kind": "push",
+    "date": "2026-10-30",
+    "times": 1,
+    "url": "https://github.com/gaurrov/meshery"
+   },
+   {
     "text": "Opened a pull request in layer5io/sistent",
     "kind": "pr",
     "date": "2026-10-29",
@@ -1211,13 +1225,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-28",
     "times": 1,
     "url": "https://github.com/gaurrov/WASP"
-   },
-   {
-    "text": "Opened a pull request in gaurrov/WASP",
-    "kind": "pr",
-    "date": "2026-10-28",
-    "times": 1,
-    "url": "https://github.com/gaurrov/WASP"
    }
   ],
   "recentRepos": [
@@ -1226,7 +1233,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-10-31",
+    "pushed": "2026-11-01",
     "description": ""
    },
    {
