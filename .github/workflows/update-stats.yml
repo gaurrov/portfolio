@@ -3,9 +3,13 @@
 name: Update stats
 
 on:
+  # GitHub's own scheduler is best-effort and in practice fires only every 4-8 hours,
+  # so the main trigger is cron-job.org calling the workflow_dispatch API every 15 minutes
+  # (fine-grained token "portfolio stats trigger", Actions: write on this repo only).
+  # This hourly cron stays as a fallback if that outside job stops.
   schedule:
-    - cron: "17 * * * *" # hourly, off the top of the hour when GitHub's scheduler is busiest
-  workflow_dispatch: # run it by hand from the Actions tab
+    - cron: "17 * * * *"
+  workflow_dispatch: # cron-job.org, the Actions tab's "Run workflow", or `gh workflow run update-stats.yml`
 
 permissions:
   contents: write
