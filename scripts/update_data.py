@@ -27,9 +27,14 @@ HANDLES = {
     "codeforces": "gaurrov2007",
 }
 
+# "Gaurrov Resume Elite.pdf" in Google Drive (shared as "anyone with the link can view").
+# Replace it in Drive with Manage versions > Upload new version so this ID stays the same.
+RESUME_DRIVE_ID = "1zQW5jMSDf3V-CYLQgvYbQP8h2X4dSC3X"
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data.js"
 BADGE_DIR = ROOT / "assets" / "lc-badges"
+RESUME = ROOT / "assets" / "Gaurrov-S-Narayanan-Resume.pdf"
 UA = {"User-Agent": "Mozilla/5.0 (portfolio-stats-refresh)"}
 
 
@@ -252,7 +257,23 @@ def github(user):
     }
 
 
+def resume():
+    """Copy the résumé PDF from Google Drive into assets/ when it has changed."""
+    pdf = get(f"https://drive.google.com/uc?export=download&id={RESUME_DRIVE_ID}", raw=True)
+    if not pdf.startswith(b"%PDF"):  # Drive returns an HTML page if sharing is off or the ID is wrong
+        raise ValueError("Drive did not return a PDF (check the file is shared as 'anyone with the link')")
+    if RESUME.exists() and RESUME.read_bytes() == pdf:
+        return "unchanged"
+    RESUME.write_bytes(pdf)
+    return "updated"
+
+
 def main():
+    try:
+        print(f"ok    resume ({resume()})")
+    except Exception as e:  # keep the copy already in assets/
+        print(f"kept  resume (fetch failed: {e})", file=sys.stderr)
+
     previous = {}
     if OUT.exists():
         txt = OUT.read_text(encoding="utf-8")
