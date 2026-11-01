@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 102682,
+  "ranking": 102010,
   "solved": {
    "All": 696,
    "Easy": 346,
@@ -758,7 +758,7 @@ window.PORTFOLIO_DATA = {
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 447,
+  "contributionsLastYear": 449,
   "contributionLevels": {
    "2025-11-02": 0,
    "2025-11-09": 0,
@@ -812,7 +812,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-11": 1,
    "2026-10-18": 3,
    "2026-10-25": 1,
-   "2026-11-01": 0,
+   "2026-11-01": 1,
    "2025-11-03": 0,
    "2025-11-10": 0,
    "2025-11-17": 0,
