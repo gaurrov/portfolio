@@ -359,6 +359,7 @@
       offset += seg + GAP;
     });
     ringEl.prepend(svg);
+    reset(); // write the live total into the centre; index.html only holds a stale fallback
     ringEl.setAttribute("aria-label", `${lc.solved.All} of ${lc.totals.All || sum} LeetCode problems solved: ${lc.solved.Easy} easy, ${lc.solved.Medium} medium, ${lc.solved.Hard} hard`);
     ringEl._scrub = (p) => arcs.forEach((a) => a.setAttribute("stroke-dasharray", a._dash(a._len * p)));
   }
