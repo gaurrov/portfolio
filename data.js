@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 102010,
+  "ranking": 101722,
   "solved": {
-   "All": 696,
+   "All": 697,
    "Easy": 346,
-   "Medium": 302,
+   "Medium": 303,
    "Hard": 48
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2138,
    "Hard": 987
   },
-  "streak": 203,
-  "activeDays": 278,
-  "submissionsLastYear": 1078,
+  "streak": 204,
+  "activeDays": 279,
+  "submissionsLastYear": 1079,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -288,6 +288,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-30": 1,
    "2026-10-31": 2,
    "2026-11-01": 1,
+   "2026-11-02": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -359,7 +360,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 600
+    "count": 601
    },
    {
     "name": "Python",
@@ -409,11 +410,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 3,
+    "progress": 6,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Moves to Equal Array Elements II",
+    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+    "date": "2026-11-02",
+    "lang": "java"
+   },
    {
     "title": "Minimum Moves to Equal Array Elements",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
@@ -477,12 +484,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Keys and Rooms",
     "url": "https://leetcode.com/problems/keys-and-rooms/",
-    "date": "2026-10-23",
-    "lang": "java"
-   },
-   {
-    "title": "Maximum K to Sort a Permutation",
-    "url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
     "date": "2026-10-23",
     "lang": "java"
    }
