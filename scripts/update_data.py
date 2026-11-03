@@ -5,8 +5,10 @@ and GitHub, then writes them to ../data.js so the site works straight from the
 file system with no server and no API calls at view time. LeetCode badge images
 are saved into ../assets/lc-badges/ for the same reason.
 
-.github/workflows/update-stats.yml runs this every hour and commits the result,
-which redeploys the site. Visitors never trigger a fetch.
+.github/workflows/update-stats.yml runs this about every 15 minutes and commits
+the result, which redeploys the site. Visitors never trigger a fetch. In CI it
+also reports whether a headline number changed (see HEADLINE), so the workflow
+can deploy those at once and batch minor churn to stay inside Vercel's deploy limit.
 
 Run:  python scripts/update_data.py
 """
@@ -14,6 +16,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
@@ -37,6 +41,15 @@ BADGE_DIR = ROOT / "assets" / "lc-badges"
 RESUME = ROOT / "assets" / "Gaurrov-S-Narayanan-Resume.pdf"
 UA = {"User-Agent": "Mozilla/5.0 (portfolio-stats-refresh)"}
 
+# Fields that visitors notice. A change here deploys at once; anything else
+# (LeetCode ranking drift, GitHub activity, the date) waits for the next batch.
+HEADLINE = {
+    "leetcode": ("solved", "contest", "badges"),
+    "codeforces": ("rating", "solved"),
+    "atcoder": ("rating", "solved"),
+    "codechef": ("rating", "solved"),
+}
+
 
 def get(url, data=None, headers=None, raw=False):
     headers = dict(headers or {})
@@ -44,9 +57,28 @@ def get(url, data=None, headers=None, raw=False):
     if token and url.startswith("https://api.github.com/"):  # set in CI; lifts the 60/hour anonymous limit
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, data=data, headers={**UA, **headers})
-    with urllib.request.urlopen(req, timeout=25) as r:
-        body = r.read()
+    for attempt in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                body = r.read()
+            break
+        except urllib.error.HTTPError as e:
+            if attempt == 2 or not (e.code == 429 or e.code >= 500):
+                raise
+            time.sleep(10)  # rate-limited or a hiccup: back off once, then give up and keep last good data
+        except urllib.error.URLError:
+            if attempt == 2:
+                raise
+            time.sleep(10)
     return body if raw else body.decode("utf-8", "replace")
+
+
+def headline_changed(old, new):
+    for source, keys in HEADLINE.items():
+        a, b = old.get(source) or {}, new.get(source) or {}
+        if any(a.get(k) != b.get(k) for k in keys):
+            return True
+    return False
 
 
 def day(ts):
@@ -124,8 +156,11 @@ def leetcode(user):
 
 
 def codeforces(user):
+    # Codeforces allows one API call every 2 seconds.
     info = json.loads(get(f"https://codeforces.com/api/user.info?handles={user}"))["result"][0]
+    time.sleep(2.1)
     rating = json.loads(get(f"https://codeforces.com/api/user.rating?handle={user}"))["result"]
+    time.sleep(2.1)
     subs = json.loads(get(f"https://codeforces.com/api/user.status?handle={user}"))["result"]
     ok = {}
     for s in subs:
@@ -269,8 +304,10 @@ def resume():
 
 
 def main():
+    resume_status = "kept"
     try:
-        print(f"ok    resume ({resume()})")
+        resume_status = resume()
+        print(f"ok    resume ({resume_status})")
     except Exception as e:  # keep the copy already in assets/
         print(f"kept  resume (fetch failed: {e})", file=sys.stderr)
 
@@ -293,6 +330,12 @@ def main():
                    f"window.PORTFOLIO_DATA = {json.dumps(data, indent=1, ensure_ascii=False)};\n",
                    encoding="utf-8")
     print(f"wrote {OUT}")
+
+    headline = resume_status == "updated" or headline_changed(previous, data)
+    print(f"headline change: {'yes' if headline else 'no'}")
+    if os.environ.get("GITHUB_OUTPUT"):  # read by the workflow's commit step
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+            f.write(f"headline={'true' if headline else 'false'}\n")
 
 
 if __name__ == "__main__":

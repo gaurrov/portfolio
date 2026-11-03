@@ -1,5 +1,5 @@
-# Refreshes data.js and the résumé PDF (from Google Drive) every hour. A commit to main redeploys the site on Vercel,
-# so the stats stay current while visitors only ever load a static file.
+# Refreshes data.js and the résumé PDF (from Google Drive) about every 15 minutes. A commit to main redeploys
+# the site on Vercel, so the stats stay current while visitors only ever load a static file.
 name: Update stats
 
 on:
@@ -23,17 +23,37 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 150 # enough history to see the last day of stats commits
 
       - name: Fetch stats
+        id: stats
         run: python3 scripts/update_data.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Every commit is a Vercel deploy, and the Hobby plan allows 100 a day (your own pushes included).
+      # Headline changes (problems solved, ratings, badges, résumé) deploy at once; minor churn such as
+      # ranking drift or GitHub activity waits until the last stats deploy is 2 hours old. Each run
+      # re-fetches everything, so nothing held back is lost; it ships with the next commit.
       - name: Commit if anything changed
+        env:
+          HEADLINE: ${{ steps.stats.outputs.headline }}
         run: |
           git add data.js assets/lc-badges assets/Gaurrov-S-Narayanan-Resume.pdf
           if git diff --cached --quiet; then
             echo "Stats unchanged, nothing to deploy."
+            exit 0
+          fi
+          now=$(date +%s)
+          last=$(git log -1 --author=github-actions --format=%ct || true)
+          today=$(git log --since="24 hours ago" --author=github-actions --oneline | wc -l)
+          if [ "$today" -ge 60 ]; then
+            echo "Already $today stats deploys in 24h; holding changes to protect the Vercel deploy limit."
+            exit 0
+          fi
+          if [ "$HEADLINE" != "true" ] && [ -n "$last" ] && [ $((now - last)) -lt 7200 ]; then
+            echo "Only minor changes and the last stats deploy was $(( (now - last) / 60 )) min ago; batching."
             exit 0
           fi
           git config user.name "github-actions[bot]"
