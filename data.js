@@ -754,13 +754,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 44,
-  "ownRepos": 29,
+  "publicRepos": 46,
+  "ownRepos": 31,
   "forks": 15,
   "followers": 2,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 452,
+  "contributionsLastYear": 463,
   "contributionLevels": {
    "2025-11-02": 0,
    "2025-11-09": 0,
@@ -920,7 +920,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-13": 1,
    "2026-10-20": 1,
    "2026-10-27": 2,
-   "2026-11-03": 1,
+   "2026-11-03": 2,
    "2025-11-05": 0,
    "2025-11-12": 0,
    "2025-11-19": 0,
@@ -1241,6 +1241,22 @@ window.PORTFOLIO_DATA = {
     "description": ""
    },
    {
+    "name": "VK-Tasks-AI-2",
+    "url": "https://github.com/gaurrov/VK-Tasks-AI-2",
+    "language": null,
+    "stars": 0,
+    "pushed": "2026-11-03",
+    "description": ""
+   },
+   {
+    "name": "VK-Tasks-AI-1",
+    "url": "https://github.com/gaurrov/VK-Tasks-AI-1",
+    "language": "Python",
+    "stars": 0,
+    "pushed": "2026-11-03",
+    "description": ""
+   },
+   {
     "name": "WASP",
     "url": "https://github.com/gaurrov/WASP",
     "language": "Python",
@@ -1263,28 +1279,12 @@ window.PORTFOLIO_DATA = {
     "stars": 0,
     "pushed": "2026-10-18",
     "description": ""
-   },
-   {
-    "name": "Case-Law-Research-Multi-Agent-System",
-    "url": "https://github.com/gaurrov/Case-Law-Research-Multi-Agent-System",
-    "language": "Python",
-    "stars": 0,
-    "pushed": "2026-09-27",
-    "description": ""
-   },
-   {
-    "name": "Memora",
-    "url": "https://github.com/gaurrov/Memora",
-    "language": "Python",
-    "stars": 2,
-    "pushed": "2026-08-26",
-    "description": ""
    }
   ],
   "languages": [
    {
     "name": "Python",
-    "repos": 11
+    "repos": 12
    },
    {
     "name": "JavaScript",
