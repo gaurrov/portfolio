@@ -4,11 +4,11 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 101722,
+  "ranking": 101056,
   "solved": {
-   "All": 698,
+   "All": 699,
    "Easy": 347,
-   "Medium": 303,
+   "Medium": 304,
    "Hard": 48
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 205,
   "activeDays": 280,
-  "submissionsLastYear": 1081,
+  "submissionsLastYear": 1082,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -289,7 +289,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-31": 2,
    "2026-11-01": 1,
    "2026-11-02": 1,
-   "2026-11-03": 2,
+   "2026-11-03": 3,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -361,7 +361,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 602
+    "count": 603
    },
    {
     "name": "Python",
@@ -416,6 +416,12 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "recent": [
+   {
+    "title": "Evaluate Division",
+    "url": "https://leetcode.com/problems/evaluate-division/",
+    "date": "2026-11-03",
+    "lang": "java"
+   },
    {
     "title": "Minimum Moves to Equal Array Elements III",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/",
@@ -480,12 +486,6 @@ window.PORTFOLIO_DATA = {
     "title": "Number of Closed Islands",
     "url": "https://leetcode.com/problems/number-of-closed-islands/",
     "date": "2026-10-25",
-    "lang": "java"
-   },
-   {
-    "title": "Count Days Spent Together",
-    "url": "https://leetcode.com/problems/count-days-spent-together/",
-    "date": "2026-10-24",
     "lang": "java"
    }
   ]
@@ -757,7 +757,7 @@ window.PORTFOLIO_DATA = {
   "publicRepos": 44,
   "ownRepos": 29,
   "forks": 15,
-  "followers": 3,
+  "followers": 2,
   "stars": 5,
   "since": "2024",
   "contributionsLastYear": 452,
@@ -1147,6 +1147,13 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/liquidslr/leetcode-company-wise-problems"
    },
    {
+    "text": "Pushed to gaurrov/Truxify",
+    "kind": "push",
+    "date": "2026-11-01",
+    "times": 1,
+    "url": "https://github.com/gaurrov/Truxify"
+   },
+   {
     "text": "Pushed to gaurrov/meshery",
     "kind": "push",
     "date": "2026-11-01",
@@ -1222,13 +1229,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
-   },
-   {
-    "text": "Pushed to gaurrov/AetherCode-Execution-Engine",
-    "kind": "push",
-    "date": "2026-10-28",
-    "times": 1,
-    "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
    }
   ],
   "recentRepos": [
