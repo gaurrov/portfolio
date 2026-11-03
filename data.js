@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 101722,
   "solved": {
-   "All": 697,
-   "Easy": 346,
+   "All": 698,
+   "Easy": 347,
    "Medium": 303,
    "Hard": 48
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2138,
    "Hard": 987
   },
-  "streak": 204,
-  "activeDays": 279,
-  "submissionsLastYear": 1079,
+  "streak": 205,
+  "activeDays": 280,
+  "submissionsLastYear": 1081,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -289,6 +289,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-31": 2,
    "2026-11-01": 1,
    "2026-11-02": 1,
+   "2026-11-03": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -360,7 +361,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 601
+    "count": 602
    },
    {
     "name": "Python",
@@ -410,11 +411,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 6,
+    "progress": 10,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Moves to Equal Array Elements III",
+    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/",
+    "date": "2026-11-03",
+    "lang": "java"
+   },
    {
     "title": "Minimum Moves to Equal Array Elements II",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
@@ -479,12 +486,6 @@ window.PORTFOLIO_DATA = {
     "title": "Count Days Spent Together",
     "url": "https://leetcode.com/problems/count-days-spent-together/",
     "date": "2026-10-24",
-    "lang": "java"
-   },
-   {
-    "title": "Keys and Rooms",
-    "url": "https://leetcode.com/problems/keys-and-rooms/",
-    "date": "2026-10-23",
     "lang": "java"
    }
   ]
@@ -759,7 +760,7 @@ window.PORTFOLIO_DATA = {
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 451,
+  "contributionsLastYear": 452,
   "contributionLevels": {
    "2025-11-02": 0,
    "2025-11-09": 0,
@@ -919,7 +920,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-13": 1,
    "2026-10-20": 1,
    "2026-10-27": 2,
-   "2026-11-03": 0,
+   "2026-11-03": 1,
    "2025-11-05": 0,
    "2025-11-12": 0,
    "2025-11-19": 0,
@@ -1146,10 +1147,17 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/liquidslr/leetcode-company-wise-problems"
    },
    {
-    "text": "Pushed to gaurrov/portfolio",
+    "text": "Pushed to gaurrov/meshery",
     "kind": "push",
     "date": "2026-11-01",
     "times": 1,
+    "url": "https://github.com/gaurrov/meshery"
+   },
+   {
+    "text": "Pushed to gaurrov/portfolio",
+    "kind": "push",
+    "date": "2026-11-01",
+    "times": 2,
     "url": "https://github.com/gaurrov/portfolio"
    },
    {
@@ -1221,13 +1229,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-28",
     "times": 1,
     "url": "https://github.com/gaurrov/AetherCode-Execution-Engine"
-   },
-   {
-    "text": "Opened a pull request in ELANGKATHIR11/TRACE-AIML",
-    "kind": "pr",
-    "date": "2026-10-28",
-    "times": 1,
-    "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
    }
   ],
   "recentRepos": [
@@ -1236,7 +1237,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-11-02",
+    "pushed": "2026-11-03",
     "description": ""
    },
    {
