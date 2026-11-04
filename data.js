@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 101056,
   "solved": {
-   "All": 699,
+   "All": 700,
    "Easy": 347,
    "Medium": 304,
-   "Hard": 48
+   "Hard": 49
   },
   "totals": {
    "All": 4101,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2139,
    "Hard": 987
   },
-  "streak": 205,
-  "activeDays": 280,
-  "submissionsLastYear": 1082,
+  "streak": 206,
+  "activeDays": 281,
+  "submissionsLastYear": 1083,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -290,6 +290,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-01": 1,
    "2026-11-02": 1,
    "2026-11-03": 3,
+   "2026-11-04": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -361,7 +362,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 603
+    "count": 604
    },
    {
     "name": "Python",
@@ -411,11 +412,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 10,
+    "progress": 13,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
+    "url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+    "date": "2026-11-04",
+    "lang": "java"
+   },
    {
     "title": "Evaluate Division",
     "url": "https://leetcode.com/problems/evaluate-division/",
@@ -480,12 +487,6 @@ window.PORTFOLIO_DATA = {
     "title": "Count Islands With Total Value Divisible by K",
     "url": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
     "date": "2026-10-26",
-    "lang": "java"
-   },
-   {
-    "title": "Number of Closed Islands",
-    "url": "https://leetcode.com/problems/number-of-closed-islands/",
-    "date": "2026-10-25",
     "lang": "java"
    }
   ]
