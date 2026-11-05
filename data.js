@@ -1237,6 +1237,14 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
+    "name": "HOPE_website",
+    "url": "https://github.com/gaurrov/HOPE_website",
+    "language": null,
+    "stars": 0,
+    "pushed": "2026-11-05",
+    "description": ""
+   },
+   {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
@@ -1266,14 +1274,6 @@ window.PORTFOLIO_DATA = {
     "language": "Python",
     "stars": 0,
     "pushed": "2026-10-28",
-    "description": ""
-   },
-   {
-    "name": "HOPE_website",
-    "url": "https://github.com/gaurrov/HOPE_website",
-    "language": null,
-    "stars": 0,
-    "pushed": "2026-10-22",
     "description": ""
    },
    {
