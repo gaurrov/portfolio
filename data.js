@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2139,
    "Hard": 987
   },
-  "streak": 206,
-  "activeDays": 281,
-  "submissionsLastYear": 1083,
+  "streak": 207,
+  "activeDays": 282,
+  "submissionsLastYear": 1084,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -291,6 +291,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-02": 1,
    "2026-11-03": 3,
    "2026-11-04": 1,
+   "2026-11-05": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -412,11 +413,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 13,
+    "progress": 16,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Find the Distance Value Between Two Arrays",
+    "url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
+    "date": "2026-11-05",
+    "lang": "java"
+   },
    {
     "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
@@ -481,12 +488,6 @@ window.PORTFOLIO_DATA = {
     "title": "Create Grid With Exactly One Path",
     "url": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
     "date": "2026-10-27",
-    "lang": "java"
-   },
-   {
-    "title": "Count Islands With Total Value Divisible by K",
-    "url": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
-    "date": "2026-10-26",
     "lang": "java"
    }
   ]
