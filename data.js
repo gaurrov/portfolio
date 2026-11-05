@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
  "leetcode": {
   "handle": "Gaurrov",
   "url": "https://leetcode.com/u/Gaurrov/",
-  "ranking": 100771,
+  "ranking": 100825,
   "solved": {
    "All": 700,
    "Easy": 347,
