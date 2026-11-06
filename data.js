@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 100825,
   "solved": {
-   "All": 700,
+   "All": 701,
    "Easy": 347,
-   "Medium": 304,
+   "Medium": 305,
    "Hard": 49
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2139,
    "Hard": 987
   },
-  "streak": 207,
-  "activeDays": 282,
-  "submissionsLastYear": 1084,
+  "streak": 208,
+  "activeDays": 283,
+  "submissionsLastYear": 1085,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -292,6 +292,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-03": 3,
    "2026-11-04": 1,
    "2026-11-05": 1,
+   "2026-11-06": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -363,7 +364,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 604
+    "count": 605
    },
    {
     "name": "Python",
@@ -413,11 +414,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 16,
+    "progress": 20,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Count Zero Request Servers",
+    "url": "https://leetcode.com/problems/count-zero-request-servers/",
+    "date": "2026-11-06",
+    "lang": "java"
+   },
    {
     "title": "Find the Distance Value Between Two Arrays",
     "url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
@@ -481,12 +488,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Number of Provinces",
     "url": "https://leetcode.com/problems/number-of-provinces/",
-    "date": "2026-10-27",
-    "lang": "java"
-   },
-   {
-    "title": "Create Grid With Exactly One Path",
-    "url": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
     "date": "2026-10-27",
     "lang": "java"
    }
