@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 100510,
   "solved": {
-   "All": 701,
+   "All": 702,
    "Easy": 347,
-   "Medium": 305,
+   "Medium": 306,
    "Hard": 49
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2139,
    "Hard": 987
   },
-  "streak": 208,
-  "activeDays": 283,
-  "submissionsLastYear": 1085,
+  "streak": 209,
+  "activeDays": 284,
+  "submissionsLastYear": 1086,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -293,6 +293,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-04": 1,
    "2026-11-05": 1,
    "2026-11-06": 1,
+   "2026-11-07": 1,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -364,7 +365,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 605
+    "count": 606
    },
    {
     "name": "Python",
@@ -414,11 +415,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 20,
+    "progress": 23,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Process Tasks Using Servers",
+    "url": "https://leetcode.com/problems/process-tasks-using-servers/",
+    "date": "2026-11-07",
+    "lang": "java"
+   },
    {
     "title": "Count Zero Request Servers",
     "url": "https://leetcode.com/problems/count-zero-request-servers/",
@@ -483,12 +490,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum XOR Path in a Grid",
     "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
     "date": "2026-10-28",
-    "lang": "java"
-   },
-   {
-    "title": "Number of Provinces",
-    "url": "https://leetcode.com/problems/number-of-provinces/",
-    "date": "2026-10-27",
     "lang": "java"
    }
   ]
