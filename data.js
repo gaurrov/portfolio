@@ -12,10 +12,10 @@ window.PORTFOLIO_DATA = {
    "Hard": 49
   },
   "totals": {
-   "All": 4101,
+   "All": 4105,
    "Easy": 975,
-   "Medium": 2139,
-   "Hard": 987
+   "Medium": 2142,
+   "Hard": 988
   },
   "streak": 209,
   "activeDays": 284,
