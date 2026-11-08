@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 100192,
   "solved": {
-   "All": 702,
+   "All": 703,
    "Easy": 347,
-   "Medium": 306,
+   "Medium": 307,
    "Hard": 49
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2145,
    "Hard": 989
   },
-  "streak": 209,
-  "activeDays": 284,
-  "submissionsLastYear": 1086,
+  "streak": 210,
+  "activeDays": 285,
+  "submissionsLastYear": 1088,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -294,6 +294,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-05": 1,
    "2026-11-06": 1,
    "2026-11-07": 1,
+   "2026-11-08": 2,
    "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
@@ -365,7 +366,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 606
+    "count": 607
    },
    {
     "name": "Python",
@@ -415,11 +416,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 23,
+    "progress": 26,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Count Servers that Communicate",
+    "url": "https://leetcode.com/problems/count-servers-that-communicate/",
+    "date": "2026-11-08",
+    "lang": "java"
+   },
    {
     "title": "Process Tasks Using Servers",
     "url": "https://leetcode.com/problems/process-tasks-using-servers/",
@@ -484,12 +491,6 @@ window.PORTFOLIO_DATA = {
     "title": "Palindromic Path Queries in a Tree",
     "url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
     "date": "2026-10-29",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum XOR Path in a Grid",
-    "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
-    "date": "2026-10-28",
     "lang": "java"
    }
   ]
