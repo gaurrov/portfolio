@@ -18,8 +18,8 @@ window.PORTFOLIO_DATA = {
    "Hard": 989
   },
   "streak": 210,
-  "activeDays": 285,
-  "submissionsLastYear": 1088,
+  "activeDays": 284,
+  "submissionsLastYear": 1087,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -295,7 +295,6 @@ window.PORTFOLIO_DATA = {
    "2026-11-06": 1,
    "2026-11-07": 1,
    "2026-11-08": 2,
-   "2025-11-08": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
