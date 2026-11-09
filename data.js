@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 99899,
   "solved": {
-   "All": 703,
+   "All": 704,
    "Easy": 347,
    "Medium": 307,
-   "Hard": 49
+   "Hard": 50
   },
   "totals": {
    "All": 4109,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2145,
    "Hard": 989
   },
-  "streak": 210,
-  "activeDays": 284,
-  "submissionsLastYear": 1087,
+  "streak": 211,
+  "activeDays": 285,
+  "submissionsLastYear": 1088,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -295,6 +295,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-06": 1,
    "2026-11-07": 1,
    "2026-11-08": 2,
+   "2026-11-09": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -365,7 +366,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 607
+    "count": 608
    },
    {
     "name": "Python",
@@ -415,11 +416,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 26,
+    "progress": 30,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Find Servers That Handled Most Number of Requests",
+    "url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
+    "date": "2026-11-09",
+    "lang": "java"
+   },
    {
     "title": "Count Servers that Communicate",
     "url": "https://leetcode.com/problems/count-servers-that-communicate/",
@@ -484,12 +491,6 @@ window.PORTFOLIO_DATA = {
     "title": "Shortest Path With At Most K Consecutive Identical Characters",
     "url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
     "date": "2026-10-30",
-    "lang": "java"
-   },
-   {
-    "title": "Palindromic Path Queries in a Tree",
-    "url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
-    "date": "2026-10-29",
     "lang": "java"
    }
   ]
