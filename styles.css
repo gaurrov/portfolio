@@ -623,7 +623,52 @@ ul, ol { padding: 0; list-style: none; }
 
 /* ---------- Certifications & achievements ---------- */
 .certs { border-top: 2px solid var(--midnight); }
-.cert-feature { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 1.75rem); margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+
+/* Google Student Ambassador: wide feature card with the program's glass symbols */
+.gsa-card {
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  margin-top: clamp(2.5rem, 5vw, 3.5rem); border-radius: 1.5rem; overflow: hidden;
+  background: var(--paper); border: 2px solid var(--midnight); color: var(--midnight);
+}
+.gsa-copy { padding: clamp(1.5rem, 3.5vw, 2.5rem); display: flex; flex-direction: column; align-items: flex-start; }
+.gsa-mark { width: clamp(4.5rem, 8vw, 6rem); height: auto; margin-bottom: 1.1rem; transition: transform .5s var(--ease); }
+.gsa-card:hover .gsa-mark { transform: rotate(-6deg) scale(1.05); }
+.gsa-live {
+  display: inline-flex; align-items: center; gap: .4rem; margin-left: .6rem; padding: .15rem .6rem;
+  border-radius: 999px; background: #e3f6ec; color: #0b6b3a; letter-spacing: .08em; font-size: .75rem;
+}
+.gsa-live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #1e9e5a; box-shadow: 0 0 0 3px rgba(30, 158, 90, .2); }
+.gsa-card h3 { font-size: clamp(1.6rem, 3.2vw, 2.4rem); line-height: 1.05; font-weight: 700; margin-top: .35rem; }
+.gsa-text { margin-top: .9rem; color: var(--ink-2); max-width: 34rem; }
+.gsa-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.25rem; }
+.gsa-tags li { padding: .3rem .8rem; border: 1.5px solid var(--midnight); border-radius: 999px; font-size: .92rem; font-weight: 500; }
+.gsa-art {
+  position: relative; min-height: 20rem; display: grid; place-items: center; border-left: 2px solid var(--midnight);
+  background:
+    radial-gradient(60% 55% at 30% 25%, rgba(255, 255, 255, .9), transparent 70%),
+    radial-gradient(55% 60% at 80% 85%, rgba(186, 160, 255, .45), transparent 70%),
+    linear-gradient(160deg, #eaf3ff 0%, #cfe1ff 55%, #b9cdfc 100%);
+}
+.gsa-sticker { position: relative; z-index: 1; width: min(68%, 22rem); height: auto; transform: rotate(-4deg); filter: drop-shadow(0 14px 20px rgba(26, 60, 140, .25)); transition: transform .5s var(--ease); }
+.gsa-card:hover .gsa-sticker { transform: rotate(-1deg) scale(1.03); }
+.gsa-sym { position: absolute; height: auto; transform: rotate(var(--r)); filter: drop-shadow(0 10px 14px rgba(26, 60, 140, .22)); }
+.gsa-sym.s1 { width: 18%; top: 7%; left: 8%; --r: -10deg; }
+.gsa-sym.s2 { width: 20%; top: 6%; right: 7%; --r: 8deg; }
+.gsa-sym.s3 { width: 19%; bottom: 7%; left: 6%; --r: -6deg; }
+.gsa-sym.s4 { width: 14%; bottom: 10%; right: 26%; --r: 10deg; }
+.gsa-sym.s5 { width: 15%; bottom: 30%; right: 4%; --r: -4deg; }
+@media (prefers-reduced-motion: no-preference) {
+  .gsa-sym { animation: gsa-bob 5.5s ease-in-out infinite; }
+  .gsa-sym.s2 { animation-delay: -1.2s; } .gsa-sym.s3 { animation-delay: -2.4s; }
+  .gsa-sym.s4 { animation-delay: -3.3s; } .gsa-sym.s5 { animation-delay: -4.4s; }
+}
+@keyframes gsa-bob { 0%, 100% { transform: translateY(0) rotate(var(--r)); } 50% { transform: translateY(-8px) rotate(calc(var(--r) * -1)); } }
+@media (max-width: 900px) {
+  .gsa-card { grid-template-columns: 1fr; }
+  .gsa-art { min-height: 15rem; border-left: 0; border-bottom: 2px solid var(--midnight); order: -1; }
+}
+
+.cert-feature { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 1.75rem); margin-top: clamp(1rem, 2.5vw, 1.75rem); }
 .cert-card {
   display: flex; align-items: center; gap: clamp(1.25rem, 3vw, 2rem);
   padding: clamp(1.5rem, 3.5vw, 2.25rem); border-radius: 1.5rem;
