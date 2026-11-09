@@ -1137,6 +1137,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 13,
   "activity": [
    {
+    "text": "Pushed to gaurrov/portfolio",
+    "kind": "push",
+    "date": "2026-11-09",
+    "times": 1,
+    "url": "https://github.com/gaurrov/portfolio"
+   },
+   {
     "text": "Forked liquidslr/leetcode-company-wise-problems",
     "kind": "fork",
     "date": "2026-11-01",
@@ -1226,13 +1233,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/gaurrov/meshery"
-   },
-   {
-    "text": "Merged a pull request in ELANGKATHIR11/TRACE-AIML",
-    "kind": "pr",
-    "date": "2026-10-29",
-    "times": 1,
-    "url": "https://github.com/ELANGKATHIR11/TRACE-AIML"
    }
   ],
   "recentRepos": [
