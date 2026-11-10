@@ -762,7 +762,7 @@ window.PORTFOLIO_DATA = {
   "publicRepos": 46,
   "ownRepos": 31,
   "forks": 15,
-  "followers": 2,
+  "followers": 3,
   "stars": 5,
   "since": "2024",
   "contributionsLastYear": 464,
