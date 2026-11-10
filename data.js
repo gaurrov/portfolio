@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 99664,
   "solved": {
-   "All": 704,
+   "All": 705,
    "Easy": 347,
-   "Medium": 307,
+   "Medium": 308,
    "Hard": 50
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2146,
    "Hard": 989
   },
-  "streak": 211,
-  "activeDays": 285,
-  "submissionsLastYear": 1088,
+  "streak": 212,
+  "activeDays": 286,
+  "submissionsLastYear": 1089,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -296,6 +296,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-07": 1,
    "2026-11-08": 2,
    "2026-11-09": 1,
+   "2026-11-10": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -366,7 +367,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 608
+    "count": 609
    },
    {
     "name": "Python",
@@ -416,11 +417,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 30,
+    "progress": 33,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Climbing Stairs II",
+    "url": "https://leetcode.com/problems/climbing-stairs-ii/",
+    "date": "2026-11-10",
+    "lang": "java"
+   },
    {
     "title": "Find Servers That Handled Most Number of Requests",
     "url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
@@ -485,12 +492,6 @@ window.PORTFOLIO_DATA = {
     "title": "Twisted Mirror Path Count",
     "url": "https://leetcode.com/problems/twisted-mirror-path-count/",
     "date": "2026-10-31",
-    "lang": "java"
-   },
-   {
-    "title": "Shortest Path With At Most K Consecutive Identical Characters",
-    "url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
-    "date": "2026-10-30",
     "lang": "java"
    }
   ]
