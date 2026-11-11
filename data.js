@@ -1141,6 +1141,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 12,
   "activity": [
    {
+    "text": "Starred im-shafiqurrehman/High-Value-Open-Source-Programs",
+    "kind": "star",
+    "date": "2026-11-11",
+    "times": 1,
+    "url": "https://github.com/im-shafiqurrehman/High-Value-Open-Source-Programs"
+   },
+   {
     "text": "Merged a pull request in KanishJebaMathewM/Truxify",
     "kind": "pr",
     "date": "2026-11-11",
@@ -1230,13 +1237,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/meshery/meshery"
-   },
-   {
-    "text": "Pushed to gaurrov/unvibecode",
-    "kind": "push",
-    "date": "2026-10-29",
-    "times": 1,
-    "url": "https://github.com/gaurrov/unvibecode"
    }
   ],
   "recentRepos": [
