@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 99334,
   "solved": {
-   "All": 705,
+   "All": 706,
    "Easy": 347,
-   "Medium": 308,
+   "Medium": 309,
    "Hard": 50
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2146,
    "Hard": 989
   },
-  "streak": 212,
-  "activeDays": 286,
-  "submissionsLastYear": 1089,
+  "streak": 213,
+  "activeDays": 287,
+  "submissionsLastYear": 1090,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -297,6 +297,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-08": 2,
    "2026-11-09": 1,
    "2026-11-10": 1,
+   "2026-11-11": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -367,7 +368,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 609
+    "count": 610
    },
    {
     "name": "Python",
@@ -417,11 +418,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 33,
+    "progress": 36,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Cost to Acquire Required Items",
+    "url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+    "date": "2026-11-11",
+    "lang": "java"
+   },
    {
     "title": "Climbing Stairs II",
     "url": "https://leetcode.com/problems/climbing-stairs-ii/",
@@ -486,12 +493,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Moves to Equal Array Elements",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
     "date": "2026-11-01",
-    "lang": "java"
-   },
-   {
-    "title": "Twisted Mirror Path Count",
-    "url": "https://leetcode.com/problems/twisted-mirror-path-count/",
-    "date": "2026-10-31",
     "lang": "java"
    }
   ]
