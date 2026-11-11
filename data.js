@@ -766,7 +766,7 @@ window.PORTFOLIO_DATA = {
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 464,
+  "contributionsLastYear": 465,
   "contributionLevels": {
    "2025-11-09": 0,
    "2025-11-16": 0,
@@ -1137,8 +1137,15 @@ window.PORTFOLIO_DATA = {
    "2026-10-31": 0,
    "2026-11-07": 0
   },
-  "pullRequestsRecent": 13,
+  "pullRequestsRecent": 12,
   "activity": [
+   {
+    "text": "Merged a pull request in KanishJebaMathewM/Truxify",
+    "kind": "pr",
+    "date": "2026-11-11",
+    "times": 1,
+    "url": "https://github.com/KanishJebaMathewM/Truxify"
+   },
    {
     "text": "Pushed to gaurrov/portfolio",
     "kind": "push",
@@ -1229,13 +1236,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/gaurrov/unvibecode"
-   },
-   {
-    "text": "Pushed to gaurrov/meshery",
-    "kind": "push",
-    "date": "2026-10-29",
-    "times": 1,
-    "url": "https://github.com/gaurrov/meshery"
    }
   ],
   "recentRepos": [
