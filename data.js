@@ -312,7 +312,7 @@ window.PORTFOLIO_DATA = {
   },
   "contest": {
    "rating": 1646,
-   "globalRanking": 166874,
+   "globalRanking": 167239,
    "attended": 6,
    "topPercentage": 19.0
   },
@@ -762,13 +762,13 @@ window.PORTFOLIO_DATA = {
  "github": {
   "handle": "gaurrov",
   "url": "https://github.com/gaurrov",
-  "publicRepos": 46,
-  "ownRepos": 31,
+  "publicRepos": 47,
+  "ownRepos": 32,
   "forks": 15,
   "followers": 3,
   "stars": 5,
   "since": "2024",
-  "contributionsLastYear": 465,
+  "contributionsLastYear": 467,
   "contributionLevels": {
    "2025-11-09": 0,
    "2025-11-16": 0,
@@ -1034,7 +1034,7 @@ window.PORTFOLIO_DATA = {
    "2026-10-22": 0,
    "2026-10-29": 1,
    "2026-11-05": 0,
-   "2026-11-12": 0,
+   "2026-11-12": 1,
    "2025-11-14": 0,
    "2025-11-21": 0,
    "2025-11-28": 0,
@@ -1243,9 +1243,9 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
-    "name": "HOPE_website",
-    "url": "https://github.com/gaurrov/HOPE_website",
-    "language": null,
+    "name": "DRL",
+    "url": "https://github.com/gaurrov/DRL",
+    "language": "Python",
     "stars": 0,
     "pushed": "2026-11-12",
     "description": ""
@@ -1254,6 +1254,14 @@ window.PORTFOLIO_DATA = {
     "name": "portfolio",
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
+    "stars": 0,
+    "pushed": "2026-11-12",
+    "description": ""
+   },
+   {
+    "name": "HOPE_website",
+    "url": "https://github.com/gaurrov/HOPE_website",
+    "language": null,
     "stars": 0,
     "pushed": "2026-11-12",
     "description": ""
@@ -1281,20 +1289,12 @@ window.PORTFOLIO_DATA = {
     "stars": 0,
     "pushed": "2026-10-28",
     "description": ""
-   },
-   {
-    "name": "readiness-hub",
-    "url": "https://github.com/gaurrov/readiness-hub",
-    "language": "Python",
-    "stars": 0,
-    "pushed": "2026-10-18",
-    "description": ""
    }
   ],
   "languages": [
    {
     "name": "Python",
-    "repos": 12
+    "repos": 13
    },
    {
     "name": "JavaScript",
