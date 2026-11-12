@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 99334,
   "solved": {
-   "All": 706,
-   "Easy": 347,
+   "All": 707,
+   "Easy": 348,
    "Medium": 309,
    "Hard": 50
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2146,
    "Hard": 989
   },
-  "streak": 213,
-  "activeDays": 287,
-  "submissionsLastYear": 1090,
+  "streak": 214,
+  "activeDays": 288,
+  "submissionsLastYear": 1091,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -298,6 +298,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-09": 1,
    "2026-11-10": 1,
    "2026-11-11": 1,
+   "2026-11-12": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -368,7 +369,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 610
+    "count": 611
    },
    {
     "name": "Python",
@@ -418,11 +419,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 36,
+    "progress": 40,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+    "url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
+    "date": "2026-11-12",
+    "lang": "java"
+   },
    {
     "title": "Minimum Cost to Acquire Required Items",
     "url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
@@ -487,12 +494,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Moves to Equal Array Elements II",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
     "date": "2026-11-02",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Moves to Equal Array Elements",
-    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
-    "date": "2026-11-01",
     "lang": "java"
    }
   ]
