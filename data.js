@@ -314,7 +314,7 @@ window.PORTFOLIO_DATA = {
    "rating": 1646,
    "globalRanking": 167239,
    "attended": 6,
-   "topPercentage": 19.0
+   "topPercentage": 19.02
   },
   "contestHistory": [
    {
@@ -1243,17 +1243,17 @@ window.PORTFOLIO_DATA = {
   ],
   "recentRepos": [
    {
-    "name": "DRL",
-    "url": "https://github.com/gaurrov/DRL",
-    "language": "Python",
+    "name": "portfolio",
+    "url": "https://github.com/gaurrov/portfolio",
+    "language": "JavaScript",
     "stars": 0,
     "pushed": "2026-11-12",
     "description": ""
    },
    {
-    "name": "portfolio",
-    "url": "https://github.com/gaurrov/portfolio",
-    "language": "JavaScript",
+    "name": "DRL",
+    "url": "https://github.com/gaurrov/DRL",
+    "language": "Python",
     "stars": 0,
     "pushed": "2026-11-12",
     "description": ""
