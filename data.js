@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 98700,
   "solved": {
-   "All": 708,
+   "All": 709,
    "Easy": 348,
-   "Medium": 309,
+   "Medium": 310,
    "Hard": 51
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 215,
   "activeDays": 289,
-  "submissionsLastYear": 1092,
+  "submissionsLastYear": 1093,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -299,7 +299,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-10": 1,
    "2026-11-11": 1,
    "2026-11-12": 1,
-   "2026-11-13": 1,
+   "2026-11-13": 2,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -370,7 +370,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 612
+    "count": 613
    },
    {
     "name": "Python",
@@ -425,6 +425,12 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "recent": [
+   {
+    "title": "LRU Cache",
+    "url": "https://leetcode.com/problems/lru-cache/",
+    "date": "2026-11-13",
+    "lang": "java"
+   },
    {
     "title": "Count Non-Decreasing Subarrays After K Operations",
     "url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
@@ -488,12 +494,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Evaluate Division",
     "url": "https://leetcode.com/problems/evaluate-division/",
-    "date": "2026-11-03",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Moves to Equal Array Elements III",
-    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/",
     "date": "2026-11-03",
     "lang": "java"
    }
