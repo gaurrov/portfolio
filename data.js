@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 98700,
   "solved": {
-   "All": 707,
+   "All": 708,
    "Easy": 348,
    "Medium": 309,
-   "Hard": 50
+   "Hard": 51
   },
   "totals": {
    "All": 4110,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2146,
    "Hard": 989
   },
-  "streak": 214,
-  "activeDays": 288,
-  "submissionsLastYear": 1091,
+  "streak": 215,
+  "activeDays": 289,
+  "submissionsLastYear": 1092,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -299,6 +299,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-10": 1,
    "2026-11-11": 1,
    "2026-11-12": 1,
+   "2026-11-13": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -369,7 +370,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 611
+    "count": 612
    },
    {
     "name": "Python",
@@ -419,11 +420,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 40,
+    "progress": 43,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Count Non-Decreasing Subarrays After K Operations",
+    "url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+    "date": "2026-11-13",
+    "lang": "java"
+   },
    {
     "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
     "url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
@@ -488,12 +495,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Moves to Equal Array Elements III",
     "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/",
     "date": "2026-11-03",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Moves to Equal Array Elements II",
-    "url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
-    "date": "2026-11-02",
     "lang": "java"
    }
   ]
