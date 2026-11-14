@@ -695,7 +695,7 @@ window.PORTFOLIO_DATA = {
   "rating": 983,
   "highest": 983,
   "contests": 7,
-  "solved": null,
+  "solved": 37,
   "history": [
    209,
    587,
