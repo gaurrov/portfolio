@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 98700,
   "solved": {
-   "All": 710,
+   "All": 711,
    "Easy": 349,
-   "Medium": 310,
+   "Medium": 311,
    "Hard": 51
   },
   "totals": {
@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 216,
   "activeDays": 290,
-  "submissionsLastYear": 1097,
+  "submissionsLastYear": 1098,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -300,7 +300,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-11": 1,
    "2026-11-12": 1,
    "2026-11-13": 2,
-   "2026-11-14": 4,
+   "2026-11-14": 5,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -371,7 +371,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 614
+    "count": 615
    },
    {
     "name": "Python",
@@ -426,6 +426,12 @@ window.PORTFOLIO_DATA = {
    }
   ],
   "recent": [
+   {
+    "title": "Lexicographically Smallest String After Operations With Constraint",
+    "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/",
+    "date": "2026-11-14",
+    "lang": "java"
+   },
    {
     "title": "Longest Substring Without Repeating Characters",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
@@ -490,12 +496,6 @@ window.PORTFOLIO_DATA = {
     "title": "Count Zero Request Servers",
     "url": "https://leetcode.com/problems/count-zero-request-servers/",
     "date": "2026-11-06",
-    "lang": "java"
-   },
-   {
-    "title": "Find the Distance Value Between Two Arrays",
-    "url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
-    "date": "2026-11-05",
     "lang": "java"
    }
   ]
