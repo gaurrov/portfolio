@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 216,
   "activeDays": 290,
-  "submissionsLastYear": 1099,
+  "submissionsLastYear": 1100,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -300,7 +300,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-11": 1,
    "2026-11-12": 1,
    "2026-11-13": 2,
-   "2026-11-14": 6,
+   "2026-11-14": 7,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -427,6 +427,12 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Replace Employee ID With The Unique Identifier",
+    "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+    "date": "2026-11-14",
+    "lang": "mysql"
+   },
+   {
     "title": "Second Highest Salary",
     "url": "https://leetcode.com/problems/second-highest-salary/",
     "date": "2026-11-14",
@@ -490,12 +496,6 @@ window.PORTFOLIO_DATA = {
     "title": "Count Servers that Communicate",
     "url": "https://leetcode.com/problems/count-servers-that-communicate/",
     "date": "2026-11-08",
-    "lang": "java"
-   },
-   {
-    "title": "Process Tasks Using Servers",
-    "url": "https://leetcode.com/problems/process-tasks-using-servers/",
-    "date": "2026-11-07",
     "lang": "java"
    }
   ]
