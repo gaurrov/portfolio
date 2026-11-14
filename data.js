@@ -692,17 +692,18 @@ window.PORTFOLIO_DATA = {
  "atcoder": {
   "handle": "gaurrov",
   "url": "https://atcoder.jp/users/gaurrov",
-  "rating": 960,
-  "highest": 960,
-  "contests": 6,
-  "solved": null,
+  "rating": 983,
+  "highest": 983,
+  "contests": 7,
+  "solved": 37,
   "history": [
    209,
    587,
    706,
    770,
    918,
-   960
+   960,
+   983
   ],
   "contestHistory": [
    {
@@ -752,6 +753,14 @@ window.PORTFOLIO_DATA = {
     "old": 918,
     "rating": 960,
     "url": "https://atcoder.jp/contests/abc482/standings"
+   },
+   {
+    "name": "AtCoder Beginner Contest 484",
+    "date": "2026-11-14",
+    "rank": 2891,
+    "old": 960,
+    "rating": 983,
+    "url": "https://atcoder.jp/contests/abc484/standings"
    }
   ]
  },
