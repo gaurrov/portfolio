@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 98700,
   "solved": {
-   "All": 709,
-   "Easy": 348,
+   "All": 710,
+   "Easy": 349,
    "Medium": 310,
    "Hard": 51
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2146,
    "Hard": 989
   },
-  "streak": 215,
-  "activeDays": 289,
-  "submissionsLastYear": 1093,
+  "streak": 216,
+  "activeDays": 290,
+  "submissionsLastYear": 1097,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -300,6 +300,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-11": 1,
    "2026-11-12": 1,
    "2026-11-13": 2,
+   "2026-11-14": 4,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -370,7 +371,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 613
+    "count": 614
    },
    {
     "name": "Python",
@@ -420,11 +421,23 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 43,
+    "progress": 46,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Longest Substring Without Repeating Characters",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "date": "2026-11-14",
+    "lang": "java"
+   },
+   {
+    "title": "Minimum Positive Sum Subarray",
+    "url": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+    "date": "2026-11-14",
+    "lang": "java"
+   },
    {
     "title": "LRU Cache",
     "url": "https://leetcode.com/problems/lru-cache/",
@@ -483,18 +496,6 @@ window.PORTFOLIO_DATA = {
     "title": "Find the Distance Value Between Two Arrays",
     "url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
     "date": "2026-11-05",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
-    "url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
-    "date": "2026-11-04",
-    "lang": "java"
-   },
-   {
-    "title": "Evaluate Division",
-    "url": "https://leetcode.com/problems/evaluate-division/",
-    "date": "2026-11-03",
     "lang": "java"
    }
   ]
