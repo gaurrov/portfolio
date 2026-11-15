@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 97279,
   "solved": {
-   "All": 711,
+   "All": 712,
    "Easy": 349,
-   "Medium": 311,
+   "Medium": 312,
    "Hard": 51
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 990
   },
-  "streak": 216,
-  "activeDays": 290,
-  "submissionsLastYear": 1100,
+  "streak": 217,
+  "activeDays": 291,
+  "submissionsLastYear": 1101,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -301,6 +301,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-12": 1,
    "2026-11-13": 2,
    "2026-11-14": 7,
+   "2026-11-15": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -371,7 +372,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 615
+    "count": 616
    },
    {
     "name": "Python",
@@ -421,11 +422,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 46,
+    "progress": 50,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Number of Sub-arrays With Odd Sum",
+    "url": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
+    "date": "2026-11-15",
+    "lang": "java"
+   },
    {
     "title": "Replace Employee ID With The Unique Identifier",
     "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
@@ -490,12 +497,6 @@ window.PORTFOLIO_DATA = {
     "title": "Find Servers That Handled Most Number of Requests",
     "url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
     "date": "2026-11-09",
-    "lang": "java"
-   },
-   {
-    "title": "Count Servers that Communicate",
-    "url": "https://leetcode.com/problems/count-servers-that-communicate/",
-    "date": "2026-11-08",
     "lang": "java"
    }
   ]
