@@ -1150,6 +1150,13 @@ window.PORTFOLIO_DATA = {
   "pullRequestsRecent": 12,
   "activity": [
    {
+    "text": "Pushed to gaurrov/meshery",
+    "kind": "push",
+    "date": "2026-11-14",
+    "times": 2,
+    "url": "https://github.com/gaurrov/meshery"
+   },
+   {
     "text": "Starred im-shafiqurrehman/High-Value-Open-Source-Programs",
     "kind": "star",
     "date": "2026-11-11",
@@ -1239,13 +1246,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-29",
     "times": 1,
     "url": "https://github.com/layer5io/sistent"
-   },
-   {
-    "text": "Forked layer5io/sistent",
-    "kind": "fork",
-    "date": "2026-10-29",
-    "times": 1,
-    "url": "https://github.com/layer5io/sistent"
    }
   ],
   "recentRepos": [
@@ -1254,7 +1254,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-11-14",
+    "pushed": "2026-11-15",
     "description": ""
    },
    {
