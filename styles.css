@@ -668,7 +668,7 @@ ul, ol { padding: 0; list-style: none; }
   .gsa-art { min-height: 15rem; border-left: 0; border-bottom: 2px solid var(--midnight); order: -1; }
 }
 
-.cert-feature { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 1.75rem); margin-top: clamp(1rem, 2.5vw, 1.75rem); }
+.cert-feature { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 1.75rem); margin-top: clamp(1rem, 2.5vw, 1.75rem); }
 .cert-card {
   display: flex; align-items: center; gap: clamp(1.25rem, 3vw, 2rem);
   padding: clamp(1.5rem, 3.5vw, 2.25rem); border-radius: 1.5rem;
@@ -682,6 +682,13 @@ ul, ol { padding: 0; list-style: none; }
 .cert-dates { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; margin: 1rem 0 1.25rem; }
 .cert-dates dt { font-size: .88rem; color: var(--ink-2); }
 .cert-dates dd { font-weight: 600; }
+/* three across: badge on top, verify button pinned to the bottom so the cards line up */
+@media (min-width: 901px) {
+  .cert-feature .cert-card { flex-direction: column; align-items: flex-start; }
+  .cert-feature .cert-card img { width: clamp(7rem, 10vw, 8.5rem); }
+  .cert-feature .cert-body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+  .cert-feature .cert-verify { margin-top: auto; }
+}
 @media (max-width: 900px) { .cert-feature { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .cert-card { flex-direction: column; align-items: flex-start; } }
 

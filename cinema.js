@@ -340,17 +340,20 @@
     }
   }
 
-  /* 07 Certifications: the two cards arrive as a stacked deck and deal out into place */
+  /* 07 Certifications: the cards arrive as a stacked deck on the first one and deal out into place */
   function certsChapter(mm) {
     const deck = document.querySelector(".cert-feature");
     const cards = gsap.utils.toArray(".cert-feature .cert-card");
     if (!deck || cards.length < 2) return;
     mm.add(WIDE, () => {
       cards.forEach((c) => c.classList.remove("reveal"));
-      gsap.set(cards[1], { zIndex: 2 });
-      gsap.timeline({ scrollTrigger: { trigger: deck, start: "center 55%", end: "+=60%", pin: true, scrub: 0.6 } })
-        .fromTo(cards[1], { xPercent: -104, yPercent: 6, rotate: -7, scale: 0.94 }, { xPercent: 0, yPercent: 0, rotate: 0, scale: 1, ease: "power2.inOut" }, 0)
+      const tl = gsap.timeline({ scrollTrigger: { trigger: deck, start: "center 55%", end: "+=60%", pin: true, scrub: 0.6 } })
         .fromTo(cards[0], { rotate: 3, yPercent: 3 }, { rotate: 0, yPercent: 0, ease: "power2.inOut" }, 0);
+      cards.slice(1).forEach((c, k) => {
+        const i = k + 1;
+        gsap.set(c, { zIndex: i + 1 });
+        tl.fromTo(c, { xPercent: -104 * i, yPercent: 6 / i, rotate: i % 2 ? -7 : 5, scale: 0.94 }, { xPercent: 0, yPercent: 0, rotate: 0, scale: 1, ease: "power2.inOut" }, 0);
+      });
     });
   }
 
