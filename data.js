@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 97004,
   "solved": {
-   "All": 712,
-   "Easy": 349,
+   "All": 713,
+   "Easy": 350,
    "Medium": 312,
    "Hard": 51
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 990
   },
-  "streak": 217,
-  "activeDays": 291,
-  "submissionsLastYear": 1101,
+  "streak": 218,
+  "activeDays": 292,
+  "submissionsLastYear": 1103,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -302,6 +302,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-13": 2,
    "2026-11-14": 7,
    "2026-11-15": 1,
+   "2026-11-16": 2,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -372,7 +373,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 616
+    "count": 617
    },
    {
     "name": "Python",
@@ -422,11 +423,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 50,
+    "progress": 53,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Calculate Digit Sum of a String",
+    "url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
+    "date": "2026-11-16",
+    "lang": "java"
+   },
    {
     "title": "Number of Sub-arrays With Odd Sum",
     "url": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
@@ -491,12 +498,6 @@ window.PORTFOLIO_DATA = {
     "title": "Climbing Stairs II",
     "url": "https://leetcode.com/problems/climbing-stairs-ii/",
     "date": "2026-11-10",
-    "lang": "java"
-   },
-   {
-    "title": "Find Servers That Handled Most Number of Requests",
-    "url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
-    "date": "2026-11-09",
     "lang": "java"
    }
   ]
