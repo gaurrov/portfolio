@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 96757,
   "solved": {
-   "All": 713,
+   "All": 714,
    "Easy": 350,
    "Medium": 312,
-   "Hard": 51
+   "Hard": 52
   },
   "totals": {
    "All": 4115,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 991
   },
-  "streak": 218,
-  "activeDays": 292,
-  "submissionsLastYear": 1103,
+  "streak": 219,
+  "activeDays": 293,
+  "submissionsLastYear": 1104,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -303,6 +303,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-14": 7,
    "2026-11-15": 1,
    "2026-11-16": 2,
+   "2026-11-17": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -373,7 +374,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 617
+    "count": 618
    },
    {
     "name": "Python",
@@ -423,11 +424,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 53,
+    "progress": 56,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Changes to Make K Semi-palindromes",
+    "url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
+    "date": "2026-11-17",
+    "lang": "java"
+   },
    {
     "title": "Calculate Digit Sum of a String",
     "url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
@@ -492,12 +499,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Cost to Acquire Required Items",
     "url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
     "date": "2026-11-11",
-    "lang": "java"
-   },
-   {
-    "title": "Climbing Stairs II",
-    "url": "https://leetcode.com/problems/climbing-stairs-ii/",
-    "date": "2026-11-10",
     "lang": "java"
    }
   ]
@@ -1151,8 +1152,15 @@ window.PORTFOLIO_DATA = {
    "2026-11-07": 0,
    "2026-11-14": 0
   },
-  "pullRequestsRecent": 12,
+  "pullRequestsRecent": 11,
   "activity": [
+   {
+    "text": "Pushed to gaurrov/portfolio",
+    "kind": "push",
+    "date": "2026-11-16",
+    "times": 1,
+    "url": "https://github.com/gaurrov/portfolio"
+   },
    {
     "text": "Pushed to gaurrov/meshery",
     "kind": "push",
@@ -1243,13 +1251,6 @@ window.PORTFOLIO_DATA = {
     "date": "2026-10-30",
     "times": 1,
     "url": "https://github.com/gaurrov/meshery"
-   },
-   {
-    "text": "Opened a pull request in layer5io/sistent",
-    "kind": "pr",
-    "date": "2026-10-29",
-    "times": 1,
-    "url": "https://github.com/layer5io/sistent"
    }
   ],
   "recentRepos": [
