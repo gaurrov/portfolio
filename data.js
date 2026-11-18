@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 96757,
   "solved": {
-   "All": 714,
+   "All": 715,
    "Easy": 350,
-   "Medium": 312,
+   "Medium": 313,
    "Hard": 52
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 991
   },
-  "streak": 219,
-  "activeDays": 293,
-  "submissionsLastYear": 1104,
+  "streak": 220,
+  "activeDays": 294,
+  "submissionsLastYear": 1105,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -304,6 +304,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-15": 1,
    "2026-11-16": 2,
    "2026-11-17": 1,
+   "2026-11-18": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -374,7 +375,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 618
+    "count": 619
    },
    {
     "name": "Python",
@@ -424,11 +425,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 56,
+    "progress": 60,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Number of Changes to Make Binary String Beautiful",
+    "url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
+    "date": "2026-11-18",
+    "lang": "java"
+   },
    {
     "title": "Minimum Changes to Make K Semi-palindromes",
     "url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
@@ -493,12 +500,6 @@ window.PORTFOLIO_DATA = {
     "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
     "url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
     "date": "2026-11-12",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Cost to Acquire Required Items",
-    "url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
-    "date": "2026-11-11",
     "lang": "java"
    }
   ]
@@ -1260,7 +1261,7 @@ window.PORTFOLIO_DATA = {
     "url": "https://github.com/gaurrov/portfolio",
     "language": "JavaScript",
     "stars": 0,
-    "pushed": "2026-11-17",
+    "pushed": "2026-11-18",
     "description": ""
    },
    {
