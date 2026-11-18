@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
   },
   "streak": 220,
   "activeDays": 294,
-  "submissionsLastYear": 1105,
+  "submissionsLastYear": 1106,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -304,7 +304,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-15": 1,
    "2026-11-16": 2,
    "2026-11-17": 1,
-   "2026-11-18": 1,
+   "2026-11-18": 2,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -431,6 +431,12 @@ window.PORTFOLIO_DATA = {
   ],
   "recent": [
    {
+    "title": "Number of Islands",
+    "url": "https://leetcode.com/problems/number-of-islands/",
+    "date": "2026-11-18",
+    "lang": "java"
+   },
+   {
     "title": "Minimum Number of Changes to Make Binary String Beautiful",
     "url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
     "date": "2026-11-18",
@@ -494,12 +500,6 @@ window.PORTFOLIO_DATA = {
     "title": "Count Non-Decreasing Subarrays After K Operations",
     "url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
     "date": "2026-11-13",
-    "lang": "java"
-   },
-   {
-    "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
-    "url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
-    "date": "2026-11-12",
     "lang": "java"
    }
   ]
