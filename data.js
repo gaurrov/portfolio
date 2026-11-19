@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 96114,
   "solved": {
-   "All": 715,
+   "All": 716,
    "Easy": 350,
-   "Medium": 313,
+   "Medium": 314,
    "Hard": 52
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 991
   },
-  "streak": 220,
-  "activeDays": 294,
-  "submissionsLastYear": 1106,
+  "streak": 221,
+  "activeDays": 295,
+  "submissionsLastYear": 1107,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -305,6 +305,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-16": 2,
    "2026-11-17": 1,
    "2026-11-18": 2,
+   "2026-11-19": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -375,7 +376,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 619
+    "count": 620
    },
    {
     "name": "Python",
@@ -425,11 +426,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 60,
+    "progress": 63,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Minimum Score by Changing Two Elements",
+    "url": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
+    "date": "2026-11-19",
+    "lang": "java"
+   },
    {
     "title": "Number of Islands",
     "url": "https://leetcode.com/problems/number-of-islands/",
@@ -493,12 +500,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "LRU Cache",
     "url": "https://leetcode.com/problems/lru-cache/",
-    "date": "2026-11-13",
-    "lang": "java"
-   },
-   {
-    "title": "Count Non-Decreasing Subarrays After K Operations",
-    "url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
     "date": "2026-11-13",
     "lang": "java"
    }
