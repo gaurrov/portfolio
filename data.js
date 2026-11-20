@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 95866,
   "solved": {
-   "All": 716,
+   "All": 717,
    "Easy": 350,
    "Medium": 314,
-   "Hard": 52
+   "Hard": 53
   },
   "totals": {
    "All": 4115,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 991
   },
-  "streak": 221,
-  "activeDays": 295,
-  "submissionsLastYear": 1107,
+  "streak": 222,
+  "activeDays": 296,
+  "submissionsLastYear": 1108,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -306,6 +306,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-17": 1,
    "2026-11-18": 2,
    "2026-11-19": 1,
+   "2026-11-20": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -376,7 +377,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 620
+    "count": 621
    },
    {
     "name": "Python",
@@ -426,11 +427,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 63,
+    "progress": 66,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Maximize Consecutive Elements in an Array After Modification",
+    "url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
+    "date": "2026-11-20",
+    "lang": "java"
+   },
    {
     "title": "Minimum Score by Changing Two Elements",
     "url": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
@@ -495,12 +502,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Positive Sum Subarray",
     "url": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
     "date": "2026-11-14",
-    "lang": "java"
-   },
-   {
-    "title": "LRU Cache",
-    "url": "https://leetcode.com/problems/lru-cache/",
-    "date": "2026-11-13",
     "lang": "java"
    }
   ]
