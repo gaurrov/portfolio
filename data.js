@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 95866,
   "solved": {
-   "All": 717,
+   "All": 718,
    "Easy": 350,
-   "Medium": 314,
+   "Medium": 315,
    "Hard": 53
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2148,
    "Hard": 991
   },
-  "streak": 222,
-  "activeDays": 296,
-  "submissionsLastYear": 1108,
+  "streak": 223,
+  "activeDays": 297,
+  "submissionsLastYear": 1110,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -307,6 +307,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-18": 2,
    "2026-11-19": 1,
    "2026-11-20": 1,
+   "2026-11-21": 2,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -377,7 +378,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 621
+    "count": 622
    },
    {
     "name": "Python",
@@ -427,11 +428,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 66,
+    "progress": 70,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Find Subtree Sizes After Changes",
+    "url": "https://leetcode.com/problems/find-subtree-sizes-after-changes/",
+    "date": "2026-11-21",
+    "lang": "java"
+   },
    {
     "title": "Maximize Consecutive Elements in an Array After Modification",
     "url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
@@ -495,12 +502,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Longest Substring Without Repeating Characters",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-    "date": "2026-11-14",
-    "lang": "java"
-   },
-   {
-    "title": "Minimum Positive Sum Subarray",
-    "url": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
     "date": "2026-11-14",
     "lang": "java"
    }
