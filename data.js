@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 95191,
   "solved": {
-   "All": 718,
-   "Easy": 350,
+   "All": 719,
+   "Easy": 351,
    "Medium": 315,
    "Hard": 53
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 993
   },
-  "streak": 223,
-  "activeDays": 297,
-  "submissionsLastYear": 1110,
+  "streak": 224,
+  "activeDays": 298,
+  "submissionsLastYear": 1111,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -308,6 +308,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-19": 1,
    "2026-11-20": 1,
    "2026-11-21": 2,
+   "2026-11-22": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -378,7 +379,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 622
+    "count": 623
    },
    {
     "name": "Python",
@@ -428,11 +429,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 70,
+    "progress": 73,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Check if All A's Appears Before All B's",
+    "url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
+    "date": "2026-11-22",
+    "lang": "java"
+   },
    {
     "title": "Find Subtree Sizes After Changes",
     "url": "https://leetcode.com/problems/find-subtree-sizes-after-changes/",
@@ -496,12 +503,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Lexicographically Smallest String After Operations With Constraint",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/",
-    "date": "2026-11-14",
-    "lang": "java"
-   },
-   {
-    "title": "Longest Substring Without Repeating Characters",
-    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "date": "2026-11-14",
     "lang": "java"
    }
