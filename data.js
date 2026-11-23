@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 94931,
   "solved": {
-   "All": 719,
+   "All": 720,
    "Easy": 351,
-   "Medium": 315,
+   "Medium": 316,
    "Hard": 53
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 993
   },
-  "streak": 224,
-  "activeDays": 298,
-  "submissionsLastYear": 1111,
+  "streak": 225,
+  "activeDays": 299,
+  "submissionsLastYear": 1112,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -309,6 +309,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-20": 1,
    "2026-11-21": 2,
    "2026-11-22": 1,
+   "2026-11-23": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -379,7 +380,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 623
+    "count": 624
    },
    {
     "name": "Python",
@@ -429,11 +430,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 73,
+    "progress": 76,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Product of the Last K Numbers",
+    "url": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
+    "date": "2026-11-23",
+    "lang": "java"
+   },
    {
     "title": "Check if All A's Appears Before All B's",
     "url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
@@ -499,12 +506,6 @@ window.PORTFOLIO_DATA = {
     "url": "https://leetcode.com/problems/second-highest-salary/",
     "date": "2026-11-14",
     "lang": "mysql"
-   },
-   {
-    "title": "Lexicographically Smallest String After Operations With Constraint",
-    "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/",
-    "date": "2026-11-14",
-    "lang": "java"
    }
   ]
  },
