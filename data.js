@@ -1159,7 +1159,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-14": 0,
    "2026-11-21": 0
   },
-  "pullRequestsRecent": 11,
+  "pullRequestsRecent": 10,
   "activity": [
    {
     "text": "Pushed to gaurrov/portfolio",
