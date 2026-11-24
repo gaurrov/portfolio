@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 94659,
   "solved": {
-   "All": 720,
-   "Easy": 351,
+   "All": 721,
+   "Easy": 352,
    "Medium": 316,
    "Hard": 53
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 993
   },
-  "streak": 225,
-  "activeDays": 299,
-  "submissionsLastYear": 1112,
+  "streak": 226,
+  "activeDays": 300,
+  "submissionsLastYear": 1113,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -310,6 +310,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-21": 2,
    "2026-11-22": 1,
    "2026-11-23": 1,
+   "2026-11-24": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -380,7 +381,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 624
+    "count": 625
    },
    {
     "name": "Python",
@@ -430,11 +431,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 76,
+    "progress": 80,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Maximum Subarray With Equal Products",
+    "url": "https://leetcode.com/problems/maximum-subarray-with-equal-products/",
+    "date": "2026-11-24",
+    "lang": "java"
+   },
    {
     "title": "Product of the Last K Numbers",
     "url": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
@@ -498,12 +505,6 @@ window.PORTFOLIO_DATA = {
    {
     "title": "Replace Employee ID With The Unique Identifier",
     "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
-    "date": "2026-11-14",
-    "lang": "mysql"
-   },
-   {
-    "title": "Second Highest Salary",
-    "url": "https://leetcode.com/problems/second-highest-salary/",
     "date": "2026-11-14",
     "lang": "mysql"
    }
