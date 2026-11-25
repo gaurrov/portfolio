@@ -326,7 +326,7 @@ window.PORTFOLIO_DATA = {
    "rating": 1646,
    "globalRanking": 167858,
    "attended": 6,
-   "topPercentage": 19.03
+   "topPercentage": 19.05
   },
   "contestHistory": [
    {
