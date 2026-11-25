@@ -6,10 +6,10 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 94423,
   "solved": {
-   "All": 721,
+   "All": 722,
    "Easy": 352,
    "Medium": 316,
-   "Hard": 53
+   "Hard": 54
   },
   "totals": {
    "All": 4124,
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 994
   },
-  "streak": 226,
-  "activeDays": 300,
-  "submissionsLastYear": 1113,
+  "streak": 227,
+  "activeDays": 301,
+  "submissionsLastYear": 1114,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -311,6 +311,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-22": 1,
    "2026-11-23": 1,
    "2026-11-24": 1,
+   "2026-11-25": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -381,7 +382,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 625
+    "count": 626
    },
    {
     "name": "Python",
@@ -431,11 +432,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 80,
+    "progress": 83,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Smallest Unique Subarray",
+    "url": "https://leetcode.com/problems/smallest-unique-subarray/",
+    "date": "2026-11-25",
+    "lang": "java"
+   },
    {
     "title": "Maximum Subarray With Equal Products",
     "url": "https://leetcode.com/problems/maximum-subarray-with-equal-products/",
@@ -501,12 +508,6 @@ window.PORTFOLIO_DATA = {
     "url": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
     "date": "2026-11-15",
     "lang": "java"
-   },
-   {
-    "title": "Replace Employee ID With The Unique Identifier",
-    "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
-    "date": "2026-11-14",
-    "lang": "mysql"
    }
   ]
  },
