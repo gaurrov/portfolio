@@ -6,8 +6,8 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 94423,
   "solved": {
-   "All": 722,
-   "Easy": 352,
+   "All": 723,
+   "Easy": 353,
    "Medium": 316,
    "Hard": 54
   },
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 994
   },
-  "streak": 227,
-  "activeDays": 301,
-  "submissionsLastYear": 1114,
+  "streak": 228,
+  "activeDays": 302,
+  "submissionsLastYear": 1115,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -312,6 +312,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-23": 1,
    "2026-11-24": 1,
    "2026-11-25": 1,
+   "2026-11-26": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -382,7 +383,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 626
+    "count": 627
    },
    {
     "name": "Python",
@@ -432,11 +433,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 83,
+    "progress": 86,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Stone Removal Game",
+    "url": "https://leetcode.com/problems/stone-removal-game/",
+    "date": "2026-11-26",
+    "lang": "java"
+   },
    {
     "title": "Smallest Unique Subarray",
     "url": "https://leetcode.com/problems/smallest-unique-subarray/",
@@ -501,12 +508,6 @@ window.PORTFOLIO_DATA = {
     "title": "Calculate Digit Sum of a String",
     "url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
     "date": "2026-11-16",
-    "lang": "java"
-   },
-   {
-    "title": "Number of Sub-arrays With Odd Sum",
-    "url": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
-    "date": "2026-11-15",
     "lang": "java"
    }
   ]
