@@ -6,9 +6,9 @@ window.PORTFOLIO_DATA = {
   "url": "https://leetcode.com/u/Gaurrov/",
   "ranking": 93822,
   "solved": {
-   "All": 723,
+   "All": 724,
    "Easy": 353,
-   "Medium": 316,
+   "Medium": 317,
    "Hard": 54
   },
   "totals": {
@@ -17,9 +17,9 @@ window.PORTFOLIO_DATA = {
    "Medium": 2152,
    "Hard": 994
   },
-  "streak": 228,
-  "activeDays": 302,
-  "submissionsLastYear": 1115,
+  "streak": 229,
+  "activeDays": 303,
+  "submissionsLastYear": 1116,
   "calendar": {
    "2026-01-03": 9,
    "2026-01-06": 2,
@@ -313,6 +313,7 @@ window.PORTFOLIO_DATA = {
    "2026-11-24": 1,
    "2026-11-25": 1,
    "2026-11-26": 1,
+   "2026-11-27": 1,
    "2025-12-05": 1,
    "2025-12-06": 3,
    "2025-12-09": 2,
@@ -383,7 +384,7 @@ window.PORTFOLIO_DATA = {
   "languages": [
    {
     "name": "Java",
-    "count": 627
+    "count": 628
    },
    {
     "name": "Python",
@@ -433,11 +434,17 @@ window.PORTFOLIO_DATA = {
   "upcomingBadges": [
    {
     "name": "Nov LeetCoding Challenge",
-    "progress": 86,
+    "progress": 90,
     "icon": "assets/lc-badges/dcc-2026-11.png"
    }
   ],
   "recent": [
+   {
+    "title": "Maximum Number of Items From Sale I",
+    "url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/",
+    "date": "2026-11-27",
+    "lang": "java"
+   },
    {
     "title": "Stone Removal Game",
     "url": "https://leetcode.com/problems/stone-removal-game/",
@@ -502,12 +509,6 @@ window.PORTFOLIO_DATA = {
     "title": "Minimum Changes to Make K Semi-palindromes",
     "url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
     "date": "2026-11-17",
-    "lang": "java"
-   },
-   {
-    "title": "Calculate Digit Sum of a String",
-    "url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
-    "date": "2026-11-16",
     "lang": "java"
    }
   ]
